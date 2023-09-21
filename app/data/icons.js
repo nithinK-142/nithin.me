@@ -1,3 +1,7 @@
+/**
+ * @type {{ [key: string]: JSX.Element }}
+ */
+
 export const Icons = {
   github: (
     <svg viewBox="0 0 25 25" className="h-full hover:fill-gray-400">
