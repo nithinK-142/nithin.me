@@ -19,14 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
+        {/* <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           rel="stylesheet"
-        ></link>
+        ></link> */}
       </head>
       <body className={inter.className}>
         <div className="w-full flex justify-center ">
-          <div className="h-screen w-[96%] sm:w-[70%] flex flex-col justify-between py-1 sm:py-2 bg-slate-700 px-2 sm:px-4">
+          <div className="h-screen w-[96%] sm:w-[70%] flex flex-col justify-between py-1 sm:py-2 bg-slate-700 px-1 sm:px-2">
             <Navbar />
             <main className="bg-green-700">{children}</main>
             <Footer />
