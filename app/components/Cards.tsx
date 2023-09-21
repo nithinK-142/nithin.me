@@ -8,10 +8,11 @@ const Cards = ({ href, title, description, technologies }: main) => (
       <a href={href} className="" target="_blank" rel="noopener noreferrer">
         {title}{" "}
       </a>
-      <span className="inline-block transition-transform group-hover:rotate-180 motion-reduce:transform-none">
+      <span className="inline-block transition-transform group-hover:rotate-180 group-hover:text-blue-200 motion-reduce:transform-none">
         -&gt;
       </span>
-      <span className="opacity-0 group-hover:opacity-100">
+      {/* <span className="opacity-0 group-hover:opacity-100"> */}
+      <span>
         <a href={href} target="_blank" rel="noopener noreferrer">
           <button className="h-4 pl-1 fill-white">{Icons.github}</button>
         </a>
