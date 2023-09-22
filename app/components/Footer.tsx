@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className='flex items-center justify-center md:justify-between pt-2'>
       <Socials />
       
-      <p className="text-sm underline underline-offset-2 hidden md:block">
+      <p className="text-sm underline underline-offset-2 hidden md:block hover:opacity-70">
         <a href="mailto:nithin.sagar.359@gmail.com">nithin.sagar.359@gmail.com</a>
       </p>
     </footer>
