@@ -8,7 +8,7 @@ const ContactPage = () => {
       <div className="w-full md:w-1/2 bg-orange-600 p-4">
         <h2 className="text-2xl mb-4 font-bold">Just Say Hi!</h2>
 
-        <h3 className="text-lg">I&apos;m always open to discuss your project or talk about new things. Let's work together and I&apos;ll provide my utmost assistance.</h3>
+        <h3 className="text-lg">I&apos;m always open to discuss your project or talk about new things. Let&apos;s work together and I&apos;ll provide my utmost assistance.</h3>
 
         <p className="mt-8 mb-2 font-semibold">Hire Me on :</p>
         <a href="https://www.fiverr.com/nithin_webdev?up_rollout=true" target="_blank" rel="noreferrer">
