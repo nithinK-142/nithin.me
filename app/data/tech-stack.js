@@ -1,7 +1,3 @@
-/**
- * @type {{ [key: string]: JSX.Element }}
- */
-
 export const frontend = [
   {
     logo: (
