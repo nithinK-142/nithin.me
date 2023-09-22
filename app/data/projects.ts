@@ -1,13 +1,12 @@
-// export type main = {
-//   href: string;
-//   gitLink: string;
-//   title: string;
-//   description: string;
-//   technologies: string[];
-// };
+export type MainProjectsType = {
+  href: string;
+  gitLink: string;
+  title: string;
+  description: string;
+  technologies: string[];
+};
 
-// export const mainProjects: main[] = [
-export const mainProjects = [
+export const mainProjects: MainProjectsType[] = [
   {
     href: "https://sveltekittodo.netlify.app/",
     gitLink: "https://github.com/nithinK-142/todo-sveltekit-fire",
@@ -61,13 +60,16 @@ export const mainProjects = [
   },
 ];
 
-// export type other = {
-//   href: string;
-//   title: string;
-// };
+type OtherType = {
+  href: string;
+  title: string;
+};
 
-// export const otherProjects: other[] = [
-export const otherProjects = [
+export const otherProjects: OtherType[] = [
+  {
+    title: "nithinK-142/nithink-142.github.io",
+    href: "https://nithin-dev.netlify.app/",
+  },
   {
     title: "nithinK-142/react-auth",
     href: "https://github.com/nithinK-142/react-auth",

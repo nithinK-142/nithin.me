@@ -1,4 +1,4 @@
-import { backend, frontend, tools, hosting } from "../../data/technologies";
+import { backend, frontend, tools, hosting } from "../../data/tech-stack";
 
 const TechStackPage = () => {
   return (

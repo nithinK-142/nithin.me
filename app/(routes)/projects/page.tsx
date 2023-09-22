@@ -1,6 +1,6 @@
 import Cards from "@/app/components/Cards";
 import React from "react";
-import { Icons } from "../../data/icons";
+import { icons } from "../../data/icons";
 import { mainProjects, otherProjects } from "../../data/projects";
 
 const ProjectsPage = () => {
@@ -19,7 +19,7 @@ const ProjectsPage = () => {
           {otherProjects.map(({ title, href }, index) => {
             return (
               <li className="flex gap-2 items-center" key={index}>
-                <span className="h-4 fill-white">{Icons.git}</span>
+                <span className="h-4 fill-white">{icons.git}</span>
                 <a href={href} target="_blank" rel="noreferrer">
                   <p className="font-jbmono opacity-90 hover:opacity-100">
                     {title}

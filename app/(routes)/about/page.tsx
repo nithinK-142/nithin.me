@@ -1,6 +1,6 @@
-import { Achivements } from "@/app/data/achievement";
-import { Icons } from "../../data/icons";
-import { happyPills } from "@/app/data/happypills";
+import { achivements } from "@/app/data/achievement";
+import { icons } from "../../data/icons";
+import { happyPills } from "@/app/data/happy-pills";
 
 const AboutPage = () => {
   return (
@@ -67,7 +67,7 @@ const AboutPage = () => {
             </a>
             .
           </p>
-          <p className="pt-2 hidden md:block">
+          <p className="pt-2 hidden lg:block">
             I spend hours experimenting with HTML, CSS, and JavaScript or
             dabbling with new technologies. I&apos;m curious and enjoy work that
             challenges me to learn something new and stretch in a different
@@ -90,9 +90,9 @@ const AboutPage = () => {
           <div className="w-full sm:w-1/2 bg-yellow-500">
             <p className="font-medium text-xl my-4 uppercase">Achievements</p>
             <ul className="space-y-1">
-              {Achivements.map(({ title, link }, index) => (
+              {achivements.map(({ title, link }, index) => (
                 <li className="flex gap-2 items-center" key={index}>
-                  <span className="h-4 fill-green-600">{Icons.tick}</span>
+                  <span className="h-4 fill-green-600">{icons.tick}</span>
                   <a
                     href={link}
                     target="_blank"
@@ -112,9 +112,9 @@ const AboutPage = () => {
             </p>
             <div className="flex gap-3">
               {happyPills.map(({ platform, icon }) => (
-                <i title={platform} key={platform}>
+                <span title={platform} key={platform}>
                   {icon}
-                </i>
+                </span>
               ))}
             </div>
           </div>
