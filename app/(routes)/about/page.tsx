@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <section className="md:mb-6">
       <div className="space-y-4">
-        <div className="leading-relaxed bio">
+        <div className="leading-relaxed">
           <p>
             I&apos;m <span className="font-medium">Nithin,</span> a 23 years old
             self-taught <span className="font-medium">Web Developer</span> / a{" "}

@@ -1,6 +1,14 @@
 import React from "react";
-import { main } from "../data/projects";
+// import { main } from "../data/projects";
 import { Icons } from "../data/icons";
+
+type main = {
+  href: string;
+  gitLink: string;
+  title: string;
+  description: string;
+  technologies: string[];
+};
 
 const Cards = ({ href, gitLink, title, description, technologies }: main) => (
   <div className="group rounded-lg border border-transparent px-2 sm:px-3 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 dark:border-neutral-700 hover:dark:bg-neutral-800/30">

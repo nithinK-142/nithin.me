@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/data/logos.js", "app/data/happypills.js", "app/data/icons.js", "app/data/socials.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/data/logos.js", "app/data/happypills.js", "app/data/icons.js", "app/data/socials.js", "app/data/nav.js", "app/data/projects.js", "app/data/achievement.js"],
   "exclude": ["node_modules"]
 }
