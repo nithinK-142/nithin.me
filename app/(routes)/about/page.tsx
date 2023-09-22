@@ -88,7 +88,7 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col gap-8 sm:flex-row sm:gap-0 bg-slate-500">
           <div className="w-full sm:w-1/2 bg-yellow-500">
-            <p className="font-medium text-2xl my-4 uppercase">Achievements</p>
+            <p className="font-medium text-xl my-4 uppercase">Achievements</p>
             <ul className="space-y-1">
               {Achivements.map(({ title, link }, index) => (
                 <li className="flex gap-2 items-center" key={index}>
@@ -107,7 +107,7 @@ const AboutPage = () => {
           </div>
 
           <div className="pb-4">
-            <p className="font-medium text-2xl my-4 uppercase">
+            <p className="font-semibold text-xl my-4 uppercase">
               My happy pills
             </p>
             <div className="flex gap-3">
