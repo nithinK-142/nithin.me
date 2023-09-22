@@ -1,53 +1,80 @@
-import { Logos } from "../../data/logos";
+import { backend, frontend, tools, hosting } from "../../data/technologies";
 
 const TechStackPage = () => {
   return (
-    <>
-      <div className="max-w-xl lg:max-w-md md:max-w-full flex-1">
-        <p className="font-medium text-2xl my-4 uppercase">Tech Stack</p>
-        <div className="flex gap-3 gap-y-4 flex-wrap items-center pr-2">
-          <i className="h-9 w-auto" title="HTML5">
-            {Logos.html5}
-          </i>
-          <i className="h-9 w-auto" title="CSS3">
-            {Logos.css3}
-          </i>
-          <i className="h-9 w-auto" title="Bootstrap">
-            {Logos.bootstrap}
-          </i>
-          <i className="h-9 w-auto" title="TailwindCSS">
-            {Logos.tailwind}
-          </i>
-          <i className="h-9 w-auto" title="JavaScript">
-            {Logos.js}
-          </i>
-          <i className="h-9 w-auto" title="React.js">
-            {Logos.react}
-          </i>
-          <i className="h-9 w-auto" title="Next.js">
-            {Logos.nextjs}
-          </i>
-          <i className="h-9 w-auto" title="Python">
-            {Logos.python}
-          </i>
-          <i className="h-9 w-auto" title="npm">
-            {Logos.npm}
-          </i>
-          <i className="h-9 w-auto" title="Postman">
-            {Logos.postman}
-          </i>
-          <i className="h-9 w-auto" title="Figma">
-            {Logos.figma}
-          </i>
-          <i className="h-9 w-auto" title="Git">
-            {Logos.git}
-          </i>
-          <i className="h-9 w-auto" title="Terminal">
-            {Logos.terminal}
-          </i>
+    <section className="mt-8">
+      {/* <h3 className="text-2xl uppercase font-semibold mb-2">Tech Stack</h3> */}
+
+      <div className="grid grid-cols-2 gap-x-8 gap-y-4">
+        <div>
+          <h4 className="text-lg font-medium mb-2">Frontend</h4>
+
+          <div className="flex gap-2 flex-wrap items-center text-sm">
+            {frontend.map(({ logo, label }, index) => (
+              <div
+                className="h-9 w-auto flex items-center gap-2 bg-stone-900 py-2 px-3 rounded select-none"
+                key={index}
+                title={label}
+              >
+                <div className="h-4">{logo}</div>
+                <p>{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h4 className="text-lg font-medium mb-2">Backend</h4>
+
+          <div className="flex gap-2 flex-wrap items-center text-sm">
+            {backend.map(({ logo, label }, index) => (
+              <div
+                className="h-9 w-auto flex items-center gap-2 bg-stone-900 py-2 px-3 rounded select-none"
+                key={index}
+                title={label}
+              >
+                <div className="h-4">{logo}</div>
+                <p>{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h4 className="text-lg font-medium mb-2">Tools</h4>
+
+          <div className="flex gap-2 flex-wrap items-center text-sm">
+            {tools.map(({ logo, label }, index) => (
+              <div
+                className="h-9 w-auto flex items-center gap-2 bg-stone-900 py-2 px-3 rounded select-none"
+                key={index}
+                title={label}
+              >
+                <div className="h-4">{logo}</div>
+                <p>{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div>
+          <h4 className="text-lg font-medium mb-2">Hosting</h4>
+
+          <div className="flex gap-2 flex-wrap items-center text-sm">
+            {hosting.map(({ logo, label }, index) => (
+              <div
+                className="h-9 w-auto flex items-center gap-2 bg-stone-900 py-2 px-3 rounded select-none"
+                key={index}
+                title={label}
+              >
+                <div className="h-4">{logo}</div>
+                <p>{label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
