@@ -116,11 +116,6 @@ const AboutPage = () => {
                   {icon}
                 </i>
               ))}
-              {/* <img
-                src="/clash.svg"
-                className="h-9 w-auto rounded-md"
-                title="clash"
-              /> */}
             </div>
           </div>
         </div>
