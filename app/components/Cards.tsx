@@ -5,7 +5,7 @@ import { socialIcons } from "../data/social-icons";
 const Cards = ({ href, gitLink, title, description, technologies }: MainProjectsType) => (
   <div className="group rounded-lg border border-transparent px-2 sm:px-3 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 dark:border-neutral-700 hover:dark:bg-neutral-800/30">
     <h2 className="mb-3 text-xl font-semibold group-hover:underline">
-      <a href={href} className="" target="_blank" rel="noopener noreferrer">
+      <a href={href} target="_blank" rel="noopener noreferrer">
         {title}{" "}
       </a>
       <span className="inline-block transition-transform group-hover:rotate-180 group-hover:text-blue-200 motion-reduce:transform-none">
@@ -23,7 +23,7 @@ const Cards = ({ href, gitLink, title, description, technologies }: MainProjects
     <div className="flex flex-wrap justify-center mt-2 gap-2">
       {technologies.map((tech, index) => (
         <p
-          className="text-sm bg-yellow-500 text-black py-1 px-1 rounded"
+          className="text-sm bg-yellow-600 text-black py-1 px-1 rounded"
           key={index}
         >
           {tech}

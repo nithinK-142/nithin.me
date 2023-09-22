@@ -9,10 +9,10 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex justify-between items-center bg-orange-800">
+    <nav className="flex justify-between items-center">
       <div>
         <Link href="/">
-          <h1 className="text-xl sm:text-2xl font-bold font-jbmono">
+          <h1 className="text-xl sm:text-2xl font-bold font-mono">
             nithin<span className="text-orange-400">.</span>me
           </h1>
         </Link>
@@ -27,7 +27,7 @@ const Navbar = () => {
                 isActive ? "opacity-100" : "opacity-70"
               }`}
             >
-              <Link href={item.path} passHref>
+              <Link href={item.path} className="font-bold" passHref>
                 {item.label}
               </Link>
             </p>

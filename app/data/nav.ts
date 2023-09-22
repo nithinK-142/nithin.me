@@ -5,6 +5,7 @@ type navItemsType = {
 
 export const navItems: navItemsType[] = [
   { path: "/about", label: "About" },
-  { path: "/techstack", label: "Tech Stack" },
+  { path: "/techstack", label: "TechStack" },
   { path: "/projects", label: "Projects" },
+  { path: "/contact", label: "Contact" },
 ];

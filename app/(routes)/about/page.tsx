@@ -5,12 +5,12 @@ import { happyPills } from "@/app/data/happy-pills";
 const AboutPage = () => {
   return (
     <section className="md:mb-6">
-      <div className="space-y-4">
+      <div className="space-y-4 font-sand">
         <div className="leading-relaxed">
           <p>
             I&apos;m <span className="font-medium">Nithin,</span> a 23 years old
             self-taught <span className="font-medium">Web Developer</span> / a{" "}
-            <span className="font-medium">Computer Hobbyist</span> living in{" "}
+            <span className="font-medium">Tech Nerd</span> living in{" "}
             <a
               href="https://en.wikipedia.org/wiki/Bangalore"
               target="_blank"
@@ -23,7 +23,7 @@ const AboutPage = () => {
             I&apos;ve recently completed my
             <span className="font-medium">
               {" "}
-              Masters in Compter Applications at{" "}
+              Master&apos;s in Compter Applications at{" "}
               <a
                 href="https://www.cambridge.edu.in/"
                 target="_blank"
@@ -86,13 +86,13 @@ const AboutPage = () => {
             </a>
           </p>
         </div>
-        <div className="flex flex-col gap-8 sm:flex-row sm:gap-0 bg-slate-500">
-          <div className="w-full sm:w-1/2 bg-yellow-500">
-            <p className="font-medium text-xl my-4 uppercase">Achievements</p>
+        <div className="flex flex-col gap-8 sm:flex-row sm:gap-0">
+          <div className="w-full sm:w-1/2">
+            <p className="font-semibold text-xl my-4 uppercase">Achievements</p>
             <ul className="space-y-1">
               {achivements.map(({ title, link }, index) => (
                 <li className="flex gap-2 items-center" key={index}>
-                  <span className="h-4 fill-green-600">{icons.tick}</span>
+                  <span className="h-4 fill-green-500">{icons.tick}</span>
                   <a
                     href={link}
                     target="_blank"

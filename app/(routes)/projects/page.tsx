@@ -21,7 +21,7 @@ const ProjectsPage = () => {
               <li className="flex gap-2 items-center" key={index}>
                 <span className="h-4 fill-white">{icons.git}</span>
                 <a href={href} target="_blank" rel="noreferrer">
-                  <p className="font-jbmono opacity-90 hover:opacity-100">
+                  <p className="opacity-70 hover:opacity-100">
                     {title}
                   </p>
                 </a>
