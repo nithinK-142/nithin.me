@@ -22,7 +22,7 @@ export const socials: SocialsType[] = [
     },
     {
         platform: 'Twitter',
-        icon: 'twitterx',
+        icon: 'twitter',
         url: 'https://twitter.com/_nithin142'
     },
     {
