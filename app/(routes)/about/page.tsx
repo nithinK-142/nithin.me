@@ -113,7 +113,7 @@ const AboutPage = () => {
             </p>
             <div className="flex gap-3">
               {happyPills.map(({ platform, icon }) => (
-                <span title={platform} key={platform}>
+                <span title={platform} key={platform} className="hover:animate-spinning">
                   {icon}
                 </span>
               ))}

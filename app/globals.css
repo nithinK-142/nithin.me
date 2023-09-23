@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-h2{
+h2 {
   font-weight: 700 !important;
-} 
+}
 
 .flex-justify {
   @apply flex justify-center;
@@ -17,5 +17,15 @@ h2{
 }
 
 .flex-colm {
-  @apply flex flex-col
+  @apply flex flex-col;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
