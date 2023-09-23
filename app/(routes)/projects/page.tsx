@@ -1,7 +1,6 @@
 import Cards from "../../components/Cards";
 import { icons } from "../../data/icons";
 import { mainProjects, otherProjects } from "../../data/projects";
-import React from "react";
 
 const ProjectsPage = () => {
   return (

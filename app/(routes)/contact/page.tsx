@@ -1,7 +1,6 @@
 import { icons } from "../../data/icons";
 import Socials from "../../components/Socials";
 import Form from "../../components/Form";
-import React from "react";
 
 const ContactPage = () => {
   return (

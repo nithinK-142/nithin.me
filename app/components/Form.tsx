@@ -1,5 +1,3 @@
-import React from "react";
-
 type FormType = {
   label: string;
   id: string;

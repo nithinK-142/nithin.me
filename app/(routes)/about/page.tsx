@@ -1,7 +1,6 @@
 import { achivements } from "../../data/achievement";
 import { icons } from "../../data/icons";
 import { happyPills } from "../../data/happy-pills";
-import React from "react";
 
 const AboutPage = () => {
   return (
