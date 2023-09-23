@@ -18,8 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`$inter.className text-white font-sand font-medium`}>
-        <div className="bg-[#1f1f1f] w-full flex justify-center ">
+      <head>
+        <link rel="icon" type="image/x-icon" href="favicon.svg" />
+      </head>
+      <body className={`$inter.className bg-[#1f1f1f] text-white font-sand font-medium`}>
+        <div className="flex justify-center w-full ">
           <div className="h-screen w-[90%] sm:w-[70%] flex flex-col justify-between py-1 sm:py-2 px-1 sm:px-2">
             <Navbar />
             <main>{children}</main>

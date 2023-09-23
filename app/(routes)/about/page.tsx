@@ -1,6 +1,7 @@
-import { achivements } from "@/app/data/achievement";
+import { achivements } from "../../data/achievement";
 import { icons } from "../../data/icons";
-import { happyPills } from "@/app/data/happy-pills";
+import { happyPills } from "../../data/happy-pills";
+import React from "react";
 
 const AboutPage = () => {
   return (
@@ -67,7 +68,7 @@ const AboutPage = () => {
             </a>
             .
           </p>
-          <p className="pt-2 hidden lg:block">
+          <p className="hidden pt-2 lg:block">
             I spend hours experimenting with HTML, CSS, and JavaScript or
             dabbling with new technologies. I&apos;m curious and enjoy work that
             challenges me to learn something new and stretch in a different
@@ -88,10 +89,10 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col gap-8 sm:flex-row sm:gap-0">
           <div className="w-full sm:w-1/2">
-            <p className="font-semibold text-xl my-4 uppercase">Achievements</p>
+            <p className="my-4 text-xl font-semibold uppercase">Achievements</p>
             <ul className="space-y-1">
               {achivements.map(({ title, link }, index) => (
-                <li className="flex gap-2 items-center" key={index}>
+                <li className="flex items-center gap-2" key={index}>
                   <span className="h-4 fill-green-500">{icons.tick}</span>
                   <a
                     href={link}
@@ -107,7 +108,7 @@ const AboutPage = () => {
           </div>
 
           <div className="pb-4">
-            <p className="font-semibold text-xl my-4 uppercase">
+            <p className="my-4 text-xl font-semibold uppercase">
               My happy pills
             </p>
             <div className="flex gap-3">

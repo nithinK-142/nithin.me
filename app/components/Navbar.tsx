@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
 import { usePathname } from "next/navigation";
 import { navItems } from "../data/nav";
 
@@ -9,10 +8,10 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="flex items-center justify-between">
       <div>
         <Link href="/">
-          <h2 className="text-xl sm:text-2xl font-bold font-mono">
+          <h2 className="font-mono text-xl font-bold sm:text-2xl">
             nithin<span className="text-orange-400">.</span>me
           </h2>
         </Link>

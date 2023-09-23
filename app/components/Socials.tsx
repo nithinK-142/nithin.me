@@ -1,15 +1,18 @@
-import React from "react";
 import { socials } from "../data/socials";
 import { socialIcons } from "../data/social-icons";
 
-const Socials = () => {
+interface SocialsProps {
+  height: string;
+}
+
+const Socials: React.FC<SocialsProps> = ({ height }) => {
   return (
     <ul className="flex items-center space-x-3 text-xl">
       {socials.map(({ platform, url, icon }, index) => {
         return (
           <li key={index}>
             <a href={url} title={platform} target="_blank" rel="noreferrer">
-              <div className="h-5 fill-white hover:scale-110">{socialIcons[icon]}</div>
+              <div className={`${height} fill-white hover:scale-110 duration-200`}>{socialIcons[icon]}</div>
             </a>
           </li>
         );

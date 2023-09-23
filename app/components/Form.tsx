@@ -1,3 +1,5 @@
+import React from "react";
+
 type FormType = {
   label: string;
   id: string;
@@ -13,11 +15,11 @@ const Form = () => {
     required = false,
   }: FormType) => (
     <>
-      <label className="block text-sm mb-2" htmlFor={id}>
+      <label className="block mb-2 text-sm" htmlFor={id}>
         {label}
       </label>
       <input
-        className="mb-4 py-1 px-2 rounded-sm w-full outline-none bg-neutral-700 "
+        className="w-full px-2 py-1 mb-4 rounded-sm outline-none bg-neutral-700 "
         type="text"
         id={id}
         name={id}
@@ -50,11 +52,11 @@ const Form = () => {
         id="subject"
         placeholder="This is the subject"
       />
-      <label className="block text-sm mb-2" htmlFor="message">
+      <label className="block mb-2 text-sm" htmlFor="message">
         Message
       </label>
       <textarea
-        className="py-1 px-2 rounded-sm w-full outline-none bg-neutral-700 min-h-full"
+        className="w-full min-h-full px-2 py-1 rounded-sm outline-none bg-neutral-700"
         rows={4}
         name="message"
         id="message"
@@ -63,7 +65,7 @@ const Form = () => {
       ></textarea>
       <button
         type="submit"
-        className="bg-orange-400 rounded-md pt-3 pb-2 px-5 mt-4"
+        className="px-5 pt-3 pb-2 mt-4 bg-orange-400 rounded-md"
       >
         Send Message
       </button>

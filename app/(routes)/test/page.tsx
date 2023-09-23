@@ -1,6 +1,5 @@
 import React from "react";
 import { icons } from "../../data/icons";
-import Image from "next/image";
 
 const page = () => {
   return (

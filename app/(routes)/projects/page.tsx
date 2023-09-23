@@ -1,24 +1,24 @@
-import Cards from "@/app/components/Cards";
-import React from "react";
+import Cards from "../../components/Cards";
 import { icons } from "../../data/icons";
 import { mainProjects, otherProjects } from "../../data/projects";
+import React from "react";
 
 const ProjectsPage = () => {
   return (
     <>
-      <div className="text-center grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-3 sm:gap-2">
+      <div className="grid text-center xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-3 sm:gap-2">
         {mainProjects.map((link, index) => (
           <Cards key={index} {...link} />
         ))}
       </div>
       <div>
-        <p className="text-xl font-medium mt-6 mb-2">
+        <p className="mt-6 mb-2 text-xl font-medium">
           Other Noteworthy Projects
         </p>
-        <ul className="ml-4 pb-2">
+        <ul className="pb-2 ml-4">
           {otherProjects.map(({ title, href }, index) => {
             return (
-              <li className="flex gap-2 items-center" key={index}>
+              <li className="flex items-center gap-2" key={index}>
                 <span className="h-4 fill-white">{icons.git}</span>
                 <a href={href} target="_blank" rel="noreferrer">
                   <p className="opacity-70 hover:opacity-100">
