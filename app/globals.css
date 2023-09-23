@@ -33,3 +33,11 @@ body {
 h1,h2{
   font-weight: 700 !important;
 } 
+
+.flex-justify {
+  @apply flex justify-center;
+}
+
+.flex-colm {
+  @apply flex flex-col
+}

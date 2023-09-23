@@ -1,45 +1,32 @@
-import Image from "next/image";
 import Link from "next/link";
+import { icons } from "./data/icons";
 
 export default function Home() {
   return (
     <section className="py-5 my-5">
-      <div className="flex">
-        <div className="w-1/2 pb-4 flex justify-center">
-          <Image
-            src="/user.png"
-            alt="Nithin"
-            width={1080}
-            height={1080}
-            // placeholder="blur"
-            className="w-3/4 ml-auto h-auto"
-            priority
-          />
-          {/* <Image
-            src="/user.svg"
-            alt="Nithin"
-            width={1080}
-            height={1080}
-            // placeholder="blur"
-            className="w-8/12 ml-auto h-auto"
-            priority
-          /> */}
+      <div className="flex-colm md:flex-row">
+        <div className="w-full md:w-1/2 pb-4 flex-justify">
+          <div className="w-7/12 sm:8/12 md:w-3/4 md:ml-auto h-auto">{icons.user}</div>
         </div>
-        
-        <div className="w-1/2 px-5 flex items-center">
+
+        <div className="w-full md:w-1/2 px-5 flex-justify md:justify-start md:items-center ">
           <div>
-            <p className="pl-1 text-2xl">Hi there, i&apos;m</p>
-            <h1 className="text-8xl leading-none">NITHIN</h1>
-            <p className="pl-1">
+            <p className="pl-1 text-xl md:text-2xl">Hi there, i&apos;m</p>
+            <h1 className="text-6xl lg:text-[86px] xl:text-8xl leading-none">
+              NITHIN
+            </h1>
+            <p className="pl-1 text-center md:text-left">
               Developer, Freelancer
               <br /> &amp; Tech Enthusiast
             </p>
-            
-            <Link href="/contact">
-            <button className="ml-1 mt-5 px-4 py-2 custom-button bg-[#f05f45] text-white font-bold text-md rounded-md">
-                Let&apos;s Talk!
-            </button>
-            </Link>
+
+            <div className="flex-justify md:justify-start">
+              <Link href="/contact">
+                <button className="ml-1 mt-5 px-4 py-2 sm:mx-auto bg-[#f05f45] text-white font-bold text-md rounded-md">
+                  Let&apos;s Talk!
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
