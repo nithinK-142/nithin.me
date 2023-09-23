@@ -13,7 +13,7 @@ const TechStackPage: React.FC = () => {
       <div className="flex gap-2 flex-wrap items-center text-sm">
         {techArray.map(({ logo, label }, index) => (
           <div
-            className="h-9 w-auto flex items-center gap-2 bg-stone-900 py-2 px-3 rounded select-none"
+            className="h-9 w-auto flex items-center gap-2 bg-stone-950 py-2 px-3 rounded select-none"
             key={index}
             title={label}
           >
