@@ -12,9 +12,9 @@ const Navbar = () => {
     <nav className="flex justify-between items-center">
       <div>
         <Link href="/">
-          <h1 className="text-xl sm:text-2xl font-bold font-mono">
+          <h2 className="text-xl sm:text-2xl font-bold font-mono">
             nithin<span className="text-orange-400">.</span>me
-          </h1>
+          </h2>
         </Link>
       </div>
       <div className="flex flex-wrap gap-2 sm:gap-4">

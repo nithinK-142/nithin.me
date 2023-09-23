@@ -9,7 +9,7 @@ const Socials = () => {
         return (
           <li key={index}>
             <a href={url} title={platform} target="_blank" rel="noreferrer">
-              <div className="h-5 fill-white">{socialIcons[icon]}</div>
+              <div className="h-5 fill-white hover:scale-110">{socialIcons[icon]}</div>
             </a>
           </li>
         );

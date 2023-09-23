@@ -23,7 +23,7 @@ const Cards = ({ href, gitLink, title, description, technologies }: MainProjects
     <div className="flex flex-wrap justify-center mt-2 gap-2">
       {technologies.map((tech, index) => (
         <p
-          className="text-sm bg-yellow-600 text-black py-1 px-1 rounded"
+          className="text-sm bg-yellow-500 text-black py-1 px-1 rounded"
           key={index}
         >
           {tech}

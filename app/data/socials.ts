@@ -22,12 +22,12 @@ export const socials: SocialsType[] = [
     },
     {
         platform: 'Twitter',
-        icon: 'twitter',
+        icon: 'twitterx',
         url: 'https://twitter.com/_nithin142'
     },
     {
-        platform: 'Email',
-        icon: 'envelope',
-        url: 'mailto:nithin.sagar.359@gmail.com'
+        platform: 'Dev.to',
+        icon: 'dev',
+        url: 'https://dev.to/nithink142'
     },
 ];

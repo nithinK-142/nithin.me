@@ -45,7 +45,7 @@ const AboutPage = () => {
               rel="noopener noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              Next.js
+              NextJs
             </a>{" "}
             ,{" "}
             <a
@@ -54,7 +54,7 @@ const AboutPage = () => {
               rel="noopener noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              Sveltkit
+              SvelteKit
             </a>{" "}
             and{" "}
             <a
