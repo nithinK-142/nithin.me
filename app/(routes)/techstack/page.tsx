@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { backend, frontend, tools, hosting } from "../../data/tech-stack";
 
 interface TechStackItem {
