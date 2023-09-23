@@ -1,3 +1,4 @@
+import React from "react";
 import { socials } from "../data/socials";
 import { socialIcons } from "../data/social-icons";
 

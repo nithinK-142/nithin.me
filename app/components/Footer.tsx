@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import Socials from "./Socials";
 import { usePathname } from "next/navigation";
 
