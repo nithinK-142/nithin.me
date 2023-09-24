@@ -9,10 +9,10 @@ const AboutPage = () => {
       <div className="space-y-4 font-sand">
         <div className="leading-relaxed">
           <p className="block pt-4 lg:hidden">
-            Passionate & proficient in Front-End technologies such as HTML5,
-            CSS3, Tailwind, ReactJs, NextJS and SvelteKit apart from this, I
-            have good knowledge in PHP & MySQL for Back-End. Focused on
-            user-friendly interfaces & continuous learning to stay ahead in the
+            Proficient in HTML, CSS & JavaScript and passionate about building
+            blazing fast, user-friendly, responsive and visually stunning web
+            applications with cutting-edge technologies like NextJs , SvelteKit
+            and TailwindCSS. Focused on continuous learning to stay ahead in the
             ever-evolving realm of web. Collaborative team player & dedicated to
             staying updated on the latest trends.
           </p>
