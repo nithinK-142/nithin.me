@@ -6,7 +6,7 @@ import { happyPills } from "../../data/happy-pills";
 const AboutPage = () => {
   return (
     <section className="md:mb-6">
-      <div className="space-y-4 font-sand">
+      <div className="space-y-4">
         <div className="leading-relaxed">
           <p className="block pt-4 lg:hidden">
             Proficient in HTML, CSS & JavaScript and passionate about building
