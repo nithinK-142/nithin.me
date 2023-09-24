@@ -82,10 +82,7 @@ const AboutPage = () => {
           </p>
           <p className="about-para">
             I spend a lot of time messing around with{" "}
-            <abbr
-              className="about-abbr"
-              title="HTML, CSS & JavaScript"
-            >
+            <abbr className="about-abbr" title="HTML, CSS & JavaScript">
               web
             </abbr>{" "}
             and checking out latest tech trends. I&apos;m super curious and love
@@ -132,7 +129,7 @@ const AboutPage = () => {
                 <span
                   title={platform}
                   key={platform}
-                  className="hover:animate-spinning"
+                  className="hover:animate-spin"
                 >
                   {icon}
                 </span>
