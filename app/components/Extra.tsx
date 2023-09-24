@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import HappyPill from "../components/HappyPill"
 import Achievements from "../components/Achievements"
 
