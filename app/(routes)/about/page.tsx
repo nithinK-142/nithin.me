@@ -126,12 +126,12 @@ const AboutPage = () => {
             <p className="about-extra">My happy pills</p>
             <div className="flex gap-3">
               {happyPills.map(({ platform, icon }) => (
-                <span key={platform} className="group">
-                  <div className="hover:animate-spin">{icon}</div>
+                <div key={platform} className="group">
+                  <span className="inline-block hover:animate-spin">{icon}</span>
                   <p className="absolute hidden pt-2 group-hover:block animate-pulse">
                     ⦿ playing {platform}...
                   </p>
-                </span>
+                </div>
               ))}
             </div>
           </div>
