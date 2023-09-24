@@ -5,7 +5,7 @@ import Form from "../../components/Form";
 
 const ContactPage = () => {
   return (
-    <div className="flex flex-col justify-between px-10 mt-8 md:flex-row md:px-0">
+    <div className="flex flex-col justify-between px-3 mt-8 md:flex-row md:px-0">
       <div className="w-full p-4 md:w-1/2">
         <h2 className="mb-4 text-2xl font-bold">Just Say Hi!</h2>
 

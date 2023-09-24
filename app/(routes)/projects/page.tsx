@@ -6,7 +6,7 @@ import { mainProjects, otherProjects } from "../../data/projects";
 const ProjectsPage = () => {
   return (
     <>
-      <div className="grid text-center xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-3 sm:gap-2">
+      <div className="grid pt-16 text-center md:pt-0 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-3 sm:gap-2">
         {mainProjects.map((link, index) => (
           <Cards key={index} {...link} />
         ))}

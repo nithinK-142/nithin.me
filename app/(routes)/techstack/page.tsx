@@ -28,7 +28,7 @@ const TechStackPage: React.FC = () => {
   return (
     // <section className="mt-8">
     // <h3 className="mb-2 text-2xl font-semibold uppercase">Tech Stack</h3>
-    <section>
+    <section className="mt-16 md:mt-0">
       <div className="grid grid-cols-2 gap-x-8 gap-y-4">
         {techStackCard(frontend, 'Frontend')}
         {techStackCard(backend, 'Backend')}

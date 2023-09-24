@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-h2 {
-  font-weight: 700 !important;
-}
-
 .flex-justify {
   @apply flex justify-center;
 }
@@ -35,6 +31,7 @@ h2 {
 .about-abbr {
   @apply text-lg hover:text-blue-500
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
