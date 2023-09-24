@@ -20,6 +20,17 @@ h2 {
   @apply flex flex-col;
 }
 
+.about-link {
+  @apply underline underline-offset-4;
+}
+
+.about-extra {
+  @apply my-4 text-xl font-semibold uppercase;
+}
+
+.about-para {
+  @apply hidden pt-2 lg:block;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
