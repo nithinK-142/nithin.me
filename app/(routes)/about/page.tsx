@@ -23,7 +23,7 @@ const AboutPage = () => {
               href="https://en.wikipedia.org/wiki/Shimoga"
               target="_blank"
               rel="noopener noreferrer"
-              className="about-link hover:text-blue-500"
+              className="about-link"
             >
               Shimoga, India
             </a>{" "}
@@ -32,7 +32,7 @@ const AboutPage = () => {
               {" "}
               Master&apos;s Degree{" "}
               <abbr
-                className="text-lg hover:text-blue-500"
+                className="about-abbr"
                 title="Master of Computer Applications"
               >
                 &#40;MCA&#41;
@@ -83,7 +83,7 @@ const AboutPage = () => {
           <p className="about-para">
             I spend a lot of time messing around with{" "}
             <abbr
-              className="text-lg hover:text-blue-500"
+              className="about-abbr"
               title="HTML, CSS & JavaScript"
             >
               web

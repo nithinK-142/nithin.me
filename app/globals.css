@@ -31,6 +31,10 @@ h2 {
 .about-para {
   @apply hidden pt-2 lg:block;
 }
+
+.about-abbr {
+  @apply text-lg hover:text-blue-500
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
