@@ -5,14 +5,14 @@ import { mainProjects, otherProjects } from "../../data/projects";
 
 const ProjectsPage = () => {
   return (
-    <>
-      <div className="grid pt-16 text-center md:pt-0 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-3 sm:gap-2">
+    <div className="my-16 md:my-0">
+      <div className="grid text-center xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-3 sm:gap-2">
         {mainProjects.map((link, index) => (
           <Cards key={index} {...link} />
         ))}
       </div>
       <div>
-        <p className="mt-6 mb-2 text-xl font-medium">
+        <p className="mt-6 text-xl">
           Other Noteworthy Projects
         </p>
         <ul className="pb-2 ml-4">
@@ -30,7 +30,7 @@ const ProjectsPage = () => {
           })}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
