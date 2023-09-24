@@ -31,3 +31,7 @@
 .about-abbr {
   @apply text-lg hover:text-blue-500
 }
+
+.happy-icons {
+  @apply w-auto h-8 hover:scale-110
+}
