@@ -1,7 +1,7 @@
 // import React from "react";
 import { achivements } from "../../data/achievement";
 import { icons } from "../../data/icons";
-import { happyPills } from "../../data/happy-pills";
+import HappyPill from "../../components/HappyPill"
 
 const AboutPage = () => {
   return (
@@ -123,17 +123,7 @@ const AboutPage = () => {
           </div>
 
           <div className="hidden pb-4 md:block">
-            <p className="about-extra">My happy pills</p>
-            <div className="flex gap-3">
-              {happyPills.map(({ platform, icon }) => (
-                <div key={platform} className="group">
-                  <span className="inline-block hover:animate-spin">{icon}</span>
-                  <p className="absolute hidden pt-2 group-hover:block animate-pulse">
-                    ⦿ playing {platform}...
-                  </p>
-                </div>
-              ))}
-            </div>
+            <HappyPill />
           </div>
         </div>
       </div>
