@@ -7,7 +7,7 @@ const AboutPage = () => {
     <div className="space-y-4">
         <div className="text-lg leading-relaxed">
             <p className="about-para">
-                I'm <span>Nithin,</span> a self-taught{" "} <span>Web Developer</span> based in{" "} Shimoga, India{". "} I completed my Master's
+                I&apos;m <span>Nithin,</span> a self-taught{" "} <span>Web Developer</span> based in{" "} Shimoga, India{". "} I completed my Master&apos;s
                 <abbr className="about-abbr" title="Master of Computer Applications">
                     &#40;MCA&#41;
                 </abbr>
@@ -34,10 +34,10 @@ const AboutPage = () => {
                 <abbr className="about-abbr" title="HTML, CSS & JavaScript">
                     web
                 </abbr>
-                {" "}and keeping up with the latest tech trends. When I'm not coding, I enjoy spending time listening to music and podcasts, gaming, or just binge-watching stuff.
+                {" "}and keeping up with the latest tech trends. When I&apos;m not coding, I enjoy spending time listening to music and podcasts, gaming, or just binge-watching stuff.
             </p>
             <p className="pt-1">
-                I'm currently available for a new freelance job.{" "}
+                I&apos;m currently available for a new freelance job.{" "}
                 <a href="https://www.fiverr.com/nithin_webdev?up_rollout=true" className="about-link" target="_blank" rel="noreferrer">
                     Hire me!
                 </a>
