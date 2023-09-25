@@ -1,0 +1,27 @@
+/* Scrollbar */
+.custom-scrollbar {
+  max-height: 50vh;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+/* Works for Chrome, Brave */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0.5em;
+}
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  border-radius: 100vw;
+  background: gray;
+}
+
+/* Scrollbar for Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.custom-scrollbar:hover {
+  scrollbar-color: gray #1f1f1f;
+}

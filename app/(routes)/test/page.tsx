@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Loading from "@/app/Loading";
+// import Loading from "@/app/Loading";
 
 const TestPage = () => {
   const [animation, setAnimation] = useState("no");
