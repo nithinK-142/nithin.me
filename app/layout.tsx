@@ -5,7 +5,6 @@ import { Quicksand } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-
 const inter = Quicksand({
   weight: ['500','600','700'],
   subsets: ['latin'],
@@ -27,8 +26,7 @@ export default function RootLayout({
         <meta name="darkreader-lock"></meta>
         <link rel="icon" type="image/x-icon" href="favicon.svg" />
       </head>
-      <body
-        className={`${inter.className} bg-[#1f1f1f] text-white font-medium`}>
+      <body className={`${inter.className} bg-[#1f1f1f] text-white font-medium`}>
         <div className="flex justify-center w-full ">
           <div className="h-screen w-[90%] sm:w-[70%] flex flex-col justify-between py-1 sm:py-2 px-1 sm:px-2">
             <Navbar />
