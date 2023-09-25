@@ -19,7 +19,7 @@ const Navbar = () => {
       </div>
       <div className="flex flex-wrap gap-2 sm:gap-4">
         <p
-          className={`block md:hidden text-sm sm:text-base ${
+          className={`block md:hidden nav-text ${
             pathname === "/" ? "opacity-100" : "opacity-70"
           }`}
         >
@@ -32,7 +32,7 @@ const Navbar = () => {
           return (
             <p
               key={item.path}
-              className={`font-medium text-sm sm:text-base ${
+              className={`nav-text ${
                 isActive ? "opacity-100" : "opacity-70"
               }`}
             >
