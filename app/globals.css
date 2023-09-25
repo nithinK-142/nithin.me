@@ -34,6 +34,10 @@
   @apply w-auto h-8 hover:scale-110;
 }
 
+.checking-text {
+  @apply absolute pt-3 text-sm;
+}
+
 .nav-text {
   @apply text-base sm:text-lg;
 }
