@@ -16,26 +16,14 @@ const AboutPage = () => {
           </p>
           <p className="about-para">
             I&apos;m <span>Nithin,</span> a self-taught{" "}
-            <span>Web Developer</span> / <span>Tech Nerd</span> from{" "}
-            <a
-              href="https://en.wikipedia.org/wiki/Shimoga"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="about-link"
-            >
-              Shimoga, India
-            </a>{" "}
-            with a
-            <span>
-              {" "}
-              Master&apos;s Degree{" "}
-              <abbr
+            <span>Web Developer</span> based in{" "}
+            Shimoga, India{". "}
+            I completed my Master&apos;s <abbr
                 className="about-abbr"
                 title="Master of Computer Applications"
               >
                 &#40;MCA&#41;
-              </abbr>{" "}
-              from{" "}
+              </abbr>{" "} at {" "} 
               <a
                 href="https://www.cambridge.edu.in/"
                 target="_blank"
@@ -46,10 +34,9 @@ const AboutPage = () => {
               </a>{" "}
               - Bangalore, India
               {". "}
-            </span>
-            I&apos;m Proficient in HTML, CSS & JavaScript and passionate about
-            building blazing fast, user-friendly, responsive and visually
-            stunning web applications with cutting-edge technologies like{" "}
+            I have extensive knowledge of HTML, CSS & JavaScript and experience
+            in building blazing fast, user-friendly, responsive and visually
+            stunning web apps with cutting-edge technologies like{" "}
             <a
               href="https://nextjs.org"
               target="_blank"
@@ -83,10 +70,8 @@ const AboutPage = () => {
             <abbr className="about-abbr" title="HTML, CSS & JavaScript">
               web
             </abbr>{" "}
-            and checking out latest tech trends. I&apos;m super curious and love
-            tackling projects that make me learn something new and take me in
-            new directions. When I&apos;m not coding, I enjoy spending time
-            jamming to music and podcasts, gaming, or just binge-watching stuff.
+            and checking out latest tech trends. When I&apos;m not coding, I enjoy spending time
+            listening music and podcasts, gaming, or just binge-watching stuff.
           </p>
           <p>
             I&apos;m currently available for a new freelance job.{" "}
