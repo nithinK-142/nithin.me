@@ -9,7 +9,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex items-center justify-center gap-2 md:gap-0 md:justify-between">
+    <nav className="flex items-center justify-center gap-2 lg:pr-2 md:gap-0 md:justify-between">
       <div>
         <Link href="/">
           <h2 className="hidden font-mono text-2xl font-bold md:block">
