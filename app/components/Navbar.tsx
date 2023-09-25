@@ -23,7 +23,7 @@ const Navbar = () => {
             pathname === "/" ? "opacity-100" : "opacity-70"
           }`}
         >
-          <Link href="/" className="font-bold" passHref>
+          <Link href="/" className="font-semibold" passHref>
             Home
           </Link>
         </p>
@@ -36,7 +36,7 @@ const Navbar = () => {
                 isActive ? "opacity-100" : "opacity-70"
               }`}
             >
-              <Link href={item.path} className="font-bold" passHref>
+              <Link href={item.path} className="font-semibold" passHref>
                 {item.label}
               </Link>
             </p>

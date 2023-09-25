@@ -9,7 +9,7 @@ interface TechStackItem {
 const TechStackPage: React.FC = () => {
   const techStackCard = (techArray: TechStackItem[], title: string) => (
     <div>
-      <h4 className="mb-2 text-lg font-medium">{title}</h4>
+      <h4 className="mb-2 text-lg font-semibold">{title}</h4>
       <div className="flex flex-wrap items-center gap-2 text-sm">
         {techArray.map(({ logo, label }, index) => (
           <div
