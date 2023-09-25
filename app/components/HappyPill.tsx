@@ -19,10 +19,12 @@ const HappyPill = () => {
           </span>
         ))}
       </div>
-      {platformName && (
+      {platformName ? (
         <p className="absolute pt-2 animate-pulse">
           ⦿ playing <span className="font-semibold">{platformName}...</span>
         </p>
+      ) : (
+        <p className="absolute pt-2 ">⦿ Checking <span className="three-dots"></span></p>
       )}
     </>
   );

@@ -27,16 +27,17 @@
 }
 
 .about-abbr {
-  @apply hover:text-blue-500
+  @apply hover:text-blue-500;
 }
 
 .happy-icons {
-  @apply w-auto h-8 hover:scale-110
+  @apply w-auto h-8 hover:scale-110;
 }
 
 .nav-text {
-  @apply text-base sm:text-lg
+  @apply text-base sm:text-lg;
 }
+
 
 /* Scrollbar */
 .custom-scrollbar {
@@ -64,4 +65,31 @@
 
 .custom-scrollbar:hover {
   scrollbar-color: gray #1f1f1f;
+}
+
+
+/* Checking Dots */
+.three-dots::before {
+  content: "";
+  animation: dots 5s infinite;
+}
+
+
+@keyframes dots {
+  0%,
+  20% {
+    content: ".";
+  }
+  40% {
+    content: ". .";
+  }
+  60% {
+    content: ". . .";
+  }
+  70% {
+    content: ". . .";
+  }
+  100% {
+    content: "";
+  }
 }
