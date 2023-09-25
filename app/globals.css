@@ -15,7 +15,7 @@
 }
 
 .about-link {
-  @apply font-semibold underline underline-offset-4;
+  @apply font-semibold underline underline-offset-4 hover:opacity-80;
 }
 
 .about-extra {
@@ -27,7 +27,7 @@
 }
 
 .about-abbr {
-  @apply text-lg hover:text-blue-500
+  @apply hover:text-blue-500
 }
 
 .happy-icons {
