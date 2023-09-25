@@ -1,5 +1,7 @@
 // import React from "react";
 
+import Button from "./Button";
+
 type FormType = {
   label: string;
   id: string;
@@ -63,12 +65,7 @@ const Form = () => {
         placeholder="I would like to ask you..."
         required
       ></textarea>
-      <button
-        type="submit"
-        className="px-5 pt-3 pb-2 mt-4 bg-orange-400 rounded-md"
-      >
-        Send Message
-      </button>
+      <Button buttonText="Send Message" fontWeight="medium" />
     </form>
   );
 };

@@ -1,13 +1,16 @@
 // import React from "react";
 import Link from "next/link";
 import { icons } from "./data/icons";
+import Button from "./components/Button";
 
 export default function Home() {
   return (
     <section className="py-5 my-5">
       <div className="flex-colm md:flex-row">
         <div className="w-full pb-4 md:w-1/2 flex-justify">
-          <div className="w-7/12 h-auto sm:w-8/12 md:w-3/4 md:ml-auto">{icons.user}</div>
+          <div className="w-7/12 h-auto sm:w-8/12 md:w-3/4 md:ml-auto">
+            {icons.user}
+          </div>
         </div>
 
         <div className="w-full px-5 md:w-1/2 flex-justify md:justify-start md:items-center ">
@@ -23,9 +26,7 @@ export default function Home() {
 
             <div className="flex-justify md:justify-start">
               <Link href="/contact">
-                <button className="ml-1 mt-5 px-4 py-2 sm:mx-auto bg-[#f05f45] text-white font-bold text-md rounded-md">
-                  Let&apos;s Talk!
-                </button>
+                <Button buttonText="Let's Talk!" />
               </Link>
             </div>
           </div>
