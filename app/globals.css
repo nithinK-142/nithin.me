@@ -41,3 +41,29 @@
 .nav-text {
   @apply text-base sm:text-lg;
 }
+
+/* Scrollbar */
+
+.floating-scrollbar {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+/* Chrome, Brave, Safari */
+.floating-scrollbar::-webkit-scrollbar {
+  width: 0.5em;
+}
+.floating-scrollbar:hover::-webkit-scrollbar-thumb {
+  border-radius: 100vw;
+  background: #1f1f1f;
+}
+
+/* Firefox */
+.floating-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.floating-scrollbar:hover {
+  scrollbar-color: #1f1f1f #1f1f1f;
+}
