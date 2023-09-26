@@ -10,10 +10,10 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex justify-center gap-2 lg:pr-2 md:gap-0 md:justify-between">
+    <nav className="flex-justify gap-2 lg:pr-2 md:gap-0 md:justify-between">
       <div className="nav-text hidden md:block">
         {pathname != "/" && (
-          <div className="justify-center gap-2 flex-align bg-slate-700">
+          <div className="justify-center gap-2 flex-align">
             <div className="w-12 h-12 pt-[2px]">{icons.user}</div>
 
             <Link href="/">
