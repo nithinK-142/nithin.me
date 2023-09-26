@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="flex items-center justify-center pt-2 pb-1 md:justify-between">
       {pathname !== "/contact" && (
         <>
-          <Socials height={"h-5"} />
+          <Socials height={"h-6"} />
           <p className="hidden text-sm underline underline-offset-2 md:block hover:opacity-70">
             <a href="mailto:nithin.sagar.359@gmail.com">
               nithin.sagar.359@gmail.com

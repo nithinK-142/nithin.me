@@ -10,7 +10,7 @@ export const icons = {
     </svg>
   ),
   fiverr: (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1690 512" className="h-6 hover:fill-green-500">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1690 512" className="h-6 hover:opacity-80">
     <path
       fill="#fff"
       fillRule="evenodd"
