@@ -56,7 +56,7 @@ export const mainProjects: MainProjectsType[] = [
     gitLink: "https://github.com/nithinK-142/NASA-API-usage",
     title: "Space Explorer",
     description:
-      "Space exploring with nasa. Images of outer space, mars, sun etc.",
+      "Space exploring with nasa. Images of outer space.",
     technologies: ["HTML", "CSS", "JS"],
   },
 ];

@@ -35,7 +35,7 @@ const Navbar = () => {
       )
     }
 
-      <div className="flex flex-wrap gap-2 sm:gap-4">
+      <div className="flex flex-wrap gap-2 sm:gap-4 mb-3">
         <p
           className={`block md:hidden nav-text ${
             pathname === "/" ? "hidden" : "opacity-70"

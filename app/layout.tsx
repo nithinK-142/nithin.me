@@ -30,7 +30,7 @@ export default function RootLayout({
         <div className="flex justify-center w-full">
           <div className="h-screen w-[90%] sm:w-[70%] flex flex-col justify-between py-1 sm:py-2 px-1 sm:px-2">
             <Navbar />
-            <main className=" floating-scrollbar">{children}</main>
+            <main className="sm:floating-scrollbar">{children}</main>
             <Footer />
           </div>
         </div>
