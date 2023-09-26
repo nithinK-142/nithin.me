@@ -13,18 +13,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full px-5 md:w-1/2 flex-justify md:justify-start md:items-center ">
+        <div className="w-full px-5 md:w-1/2 flex-justify md:justify-start md:items-center">
           <div>
-            <p className="pl-1 text-xl md:text-2xl">Hi there, i&apos;m</p>
-            <h1 className="text-5xl sm:text-6xl lg:text-[86px] xl:text-8xl leading-none font-bold">
+            <p className="hidden pl-1 text-base font-normal md:text-xl md:block">Hi there, i&apos;m</p>
+            <h1 className="text-5xl sm:text-6xl lg:text-[86px] xl:text-8xl font-bold">
               NITHIN
             </h1>
-            <p className="pl-1 text-center md:text-left">
+            <p className="pt-2 font-normal leading-relaxed text-center md:pl-1 md:text-left">
               Developer, Freelancer
               <br /> &amp; Tech Enthusiast
             </p>
 
-            <div className="flex-justify md:justify-start md:pl-1">
+            <div className="flex-justify md:justify-start md:pl-1 md:mt-2">
               <Link href="/contact">
                 <Button buttonText="Let's Talk!" animation="md:animate-bounce" />
               </Link>
