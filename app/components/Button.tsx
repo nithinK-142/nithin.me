@@ -3,12 +3,13 @@
 interface ButtonProps {
   buttonText: string;
   fontWeight?: string;
+  animation?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ buttonText, fontWeight = "bold" }) => {
+const Button: React.FC<ButtonProps> = ({ buttonText, fontWeight = "bold", animation }) => {
   return (
     <button
-      className={`ml-1 mt-5 px-4 py-2 sm:mx-auto bg-[#f05f45] text-white font-${fontWeight} text-md rounded-md`}
+      className={`${animation} mt-5 px-4 py-2 sm:mx-auto bg-[#f05f45] text-white font-${fontWeight} text-md rounded-md`}
     >
       {buttonText}
     </button>

@@ -9,6 +9,7 @@ const config: Config = {
     extend: {
       animation: {
         spin: 'spin 2s linear infinite',
+        bounce: 'bounce 3s linear infinite',
       },
     },
   },

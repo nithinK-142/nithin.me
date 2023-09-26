@@ -24,9 +24,9 @@ export default function Home() {
               <br /> &amp; Tech Enthusiast
             </p>
 
-            <div className="flex-justify md:justify-start">
+            <div className="flex-justify md:justify-start md:pl-1">
               <Link href="/contact">
-                <Button buttonText="Let's Talk!" />
+                <Button buttonText="Let's Talk!" animation="md:animate-bounce" />
               </Link>
             </div>
           </div>
