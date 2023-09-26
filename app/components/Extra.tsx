@@ -5,12 +5,12 @@ import Achievements from "../components/Achievements"
 const Extra = () => {
   return (
     
-    <div className="gap-8 flex-colm sm:flex-row sm:gap-0">
-    <div className="w-full sm:w-1/2">
+    <div className="gap-8 flex">
+    <div className="w-full md:w-1/2">
       <Achievements />
     </div>
 
-    <div className="hidden pb-4 md:block">
+    <div className="hidden md:block">
       <HappyPill />
     </div>
   </div>
