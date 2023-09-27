@@ -42,6 +42,11 @@
   @apply text-base sm:text-lg;
 }
 
+.underlined {
+  @apply bg-left-bottom bg-gradient-to-r from-white/90 to-white/90 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out;
+}
+
+
 /* Scrollbar */
 @layer components {
   .floating-scrollbar {

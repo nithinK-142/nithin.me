@@ -4,8 +4,8 @@ import { socialIcons } from "../data/social-icons";
 
 const Cards = ({ href, gitLink, title, description, technologies }: MainProjectsType) => (
   <div className="px-2 py-4 transition-colors border rounded-lg border-gray-100/30 bg-black/30 group sm:px-3 hover:border-gray-300">
-    <h2 className="mb-3 text-xl font-semibold group-hover:underline">
-      <a href={href} target="_blank" rel="noopener noreferrer">
+    <h2 className="mb-3 text-xl">
+      <a href={href} target="_blank" rel="noopener noreferrer" className="underlined font-semibold">
         {title}{" "}
       </a>
       <span className="inline-block transition-transform group-hover:rotate-180 group-hover:text-blue-200 motion-reduce:transform-none duration-500">
@@ -14,7 +14,7 @@ const Cards = ({ href, gitLink, title, description, technologies }: MainProjects
       {/* <span className="opacity-0 group-hover:opacity-100"> */}
       <span>
         <a href={gitLink} target="_blank" rel="noopener noreferrer">
-          <button className="h-4 pl-1 duration-300 fill-white hover:scale-125">{socialIcons.github}</button>
+          <button className="h-5 pl-1 duration-300 fill-white hover:scale-125">{socialIcons.github}</button>
         </a>
       </span>
     </h2>
