@@ -8,7 +8,7 @@ const Cards = ({ href, gitLink, title, description, technologies }: MainProjects
       <a href={href} target="_blank" rel="noopener noreferrer">
         {title}{" "}
       </a>
-      <span className="inline-block transition-transform group-hover:rotate-180 group-hover:text-blue-200 motion-reduce:transform-none">
+      <span className="inline-block transition-transform group-hover:rotate-180 group-hover:text-blue-200 motion-reduce:transform-none duration-500">
         -&gt;
       </span>
       {/* <span className="opacity-0 group-hover:opacity-100"> */}
