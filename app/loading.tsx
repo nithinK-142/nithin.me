@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+"use client";
 import "./styles/Windmill.css";
 
 const Loading = () => {
