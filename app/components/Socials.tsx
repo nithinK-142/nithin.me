@@ -13,7 +13,7 @@ const Socials: React.FC<SocialsProps> = ({ height }) => {
         return (
           <li key={index}>
             <a href={url} title={platform} target="_blank" rel="noreferrer">
-              <div className={`${height} fill-white hover:scale-110 duration-150`}>{socialIcons[icon]}</div>
+              <div className={`${height} fill-white hover:scale-110 duration-150 group`}>{socialIcons[icon]}</div>
             </a>
           </li>
         );
