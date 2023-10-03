@@ -48,7 +48,7 @@ const Navbar = () => {
           return (
             <p
               key={item.path}
-              className={`nav-text ${isActive ? "opacity-100" : "opacity-70"}`}
+              className={`nav-text ${isActive ? "opacity-100" : "hover:opacity-90 opacity-70"}`}
             >
               {isActive && (
                 <div className="flex-justify items-center">
