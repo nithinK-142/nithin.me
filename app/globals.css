@@ -42,6 +42,10 @@
   @apply text-base sm:text-lg pt-1;
 }
 
+.arrow-head {
+  @apply absolute w-0 h-0 border-t-8 border-t-[#FFA500] border-x-[7px] border-x-transparent border-solid;
+}
+
 .underlined {
   @apply bg-left-bottom bg-gradient-to-r from-white/80 to-white/80 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out;
 }
@@ -79,13 +83,4 @@
   .floating-scrollbar:hover {
     scrollbar-color: #1f1f1f #1f1f1f;
   }
-}
-
-.arrow-head {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 8px solid #FFA500;
 }
