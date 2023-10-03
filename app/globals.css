@@ -39,7 +39,7 @@
 }
 
 .nav-text {
-  @apply text-base sm:text-lg pt-1;
+  @apply text-base sm:text-lg;
 }
 
 .arrow-head {

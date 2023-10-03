@@ -35,7 +35,7 @@ const Navbar = () => {
 
       <div className="flex flex-wrap gap-2 sm:gap-4 mb-3">
         <p
-          className={`block md:hidden nav-text ${
+          className={`block md:hidden nav-text pt-1 ${
             pathname === "/" ? "hidden" : "opacity-70"
           }`}
         >
@@ -48,7 +48,7 @@ const Navbar = () => {
           return (
             <p
               key={item.path}
-              className={`nav-text ${isActive ? "opacity-100" : "hover:opacity-90 opacity-70"}`}
+              className={`nav-text pt-1 ${isActive ? "opacity-100" : "hover:opacity-90 opacity-70"}`}
             >
               {isActive && (
                 <div className="flex-justify items-center">
