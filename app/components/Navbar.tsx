@@ -10,7 +10,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className={`flex-justify gap-2 lg:pr-2 md:gap-0 md:justify-between `}>
+    <nav className={`flex-justify gap-2 lg:pr-2 md:gap-0 md:justify-between`}>
       {pathname !== "/" ? (
         <div className="nav-text hidden md:block">
           <div className="justify-center gap-2 flex-align">
@@ -24,16 +24,14 @@ const Navbar = () => {
           </div>
         </div>
       ) : (
-        
-      <div>
-      <Link href="/">
-        <h2 className="hidden font-mono text-2xl font-bold md:block">
-          nithin<span className="text-orange-400">.</span>me
-        </h2>
-      </Link>
-    </div>
-      )
-    }
+        <div>
+          <Link href="/">
+            <h2 className="hidden font-mono text-2xl font-bold md:block">
+              nithin<span className="text-orange-400">.</span>me
+            </h2>
+          </Link>
+        </div>
+      )}
 
       <div className="flex flex-wrap gap-2 sm:gap-4 mb-3">
         <p
@@ -52,6 +50,11 @@ const Navbar = () => {
               key={item.path}
               className={`nav-text ${isActive ? "opacity-100" : "opacity-70"}`}
             >
+              {isActive && (
+                <div className="flex-justify items-center">
+                  <span className="hidden md:block arrow-head"></span>
+                </div>
+              )}
               <Link href={item.path} className="font-semibold" passHref>
                 {item.label}
               </Link>
