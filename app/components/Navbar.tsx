@@ -46,7 +46,7 @@ const Navbar = () => {
         {navItems.map((item) => {
           const isActive = pathname === item.path;
           return (
-            <p
+            <div
               key={item.path}
               className={`nav-text pt-1 ${isActive ? "opacity-100" : "hover:opacity-90 opacity-70"}`}
             >
@@ -58,7 +58,7 @@ const Navbar = () => {
               <Link href={item.path} className="font-semibold" passHref>
                 {item.label}
               </Link>
-            </p>
+            </div>
           );
         })}
       </div>
