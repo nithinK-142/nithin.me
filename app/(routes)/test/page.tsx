@@ -4,7 +4,12 @@
 "use client";
 
 const TestPage = () => {
-  const animationClasses = ["spin bg-blue-500", "pulse bg-blue-400", "ping bg-slate-600", "bounce bg-white rounded-full"];
+  const animationClasses = [
+    "animate-spin bg-blue-500",
+    "animate-pulse bg-blue-400",
+    "animate-ping bg-slate-600",
+    "animate-bounce bg-white rounded-full",
+  ];
   return (
     <div className="flex-col items-center gap-8 flex-justify p-10">
       {/* <Loading /> */}
@@ -13,7 +18,7 @@ const TestPage = () => {
         {animationClasses.map((animationName) => (
           <div
             key={animationName}
-            className={`w-24 h-24 animate-${animationName}`}
+            className={`w-24 h-24 ${animationName}`}
           ></div>
         ))}
       </div>
