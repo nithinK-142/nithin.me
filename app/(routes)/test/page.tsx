@@ -1,29 +1,19 @@
-"use client";
-import React, { useState } from "react";
+// import React from "react";
 // import Loading from "@/app/Loading";
 
+"use client";
+
 const TestPage = () => {
-  const [animation, setAnimation] = useState("no");
-
-  const handleMouseEnter = (animationName: React.SetStateAction<string>) => () => {
-    setAnimation(animationName);
-  };
-
-  const handleMouseLeave = () => {
-    setAnimation("no Animation!!");
-  };
-
+  const animationClasses = ["spin bg-blue-500", "pulse bg-blue-400", "ping bg-slate-600", "bounce bg-white rounded-full"];
   return (
-    <div className="flex-col items-center gap-8 flex-justify">
-    {/* <Loading /> */}
-      <p className="text-xl">Currently using {animation} animation.</p>
-      <div className="flex gap-4">
-        {["Spin", "Pulse", "Ping", "Bounce"].map((animationName) => (
+    <div className="flex-col items-center gap-8 flex-justify p-10">
+      {/* <Loading /> */}
+      <p className="text-xl">Tailwind CSS Animations</p>
+      <div className="flex gap-10 group">
+        {animationClasses.map((animationName) => (
           <div
             key={animationName}
-            className={`w-24 h-24 bg-blue-500 hover:bg-slate-400 hover:animate-${animationName.toLowerCase()}`}
-            onMouseEnter={handleMouseEnter(animationName)}
-            onMouseLeave={handleMouseLeave}
+            className={`w-24 h-24 animate-${animationName}`}
           ></div>
         ))}
       </div>
