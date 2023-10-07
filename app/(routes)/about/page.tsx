@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <section className="md:mb-6">
     <div className="space-y-4">
-        <div className="text-lg leading-relaxed">
+        <div className="text-lg font-normal leading-relaxed">
           <p className="block mt-4 lg:hidden">
             Proficient in HTML, CSS & JavaScript and passionate about building
             blazing fast, user-friendly, responsive and visually stunning web
@@ -25,11 +25,11 @@ const AboutPage = () => {
                 </a>
                 {" "} - Bangalore, India{". "} I have extensive knowledge of HTML, CSS & JavaScript and experience in building blazing fast, user-friendly and responsive web apps with technologies like{" "}
                 <a href="https://react.dev" target="_blank" rel="noopener noreferrer" className="about-link">
-                    React
+                    NextJs
                 </a>
                 {" "} ,{" "}
                 <a href="https://svelte.dev" target="_blank" rel="noopener noreferrer" className="about-link">
-                    SvelteKit
+                    Svelte
                 </a>
                 {" "} and{" "}
                 <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="about-link">

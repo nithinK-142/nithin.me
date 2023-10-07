@@ -15,7 +15,7 @@
 }
 
 .about-link {
-  @apply font-semibold underline underline-offset-4 hover:opacity-80;
+  @apply font-medium decoration-1 underline underline-offset-4 hover:opacity-80;
 }
 
 .about-extra {
