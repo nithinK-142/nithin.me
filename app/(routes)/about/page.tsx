@@ -15,7 +15,7 @@ const AboutPage = () => {
             staying updated on the latest trends.
           </p>
             <p className="about-para">
-                I&apos;m <span>Nithin,</span> a self-taught{" "} <span>Web Developer</span> based in{" "} Shimoga, India{". "} I completed my Master&apos;s
+                I&apos;m <span>Nithin,</span> a self-taught{" "} <span>Web Developer</span> based in{" "} Shimoga, India{". "} I completed my Master&apos;s{" "}
                 <abbr className="about-abbr" title="Master of Computer Applications">
                     &#40;MCA&#41;
                 </abbr>

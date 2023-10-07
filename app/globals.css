@@ -27,7 +27,7 @@
 }
 
 .about-abbr {
-  @apply hover:text-blue-500;
+  @apply hover:text-blue-500 no-underline font-medium;
 }
 
 .happy-icons {
