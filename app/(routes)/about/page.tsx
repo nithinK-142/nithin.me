@@ -17,10 +17,7 @@ const AboutPage = () => {
           </p>
             <p className="about-para">
                 I&apos;m <span>Nithin,</span> a self-taught{" "} <span>Web Developer</span> based in{" "} Shimoga, India{". "} I completed my Master&apos;s{" "}
-                {/* <abbr className="about-abbr" title="Master of Computer Applications">
-                    &#40;MCA&#41;
-                </abbr> */}
-                <Tooltip text={"(MCA)"} content={"Master of Computer Applications"} />
+                <Tooltip text={"(MCA)"} content={"Master of Computer Applications"} tooltip="reverse" />
                 {" "} at {" "}
                 <a href="https://www.cambridge.edu.in/" target="_blank" rel="noopener noreferrer" className="about-link">
                     Cambridge Institute of Technology
@@ -41,9 +38,6 @@ const AboutPage = () => {
             </p>
             <p className="about-para">
                 I spend a lot of time working with{" "}
-                {/* <abbr className="about-abbr" title="HTML, CSS & JavaScript">
-                    web
-                </abbr> */}
                 <Tooltip text={"web"} content={"HTML, CSS & JavaScript"} />
                 {" "}and keeping up with the latest tech trends. When I&apos;m not coding, I enjoy spending time listening to music and podcasts, gaming, or just binge-watching stuff.
             </p>

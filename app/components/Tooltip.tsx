@@ -3,13 +3,32 @@ import React from "react";
 type TooltipProps = {
   text: string;
   content: string;
+  tooltip?: "normal" | "reverse";
 };
 
-const Tooltip = ({ text, content }: TooltipProps) => {
+const tooltipStyles = {
+  normal: {
+    body: "-translate-y-full bottom-0",
+    tip: "arrow-head bottom-[-10px]",
+  },
+  reverse: {
+    body: "top-full mt-2",
+    tip: "arrow-head-reverse top-[-10px]",
+  },
+};
+
+const Tooltip = ({ text, content, tooltip = "normal" }: TooltipProps) => {
   return (
-    <span className="relative group inline-block">
-      <span className="text-white hover:opacity-80 font-semibold inline-block">{text}</span>
-      <span className="absolute inline-block bg-gray-800 whitespace-nowrap text-white text-xs rounded-lg p-2 opacity-0 group-hover:opacity-100 transform -translate-x-1/2 -translate-y-full left-1/2 transition-all duration-300 origin-top top-0">
+    <span className="text-white group relative hover:opacity-90 font-semibold inline-block">
+      {text}
+      <span
+        className={`absolute bg-white whitespace-nowrap text-black font-semibold text-sm rounded-lg p-2 group-hover:inline-block hidden transform-center transition-all duration-300 origin-top ${tooltipStyles[tooltip].body}`}
+        aria-label="tooltip"
+        role="tooltip"
+      >
+        <span
+          className={`${tooltipStyles[tooltip].tip} transform-center`}
+        ></span>
         {content}
       </span>
     </span>
@@ -17,3 +36,35 @@ const Tooltip = ({ text, content }: TooltipProps) => {
 };
 
 export default Tooltip;
+
+// import React from "react";
+// import { icons } from "../data/icons";
+
+// type TooltipProps = {
+//   text: string;
+//   content: string;
+// };
+
+// const Tooltip = ({ text, content }: TooltipProps) => {
+//   return (
+//     <>
+//       <span className="text-white group relative hover:opacity-90 font-semibold inline-block">
+//         {text}
+//         <span className="absolute bg-white whitespace-nowrap text-black font-semibold text-sm rounded-lg p-2 group-hover:inline-block hidden transform-center transition-all duration-300 origin-top -translate-y-full bottom-0">
+//           <span className="arrow-head bottom-[-10px] transform-center"></span>
+//           {content}
+//         </span>
+//       </span>
+
+//       <span className="text-white group relative hover:opacity-90 font-semibold inline-block">
+//         {text}
+//         <span className="absolute bg-white whitespace-nowrap text-black font-semibold text-sm rounded-lg p-2  group-hover:inline-block hidden transform-center transition-all duration-300 origin-top top-full mt-2">
+//           <span className="arrow-head-reverse top-[-10px] transform-center"></span>
+//           {content}
+//         </span>
+//       </span>
+//     </>
+//   );
+// };
+
+// export default Tooltip;

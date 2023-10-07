@@ -26,8 +26,8 @@
   @apply hidden pt-2 lg:block;
 }
 
-.about-abbr {
-  @apply hover:text-blue-500 no-underline font-medium;
+.transform-center {
+  @apply left-1/2 transform -translate-x-1/2;
 }
 
 .happy-icons {
@@ -42,8 +42,19 @@
   @apply text-base sm:text-lg;
 }
 
+
+@layer components {
+  .arrow {
+    @apply absolute w-0 h-0 border-x-[7px] border-x-transparent border-solid;
+  }
+}
+
 .arrow-head {
-  @apply absolute w-0 h-0 border-t-8 border-t-[#FFA500] border-x-[7px] border-x-transparent border-solid;
+  @apply arrow border-t-8 border-t-[#FFA500];
+}
+
+.arrow-head-reverse {
+  @apply arrow border-b-8 border-b-[#FFA500];
 }
 
 .underlined {
