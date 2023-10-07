@@ -1,5 +1,6 @@
 // import React from "react";
 import Extra from "../../components/Extra"
+import Tooltip from "../../components/Tooltip"
 
 const AboutPage = () => {
   return (
@@ -16,9 +17,10 @@ const AboutPage = () => {
           </p>
             <p className="about-para">
                 I&apos;m <span>Nithin,</span> a self-taught{" "} <span>Web Developer</span> based in{" "} Shimoga, India{". "} I completed my Master&apos;s{" "}
-                <abbr className="about-abbr" title="Master of Computer Applications">
+                {/* <abbr className="about-abbr" title="Master of Computer Applications">
                     &#40;MCA&#41;
-                </abbr>
+                </abbr> */}
+                <Tooltip text={"(MCA)"} content={"Master of Computer Applications"} />
                 {" "} at {" "}
                 <a href="https://www.cambridge.edu.in/" target="_blank" rel="noopener noreferrer" className="about-link">
                     Cambridge Institute of Technology
@@ -39,9 +41,10 @@ const AboutPage = () => {
             </p>
             <p className="about-para">
                 I spend a lot of time working with{" "}
-                <abbr className="about-abbr" title="HTML, CSS & JavaScript">
+                {/* <abbr className="about-abbr" title="HTML, CSS & JavaScript">
                     web
-                </abbr>
+                </abbr> */}
+                <Tooltip text={"web"} content={"HTML, CSS & JavaScript"} />
                 {" "}and keeping up with the latest tech trends. When I&apos;m not coding, I enjoy spending time listening to music and podcasts, gaming, or just binge-watching stuff.
             </p>
             <p className="pt-1">
