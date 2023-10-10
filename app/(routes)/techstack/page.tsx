@@ -8,7 +8,7 @@ interface TechStackItem {
 
 const TechStackPage: React.FC = () => {
   const techStackCard = (techArray: TechStackItem[], title: string) => (
-    <div className="bg-black/10 mb-4">
+    <div className={`bg-black/10 mb-4 ${title}`}>
       <h4 className="mb-2 text-lg font-semibold text-center">{title}</h4>
       <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
         {techArray.map(({ logo, label }, index) => (
@@ -29,7 +29,8 @@ const TechStackPage: React.FC = () => {
     // <section className="mt-8">
     // <h3 className="mb-2 text-2xl font-semibold uppercase">Tech Stack</h3>
     <section className="my-16 md:my-0">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4"> */}
+      <div className="grid-stack">
         {techStackCard(frontend, 'Frontend')}
         {techStackCard(backend, 'Backend')}
         {techStackCard(tools, 'Tools')}
