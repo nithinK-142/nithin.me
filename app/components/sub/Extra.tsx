@@ -1,6 +1,6 @@
 // import React from "react";
-import HappyPill from "../components/HappyPill"
-import Achievements from "../components/Achievements"
+import HappyPill from "./HappyPill"
+import Achievements from "./Achievements"
 
 const Extra = () => {
   return (

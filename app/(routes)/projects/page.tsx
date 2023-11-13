@@ -1,5 +1,5 @@
 // import React from "react";
-import Cards from "../../components/Cards";
+import Cards from "../../components/sub/Cards";
 import { icons } from "../../data/icons";
 import { mainProjects, otherProjects } from "../../data/projects";
 import "../../styles/scrollbar.css"

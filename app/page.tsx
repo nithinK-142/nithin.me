@@ -1,7 +1,7 @@
 // import React from "react";
 import Link from "next/link";
 import { icons } from "./data/icons";
-import Button from "./components/Button";
+import Button from "./components/sub/Button";
 
 export default function Home() {
   return (

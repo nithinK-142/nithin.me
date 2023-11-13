@@ -1,6 +1,6 @@
 // import React from "react";
-import Extra from "../../components/Extra"
-import Tooltip from "../../components/Tooltip"
+import Extra from "../../components/sub/Extra"
+import Tooltip from "../../components/sub/Tooltip"
 
 const AboutPage = () => {
   return (

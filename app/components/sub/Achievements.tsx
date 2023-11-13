@@ -1,6 +1,6 @@
 // import React from "react";
-import { achivements } from "../data/achievement";
-import { icons } from "../data/icons";
+import { achivements } from "../../data/achievement";
+import { icons } from "../../data/icons";
 
 const Achievements = () => {
   return (

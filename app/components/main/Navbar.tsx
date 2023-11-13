@@ -3,8 +3,8 @@
 // import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navItems } from "../data/nav-items";
-import { icons } from "../data/icons";
+import { navItems } from "../../data/nav-items";
+import { icons } from "../../data/icons";
 
 const Navbar = () => {
   const pathname = usePathname();

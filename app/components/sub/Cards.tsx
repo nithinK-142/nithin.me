@@ -1,6 +1,6 @@
 // import React from "react";
-import { MainProjectsType } from "../data/projects";
-import { socialIcons } from "../data/social-icons";
+import { MainProjectsType } from "../../data/projects";
+import { socialIcons } from "../../data/social-icons";
 
 const Cards = ({ href, gitLink, title, description, technologies }: MainProjectsType) => (
   <div className="px-2 py-4 border rounded-lg hover:rounded-none transition-all duration-700 border-gray-100/30 bg-black/30 group sm:px-3 hover:border-gray-300">

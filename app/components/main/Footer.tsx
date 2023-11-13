@@ -1,7 +1,7 @@
 "use client";
 
 // import React from "react";
-import Socials from "./Socials";
+import Socials from "../sub/Socials";
 import { usePathname } from "next/navigation";
 
 const Footer = () => {
