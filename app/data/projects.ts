@@ -16,6 +16,14 @@ export const mainProjects: MainProjectsType[] = [
     technologies: ["NextJs", "Tailwind","Typescript"],
   },
   {
+    href: "https://next-aesop-clone.vercel.app/",
+    gitLink: "https://github.com/nithinK-142/next-aesop-clone",
+    title: "Aesop Clone",
+    description:
+      "Clone of aesop made using nextjs13.",
+    technologies: ["NextJs", "Tailwind","Typescript"],
+  },
+  {
     href: "https://sveltekittodo.netlify.app/",
     gitLink: "https://github.com/nithinK-142/todo-sveltekit-fire",
     title: "SvelteKit Todo",
@@ -68,15 +76,15 @@ type OtherType = {
 
 export const otherProjects: OtherType[] = [
   {
-    title: "nithinK-142/react-auth",
-    href: "https://github.com/nithinK-142/react-auth"
+    title: "nithinK-142/vue-expense-tracker",
+    href: "https://github.com/nithinK-142/vue-expense-tracker"
+  },
+  {
+    title: "nithinK-142/spaceportfolio",
+    href: "https://github.com/nithinK-142/spaceportfolio"
   },
   {
     title: "nithinK-142/tmdb-movies",
     href: "https://github.com/nithinK-142/tmdb-movies"
-  },
-  {
-    title: "nithinK-142/weather-app",
-    href: "https://github.com/nithinK-142/weather-app"
   },
 ];

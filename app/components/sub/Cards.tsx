@@ -4,7 +4,7 @@ import { socialIcons } from "../../data/social-icons";
 
 const Cards = ({ href, gitLink, title, description, technologies }: MainProjectsType) => (
   <div className="px-2 py-4 border rounded-lg hover:rounded-none transition-all duration-700 border-gray-100/30 bg-black/30 group sm:px-3 hover:border-gray-300">
-    <h2 className="mb-3 text-xl">
+    <h2 className="mb-[6px] text-xl">
       <a href={href} target="_blank" rel="noopener noreferrer" className="underlined font-semibold pb-1">
         {title}{" "}
       </a>
