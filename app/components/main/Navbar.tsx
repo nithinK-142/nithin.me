@@ -11,11 +11,16 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className={`flex-justify gap-2 lg:pr-2 md:gap-0 md:justify-between relative`}>
+    <nav
+      className={`flex-justify gap-2 lg:pr-2 md:gap-0 md:justify-between relative`}
+    >
       {pathname !== "/" ? (
         <div className="nav-text hidden md:block">
           <div className="justify-center gap-2 flex-align">
-            <div className="w-12 h-12 pt-[2px]">{icons.user}</div>
+            <div className="w-12 h-12 pt-[2px]">
+              <Link href="/">{icons.user}</Link>
+            </div>
+
             <Link href="/">
               <h2 className="text-xl font-bold tracking-[.1em]">Nithin</h2>
               <p className="font-mono text-sm font-semibold opacity-80">
@@ -65,9 +70,9 @@ const Navbar = () => {
           );
         })}
       </div>
-        <div className="hidden md:block absolute -right-8 top-1">
-          <ThemeSwitch />
-        </div>
+      <div className="hidden md:block absolute -right-8 top-1">
+        <ThemeSwitch />
+      </div>
     </nav>
   );
 };
