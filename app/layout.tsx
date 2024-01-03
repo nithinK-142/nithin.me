@@ -6,7 +6,7 @@ import Navbar from "./components/main/Navbar";
 import Footer from "./components/main/Footer";
 import { Providers } from "./Providers";
 
-const inter = Quicksand({
+const quick = Quicksand({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
@@ -28,7 +28,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="favicon.svg" />
       </head>
       <body
-        className={`${inter.className} bg-green-500 dark:bg-[#1f1f1f] dark:text-white font-medium`}
+        className={`${quick.className} bg-[#ba97a95e] dark:bg-[#1f1f1f] dark:text-white font-medium`}
       >
         <Providers>
           <div className="flex justify-center w-full">
