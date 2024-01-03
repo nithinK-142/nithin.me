@@ -28,7 +28,7 @@ const ThemeSwitch = () => {
       <Image
         src="/sun.svg"
         alt="sun"
-        className="h-7 opacity-80"
+        className="h-9 md:h-7 opacity-80"
         width={24}
         height={24}
         onClick={() => setTheme("light")}
@@ -41,7 +41,7 @@ const ThemeSwitch = () => {
       <Image
         src="/moon.svg"
         alt="moon"
-        className="h-7 opacity-60 transform -rotate-12"
+        className="h-8 md:h-7 md:opacity-60 transform -rotate-12"
         width={22}
         height={22}
         onClick={() => setTheme("dark")}

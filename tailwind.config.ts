@@ -11,6 +11,9 @@ const config: Config = {
         spin: 'spin 2s linear infinite',
         bounce: 'bounce 3s linear infinite',
       },
+      screens: {
+        'xs': '340px',
+      },
     },
   },
   plugins: [],

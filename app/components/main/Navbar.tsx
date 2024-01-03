@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { navItems } from "../../data/nav-items";
 import { icons } from "../../data/icons";
 import ThemeSwitch from "../sub/ThemeSwitch";
+import Image from "next/image";
+import { navsmall } from "../../data/nav-small";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -38,7 +40,7 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className="flex flex-wrap gap-2 sm:gap-4 mb-3">
+      <div className="hidden md:flex flex-wrap gap-2 sm:gap-4 mb-3">
         <p
           className={`block md:hidden nav-text pt-1 ${
             pathname === "/" ? "hidden" : "opacity-70"
@@ -71,6 +73,17 @@ const Navbar = () => {
       </div>
       <div className="hidden md:block absolute -right-8 top-1">
         <ThemeSwitch />
+      </div>
+
+      <div className="md:hidden flex flex-justify items-center flex-wrap max-xs:space-x-4 space-x-5">
+        {navsmall.map((nav, index) => (
+          <Link key={index} href={nav.path}>
+            <div className={`h-6 fill-black dark:fill-white `}>{nav.logo}</div>
+          </Link>
+        ))}
+        <div className="pt-1">
+          <ThemeSwitch />
+        </div>
       </div>
     </nav>
   );
