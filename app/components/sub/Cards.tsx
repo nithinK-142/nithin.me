@@ -1,4 +1,3 @@
-// import React from "react";
 import { MainProjectsType } from "../../data/projects";
 import { socialIcons } from "../../data/social-icons";
 

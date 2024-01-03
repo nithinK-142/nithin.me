@@ -1,11 +1,10 @@
-// import React from "react";
 import { icons } from "../../data/icons";
 import Socials from "../../components/sub/Socials";
 import Form from "../../components/sub/Form";
 
 const ContactPage = () => {
   return (
-    <div className="flex flex-col justify-between px-3 mt-8 md:flex-row md:px-0">
+    <div className="flex flex-col justify-between px-3 mt-8 md:flex-row md:px-0 transition-slow">
       <div className="w-full p-4 md:w-1/2">
         <h2 className="mb-4 text-2xl font-bold opacity-90">Just Say Hi!</h2>
 

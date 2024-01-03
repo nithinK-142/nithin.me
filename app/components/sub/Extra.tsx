@@ -1,4 +1,3 @@
-// import React from "react";
 import HappyPill from "./HappyPill"
 import Achievements from "./Achievements"
 

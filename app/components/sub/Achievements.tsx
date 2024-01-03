@@ -1,4 +1,3 @@
-// import React from "react";
 import { achivements } from "../../data/achievement";
 import { icons } from "../../data/icons";
 
