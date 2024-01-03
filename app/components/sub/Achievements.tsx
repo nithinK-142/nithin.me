@@ -14,7 +14,7 @@ const Achievements = () => {
               href={link}
               target="_blank"
               rel="noreferrer"
-              className="opacity-80 hover:opacity-100"
+              className="opacity-100 hover:font-semibold dark:hover:font-medium dark:opacity-80 dark:hover:opacity-100"
             >
               {title}
             </a>

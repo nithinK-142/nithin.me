@@ -41,7 +41,7 @@ const AboutPage = () => {
                 <Tooltip text={"web"} content={"HTML, CSS & JavaScript"} />
                 {" "}and keeping up with the latest tech trends. When I&apos;m not coding, I enjoy spending time listening to music and podcasts, gaming, or just binge-watching stuff.
             </p>
-            <p className="pt-1">
+            <p className="pt-1 font-medium dark:font-normal">
                 I&apos;m currently available for a new freelance job.{" "}
                 <a href="https://www.fiverr.com/nithin_webdev?up_rollout=true" className="about-link" target="_blank" rel="noreferrer">
                     Hire me!

@@ -15,7 +15,7 @@
 }
 
 .about-link {
-  @apply font-medium decoration-1 underline underline-offset-4 hover:opacity-80;
+  @apply font-medium decoration-1 underline underline-offset-4 hover:font-bold dark:hover:font-medium dark:hover:opacity-80;
 }
 
 .about-extra {
@@ -23,7 +23,7 @@
 }
 
 .about-para {
-  @apply hidden pt-2 lg:block;
+  @apply hidden pt-2 lg:block font-medium dark:font-normal;
 }
 
 .transform-center {
@@ -41,7 +41,6 @@
 .nav-text {
   @apply text-base sm:text-lg;
 }
-
 
 @layer components {
   .arrow {
@@ -68,7 +67,6 @@
 .social-after {
   @apply hidden w-auto h-full group-hover:block;
 }
-
 
 /* Scrollbar */
 @layer components {
