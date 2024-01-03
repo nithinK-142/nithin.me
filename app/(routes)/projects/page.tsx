@@ -20,7 +20,7 @@ const ProjectsPage = () => {
           {otherProjects.map(({ title, href }, index) => {
             return (
               <li className="flex items-center gap-2" key={index}>
-                <span className="h-4 fill-white">{icons.git}</span>
+                <span className="h-4 dark:fill-white">{icons.git}</span>
                 <a href={href} target="_blank" rel="noreferrer">
                   <p className="opacity-70 hover:opacity-100">
                     {title}

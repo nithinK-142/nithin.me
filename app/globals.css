@@ -68,6 +68,10 @@
   @apply hidden w-auto h-full group-hover:block;
 }
 
+.transition-slow {
+  @apply transition-all duration-700;
+}
+
 /* Scrollbar */
 @layer components {
   .floating-scrollbar {

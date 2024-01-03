@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <section className="md:mb-6">
     <div className="space-y-4">
-        <div className="text-lg font-normal leading-relaxed">
+        <div className="text-lg font-normal leading-relaxed transition-slow">
           <p className="block mt-4 lg:hidden">
             Proficient in HTML, CSS & JavaScript and passionate about building
             blazing fast, user-friendly, responsive and visually stunning web
