@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className={`flex-justify gap-2 lg:pr-2 md:gap-0 md:justify-between`}>
+    <nav className={`flex-justify gap-2 lg:pr-2 md:gap-0 md:justify-between relative`}>
       {pathname !== "/" ? (
         <div className="nav-text hidden md:block">
           <div className="justify-center gap-2 flex-align">
@@ -49,11 +49,13 @@ const Navbar = () => {
           return (
             <div
               key={item.path}
-              className={`nav-text pt-1 ${isActive ? "opacity-100" : "hover:opacity-90 opacity-70"}`}
+              className={`nav-text pt-1 ${
+                isActive ? "opacity-100" : "hover:opacity-90 opacity-70"
+              }`}
             >
               {isActive && (
                 <div className="flex-justify items-center">
-                  <span className="hidden md:block arrow-head"></span>
+                  <span className="opacity-0 md:opacity-100 arrow-head"></span>
                 </div>
               )}
               <Link href={item.path} className="font-semibold" passHref>
@@ -62,8 +64,10 @@ const Navbar = () => {
             </div>
           );
         })}
-        <ThemeSwitch />
       </div>
+        <div className="hidden md:block absolute -right-8 top-1">
+          <ThemeSwitch />
+        </div>
     </nav>
   );
 };
