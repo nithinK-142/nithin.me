@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="darkreader-lock"></meta>
         <link rel="icon" type="image/x-icon" href="favicon.svg" />
