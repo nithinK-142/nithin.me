@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navItems } from "../../data/nav-items";
 import { icons } from "../../data/icons";
+import ThemeSwitch from "../sub/ThemeSwitch";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -61,6 +62,7 @@ const Navbar = () => {
             </div>
           );
         })}
+        <ThemeSwitch />
       </div>
     </nav>
   );
