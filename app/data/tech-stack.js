@@ -552,8 +552,8 @@ export const hosting = [
   },
   {
     logo: (
-      <svg viewBox="0 0 512 512" className="h-full">
-      <path fillRule="evenodd" d="M256,48,496,464H16Z" fill="#FFFFFF"/>
+      <svg viewBox="0 0 512 512" className="h-full fill-black dark:fill-white">
+      <path fillRule="evenodd" d="M256,48,496,464H16Z"/>
     </svg>
     ),
     label: "Vercel"

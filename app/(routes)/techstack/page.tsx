@@ -8,12 +8,12 @@ interface TechStackItem {
 
 const TechStackPage: React.FC = () => {
   const techStackCard = (techArray: TechStackItem[], title: string) => (
-    <div className="bg-black/10 mb-4">
+    <div className="bg-black/10 mb-4 transition-slow">
       <h4 className="mb-2 text-lg font-semibold text-center">{title}</h4>
       <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
         {techArray.map(({ logo, label }, index) => (
           <div
-            className="flex items-center w-auto gap-2 px-3 py-2 duration-200 rounded select-none hover:scale-110 h-9 bg-stone-950"
+            className="flex items-center w-auto gap-2 px-3 py-2 hover:duration-200 rounded select-none hover:scale-110 h-9 bg-white dark:bg-stone-950"
             key={index}
             title={label}
           >

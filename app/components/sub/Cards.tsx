@@ -9,7 +9,7 @@ const Cards = ({
   description,
   technologies,
 }: MainProjectsType) => (
-  <div className="px-2 py-4 border rounded-lg hover:rounded-none transition-slow border-gray-100/30 bg-[#9ED2BE] dark:bg-black/30 group sm:px-3 hover:border-gray-300">
+  <div className="px-2 py-4 border rounded-lg hover:rounded-none transition-slow border-gray-100/30 bg-white dark:bg-black/30 group sm:px-3 hover:border-gray-300">
     <h2 className="mb-[6px] text-xl">
       <a
         href={href}
@@ -19,7 +19,7 @@ const Cards = ({
       >
         {title}{" "}
       </a>
-      <span className="inline-block transition-transform group-hover:rotate-180 group-hover:text-blue-200 motion-reduce:transform-none duration-500">
+      <span className="inline-block transition-transform group-hover:rotate-180 group-hover:text-blue-800 dark:group-hover:text-blue-200 motion-reduce:transform-none duration-500">
         -&gt;
       </span>
       {/* <span className="opacity-0 group-hover:opacity-100"> */}
