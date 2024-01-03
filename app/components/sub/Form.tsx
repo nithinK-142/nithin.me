@@ -21,7 +21,7 @@ const Form = () => {
         {label}
       </label>
       <input
-        className="w-full px-2 py-1 mb-4 rounded-sm outline-none bg-neutral-700 "
+        className="w-full px-2 py-1 mb-4 rounded-sm outline-none bg-white/70 dark:bg-neutral-700"
         type="text"
         id={id}
         name={id}
@@ -58,7 +58,7 @@ const Form = () => {
         Message
       </label>
       <textarea
-        className="w-full min-h-full px-2 py-1 rounded-sm outline-none bg-neutral-700"
+        className="w-full min-h-full px-2 py-1 rounded-sm outline-none bg-white/70 dark:bg-neutral-700"
         rows={4}
         name="message"
         id="message"

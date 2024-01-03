@@ -9,7 +9,7 @@ const Cards = ({
   description,
   technologies,
 }: MainProjectsType) => (
-  <div className="px-2 py-4 border rounded-lg hover:rounded-none transition-slow border-gray-100/30 bg-white dark:bg-black/30 group sm:px-3 hover:border-gray-300">
+  <div className="px-2 py-4 border rounded-lg hover:rounded-none transition-slow border-black/20 dark:border-gray-100/30 bg-white dark:bg-black/30 group sm:px-3 hover:border-gray-300">
     <h2 className="mb-[6px] text-xl">
       <a
         href={href}

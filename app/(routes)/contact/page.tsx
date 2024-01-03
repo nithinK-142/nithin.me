@@ -15,7 +15,7 @@ const ContactPage = () => {
         </h3>
 
         <div className="flex-wrap mt-2 flex-align hover:opacity-80">
-          <div className="w-auto h-5">{icons.envelope}</div>
+          <div className="w-auto h-5 dark:fill-white">{icons.envelope}</div>
           <p className="pl-1 hover:underline underline-offset-2">
             <a href="mailto:nithin.sagar.359@gmail.com">
               nithin.sagar.359@gmail.com
