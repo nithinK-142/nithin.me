@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { happyPills } from "../../data/happy-pills";
-import "../../styles/threedots.css"
+import { happyPills } from "@/app/assets/happy-pills";
+import "@/styles/threedots.css"
 
 const HappyPill = () => {
   const [platformName, setPlatformName] = useState("");

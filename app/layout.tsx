@@ -1,9 +1,9 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
-import Navbar from "./components/main/Navbar";
-import Footer from "./components/main/Footer";
-import { Providers } from "./Providers";
+import Navbar from "@/components/main/Navbar";
+import Footer from "@/components/main/Footer";
+import { Providers } from "@/providers";
 
 const quick = Quicksand({
   weight: ["400", "500", "600", "700"],

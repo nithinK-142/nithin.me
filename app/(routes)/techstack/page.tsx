@@ -1,4 +1,4 @@
-import { backend, frontend, tools, hosting } from "../../data/tech-stack";
+import { backend, frontend, tools, hosting } from "@/app/assets/tech-stack";
 
 interface TechStackItem {
   logo: JSX.Element;

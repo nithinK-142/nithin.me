@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import ThemeSwitch from "../sub/ThemeSwitch";
-import { navItems } from "../../data/nav-items";
-import { icons } from "../../data/icons";
-import { navsmall } from "../../data/nav-small";
+import ThemeSwitch from "@/components/sub/ThemeSwitch";
+import { navItems } from "@/data/nav-items";
+import { icons } from "@/app/assets/icons";
+import { navsmall } from "@/app/assets/nav-small";
 
 const Navbar = () => {
   const pathname = usePathname();

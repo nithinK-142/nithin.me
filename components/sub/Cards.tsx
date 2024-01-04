@@ -1,5 +1,5 @@
-import { MainProjectsType } from "../../data/projects";
-import { socialIcons } from "../../data/social-icons";
+import { MainProjectsType } from "@/data/projects";
+import { socialIcons } from "@/app/assets/social-icons";
 
 const Cards = ({
   href,

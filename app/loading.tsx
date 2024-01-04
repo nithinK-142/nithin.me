@@ -1,5 +1,4 @@
-import React from "react";
-import "./styles/Windmill.css";
+import "@/styles/windmill.css";
 
 const Loading = () => {
   return (

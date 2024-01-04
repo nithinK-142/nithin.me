@@ -1,5 +1,5 @@
-import { socials } from "../../data/socials";
-import { socialIcons } from "../../data/social-icons";
+import { socials } from "@/data/socials";
+import { socialIcons } from "@/app/assets/social-icons";
 
 interface SocialsProps {
   height: string;

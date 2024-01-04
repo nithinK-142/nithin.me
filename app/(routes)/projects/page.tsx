@@ -1,7 +1,7 @@
-import Cards from "../../components/sub/Cards";
-import { icons } from "../../data/icons";
-import { mainProjects, otherProjects } from "../../data/projects";
-import "../../styles/scrollbar.css"
+import Cards from "@/components/sub/Cards";
+import { icons } from "@/app/assets/icons";
+import { mainProjects, otherProjects } from "@/data/projects";
+import "@/styles/scrollbar.css"
 
 const ProjectsPage = () => {
   return (

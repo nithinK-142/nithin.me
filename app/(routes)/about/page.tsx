@@ -1,5 +1,5 @@
-import Extra from "../../components/sub/Extra"
-import Tooltip from "../../components/sub/Tooltip"
+import Extra from "@/components/sub/Extra"
+import Tooltip from "@/components/sub/Tooltip"
 
 const AboutPage = () => {
   return (

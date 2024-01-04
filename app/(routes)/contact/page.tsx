@@ -1,6 +1,6 @@
-import { icons } from "../../data/icons";
-import Socials from "../../components/sub/Socials";
-import Form from "../../components/sub/Form";
+import { icons } from "@/app/assets/icons";
+import Socials from "@/components/sub/Socials";
+import Form from "@/components/sub/Form";
 
 const ContactPage = () => {
   return (

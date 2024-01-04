@@ -1,5 +1,5 @@
-import { achivements } from "../../data/achievement";
-import { icons } from "../../data/icons";
+import { achivements } from "@/data/achievement";
+import { icons } from "@/app/assets/icons";
 
 const Achievements = () => {
   return (

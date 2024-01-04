@@ -1,6 +1,6 @@
 "use client";
 
-import Socials from "../sub/Socials";
+import Socials from "@/components/sub/Socials";
 import { usePathname } from "next/navigation";
 
 const Footer = () => {
