@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeSwitch from "../sub/ThemeSwitch";
 import { navItems } from "../../data/nav-items";
 import { icons } from "../../data/icons";
-import ThemeSwitch from "../sub/ThemeSwitch";
-import Image from "next/image";
 import { navsmall } from "../../data/nav-small";
 
 const Navbar = () => {
@@ -71,14 +70,15 @@ const Navbar = () => {
           );
         })}
       </div>
-      <div className="hidden md:block absolute -right-8 top-1">
+      <div className="hidden md:block absolute -right-8 top-[5px]">
         <ThemeSwitch />
       </div>
 
+      {/* Small Screen Nav */}
       <div className="md:hidden flex flex-justify items-center flex-wrap max-xs:space-x-4 space-x-5">
         {navsmall.map((nav, index) => (
           <Link key={index} href={nav.path}>
-            <div className={`h-6 fill-black dark:fill-white `}>{nav.logo}</div>
+            <div className="h-6 fill-black dark:fill-white">{nav.logo}</div>
           </Link>
         ))}
         <div className="pt-1">

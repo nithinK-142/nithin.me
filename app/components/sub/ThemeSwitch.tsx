@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { icons } from "@/app/data/icons";
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
@@ -25,27 +26,20 @@ const ThemeSwitch = () => {
 
   if (resolvedTheme === "dark") {
     return (
-      <Image
-        src="/sun.svg"
-        alt="sun"
-        className="h-9 md:h-7 opacity-80"
-        width={24}
-        height={24}
-        onClick={() => setTheme("light")}
-      />
+      <div className="opacity-80" onClick={() => setTheme("light")}>
+        {icons.sun}
+      </div>
     );
   }
 
   if (resolvedTheme === "light") {
     return (
-      <Image
-        src="/moon.svg"
-        alt="moon"
-        className="h-8 md:h-7 md:opacity-60 transform -rotate-12"
-        width={22}
-        height={22}
+      <div
+        className="md:opacity-60 transform -rotate-12"
         onClick={() => setTheme("dark")}
-      />
+      >
+        {icons.moon}
+      </div>
     );
   }
 };
