@@ -70,7 +70,7 @@ const Navbar = () => {
           );
         })}
       </div>
-      <div className="hidden md:block absolute -right-8 top-[5px]">
+      <div className="hidden md:block absolute -right-8 top-[5px] cursor-pointer">
         <ThemeSwitch />
       </div>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
             <div className="h-6 fill-black dark:fill-white">{nav.logo}</div>
           </Link>
         ))}
-        <div className="pt-1">
+        <div className="pt-1 cursor-pointer">
           <ThemeSwitch />
         </div>
       </div>

@@ -14,7 +14,7 @@ export default function Home() {
 
         <div className="w-full px-5 md:w-1/2 flex-justify md:justify-start md:items-center transition-slow">
           <div>
-            <p className="hidden pl-1 text-base font-normal md:text-xl md:block">Hi there, i&apos;m</p>
+            <p className="hidden pl-1 text-base font-normal md:text-xl md:block select-none">Hi there, i&apos;m</p>
             <h1 className="text-5xl sm:text-6xl lg:text-[86px] xl:text-8xl font-bold opacity-75 dark:opacity-100">
               NITHIN
             </h1>
