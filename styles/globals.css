@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  transition: background-color 700ms;
+}
+
 .flex-justify {
   @apply flex justify-center;
 }
