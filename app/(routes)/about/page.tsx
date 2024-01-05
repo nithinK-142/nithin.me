@@ -1,10 +1,12 @@
 import Extra from "@/components/sub/Extra"
 import Tooltip from "@/components/sub/Tooltip"
+import Header from "@/components/sub/Header"
 
 const AboutPage = () => {
   return (
     <section className="md:mb-6">
     <div className="space-y-4">
+        <Header heading="About" />
         <div className="text-lg font-normal leading-relaxed transition-slow">
           <p className="block mt-4 lg:hidden">
             Proficient in HTML, CSS & JavaScript and passionate about building
