@@ -7,7 +7,7 @@ interface SocialsProps {
 
 const Socials: React.FC<SocialsProps> = ({ height }) => {
   return (
-    <ul className="flex items-center space-x-3 text-xl">
+    <ul className="flex items-center space-x-3 text-xl transition-color">
       {socials.map(({ platform, url, icon }, index) => {
         return (
           <li key={index}>

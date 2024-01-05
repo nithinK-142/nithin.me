@@ -4,7 +4,7 @@ import Button from "@/components/sub/Button";
 
 export default function Home() {
   return (
-    <section className="py-5 my-5 transition-slow">
+    <section className="py-5 my-5 transition-color">
       <div className="flex-colm md:flex-row">
         <div className="w-full pb-4 md:w-1/2 flex-justify">
           <div className="w-7/12 h-auto sm:w-8/12 md:w-3/4 md:ml-auto">

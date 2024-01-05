@@ -69,7 +69,11 @@
 }
 
 .transition-slow {
-  @apply transition-all duration-700;
+  @apply transition-all duration-1000;
+}
+
+.transition-color {
+  @apply transition-colors duration-700;
 }
 
 /* Scrollbar */
