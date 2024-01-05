@@ -70,18 +70,18 @@ const Navbar = () => {
           );
         })}
       </div>
-      <div className="hidden md:block absolute -right-8 top-[5px] cursor-pointer">
+      <div className="hidden md:block absolute -right-9 top-[2px] cursor-pointer">
         <ThemeSwitch />
       </div>
 
       {/* Small Screen Nav */}
-      <div className="md:hidden flex flex-justify items-center flex-wrap max-xs:space-x-4 space-x-5">
+      <div className="md:hidden pt-2 flex flex-justify items-center flex-wrap max-xs:space-x-4 space-x-8">
         {navsmall.map((nav, index) => (
           <Link key={index} href={nav.path}>
-            <div className="h-6 fill-black dark:fill-white">{nav.logo}</div>
+            <div className="fill-black dark:fill-white opacity-80 dark:opacity-90">{nav.logo}</div>
           </Link>
         ))}
-        <div className="pt-1 cursor-pointer">
+        <div className="cursor-pointer">
           <ThemeSwitch />
         </div>
       </div>
