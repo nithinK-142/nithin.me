@@ -12,10 +12,7 @@ const config: Config = {
         bounce: 'bounce 3s linear infinite',
       },
       fontFamily: {
-        'quicksand-regular': ['Quicksand-Regular', 'sans-serif'],
-        'quicksand-medium': ['Quicksand-Medium', 'sans-serif'],
-        'quicksand-semibold': ['Quicksand-SemiBold', 'sans-serif'],
-        'quicksand-bold': ['Quicksand-Bold', 'sans-serif'],
+        'quicksand': ['Quicksand', 'sans-serif'],
       },
       screens: {
         'xs': '340px',

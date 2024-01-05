@@ -27,7 +27,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="favicon.svg" />
       </head>
       <body
-        className={`quicksand-medium bg-[#ba97a95e] dark:bg-[#1f1f1f] dark:text-white font-medium`}
+        className={`font-quicksand bg-[#ba97a95e] dark:bg-[#1f1f1f] dark:text-white font-medium`}
       >
         <Providers>
           <div className="flex justify-center w-full">
