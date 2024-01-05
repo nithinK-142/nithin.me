@@ -26,22 +26,20 @@ const ThemeSwitch = () => {
 
   if (resolvedTheme === "dark") {
     return (
-      <div 
-      className="md:opacity-80"
-      onClick={() => setTheme("light")}>
+      <button className="md:opacity-80" onClick={() => setTheme("light")}>
         {icons.sun}
-      </div>
+      </button>
     );
   }
 
   if (resolvedTheme === "light") {
     return (
-      <div
+      <button
         className="md:opacity-60 transform rotate-12"
         onClick={() => setTheme("dark")}
       >
         {icons.moon}
-      </div>
+      </button>
     );
   }
 };
