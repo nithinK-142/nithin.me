@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
-import { Providers } from "@/providers";
+import { ThemeContextProvider } from "@/providers/ThemeContextProvider";
 
 const quick = Quicksand({
   weight: ["400", "500", "600", "700"],
@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${quick.className} bg-[#ba97a95e] dark:bg-[#1f1f1f] dark:text-white font-medium`}
       >
-        <Providers>
+        <ThemeContextProvider>
           <div className="flex justify-center w-full">
             <div className="h-screen w-[90%] sm:w-[70%] flex flex-col justify-between py-1 sm:py-2 px-1 sm:px-2">
               <Navbar />
@@ -37,7 +37,7 @@ export default function RootLayout({
               <Footer />
             </div>
           </div>
-        </Providers>
+        </ThemeContextProvider>
       </body>
     </html>
   );
