@@ -70,7 +70,7 @@ const Navbar = () => {
           );
         })}
       </div>
-      <div className="hidden md:block absolute -right-9 top-[2px] cursor-pointer">
+      <div className="hidden md:block absolute rounded-lg px-1 pt-1 pb-0 hover:bg-[#7d65716e] dark:hover:bg-[#353535] -right-10 top-[2px cursor-pointer">
         <ThemeSwitch />
       </div>
 
@@ -78,7 +78,9 @@ const Navbar = () => {
       <div className="md:hidden pt-2 flex flex-justify items-center flex-wrap max-xs:space-x-4 space-x-8">
         {navsmall.map((nav, index) => (
           <Link key={index} href={nav.path}>
-            <div className="fill-black dark:fill-white opacity-80 dark:opacity-90">{nav.logo}</div>
+            <div className="fill-black dark:fill-white opacity-80 dark:opacity-90">
+              {nav.logo}
+            </div>
           </Link>
         ))}
         <div className="cursor-pointer">
