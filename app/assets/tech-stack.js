@@ -224,47 +224,23 @@ export const backend = [
   },
   {
     logo: (
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" className=" h-full w-auto">
-        <path
-          fill="url(#a)"
-          d="M37.412 62.937c-1.635 2.059-4.95.93-4.99-1.698l-.575-38.453h25.855c4.683 0 7.295 5.41 4.383 9.077z"
-        />
-        <path
-          fill="url(#b)"
-          fillOpacity=".2"
-          d="M37.412 62.937c-1.635 2.059-4.95.93-4.99-1.698l-.575-38.453h25.855c4.683 0 7.295 5.41 4.383 9.077z"
-        />
-        <path
-          fill="#3ecf8e"
-          d="M26.897 1.063c1.635-2.059 4.95-.93 4.99 1.699l.252 38.452H6.607c-4.683 0-7.295-5.409-4.383-9.077z"
-        />
+    <svg viewBox="0 0 256 263" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" className="h-full w-auto">
         <defs>
-          <linearGradient
-            id="a"
-            x1="53.974"
-            x2="94.163"
-            y1="54.974"
-            y2="71.829"
-            gradientTransform="matrix(.57177 0 0 .57177 .986 -.12)"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="#249361" />
-            <stop offset="1" stopColor="#3ECF8E" />
-          </linearGradient>
-          <linearGradient
-            id="b"
-            x1="36.156"
-            x2="54.484"
-            y1="30.578"
-            y2="65.081"
-            gradientTransform="matrix(.57177 0 0 .57177 .986 -.12)"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop />
-            <stop offset="1" stopOpacity="0" />
-          </linearGradient>
+            <linearGradient x1="20.8617445%" y1="20.6868812%" x2="63.4256086%" y2="44.0710077%" id="supabase-linearGradient-1">
+                <stop stop-color="#249361" offset="0%"></stop>
+                <stop stop-color="#3ECF8E" offset="100%"></stop>
+            </linearGradient>
+            <linearGradient x1="1.99116498%" y1="-13.1584008%" x2="21.4025077%" y2="34.708062%" id="supabase-linearGradient-2">
+                <stop stop-color="#000000" offset="0%"></stop>
+                <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+            </linearGradient>
         </defs>
-      </svg>
+        <g>
+            <path d="M149.601512,258.578826 C142.884085,267.038157 129.263882,262.403261 129.102024,251.601817 L126.735244,93.6176533 L232.963622,93.6176533 C252.204429,93.6176533 262.935398,115.840956 250.971119,130.909887 L149.601512,258.578826 Z" fill="url(#supabase-linearGradient-1)"></path>
+            <path d="M149.601512,258.578826 C142.884085,267.038157 129.263882,262.403261 129.102024,251.601817 L126.735244,93.6176533 L232.963622,93.6176533 C252.204429,93.6176533 262.935398,115.840956 250.971119,130.909887 L149.601512,258.578826 Z" fill-opacity="0.2" fill="url(#supabase-linearGradient-2)"></path>
+            <path d="M106.399023,4.36908575 C113.11645,-4.09118439 126.736889,0.544432392 126.898746,11.3460249 L127.935901,169.329953 L23.0369844,169.329953 C3.79559007,169.329953 -6.93568494,147.106651 5.02918175,132.037719 L106.399023,4.36908575 Z" fill="#3ECF8E"></path>
+        </g>
+    </svg>
     ),
     label: "Supabase",
   },
