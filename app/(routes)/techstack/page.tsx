@@ -31,10 +31,10 @@ const TechStackPage: React.FC = () => {
     <section className="my-16 md:my-0">
       <Header heading="Tech Stack" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
-        {techStackCard(frontend, 'Frontend')}
-        {techStackCard(backend, 'Backend')}
-        {techStackCard(tools, 'Tools')}
-        {techStackCard(hosting, 'Hosting')}
+        {techStackCard(frontend, "Frontend")}
+        {techStackCard(backend, "Backend")}
+        {techStackCard(tools, "Tools")}
+        {techStackCard(hosting, "Hosting")}
       </div>
     </section>
   );
