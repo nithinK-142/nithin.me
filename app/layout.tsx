@@ -4,6 +4,7 @@ import { Quicksand } from "next/font/google";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 import { ThemeContextProvider } from "@/providers/ThemeContextProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 const quick = Quicksand({
   weight: ["400", "500", "600", "700"],
@@ -38,6 +39,7 @@ export default function RootLayout({
             </div>
           </div>
         </ThemeContextProvider>
+        <Analytics />
       </body>
     </html>
   );
