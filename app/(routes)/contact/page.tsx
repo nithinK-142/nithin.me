@@ -31,7 +31,7 @@ const ContactPage = () => {
         </a>
 
         <p className="mt-8 mb-2 font-semibold">Ping Me on :</p>
-        <Socials height={"h-7"} />
+        <Socials height="h-7" />
       </div>
 
       <div className="w-full p-4 md:w-1/2">
