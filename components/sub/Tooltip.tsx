@@ -15,7 +15,11 @@ const tooltipStyles = {
   },
 };
 
-const Tooltip = ({ text, content, tooltip = "normal" }: TooltipProps) => {
+const Tooltip: React.FC<TooltipProps> = ({
+  text,
+  content,
+  tooltip = "normal",
+}) => {
   return (
     <span className="dark:text-white group relative hover:opacity-90 font-semibold inline-block">
       {text}
