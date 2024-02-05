@@ -1,8 +1,8 @@
 import Cards from "@/components/sub/Cards";
-import { icons } from "@/app/assets/icons";
 import { mainProjects, otherProjects } from "@/data/projects";
-import "@/styles/scrollbar.css"
+import "@/styles/scrollbar.css";
 import Header from "@/components/sub/Header";
+import OtherProjects from "@/components/sub/OtherProjects";
 
 const ProjectsPage = () => {
   return (
@@ -14,22 +14,11 @@ const ProjectsPage = () => {
         ))}
       </div>
       <div>
-        <p className="mt-6 text-xl">
-          Other Noteworthy Projects
-        </p>
+        <p className="mt-6 text-xl">Other Noteworthy Projects</p>
         <ul className="pb-2 ml-4">
-          {otherProjects.map(({ title, href }, index) => {
-            return (
-              <li className="flex items-center gap-2" key={index}>
-                <span className="h-4 dark:fill-white">{icons.git}</span>
-                <a href={href} target="_blank" rel="noreferrer">
-                  <p className="opacity-70 hover:opacity-100">
-                    {title}
-                  </p>
-                </a>
-              </li>
-            );
-          })}
+          {otherProjects.map(({ title, href }, index) => (
+            <OtherProjects key={index} title={title} href={href} />
+          ))}
         </ul>
       </div>
     </div>

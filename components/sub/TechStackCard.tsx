@@ -1,5 +1,5 @@
 import { TechStackCardProps } from "@/data/tech-stack-types";
-import TechStackLogo from "@/components/sub/TechStackLogo";
+import TechStackLogo from "./TechStackLogo";
 
 const TechStackCard: React.FC<TechStackCardProps> = ({ techArray, title }) => (
   <div className="bg-white/20 dark:bg-black/10 mb-4 transition-slow">
