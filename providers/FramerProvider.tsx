@@ -1,10 +1,7 @@
 "use client";
+import { FramerProviderType } from "@/data/tech-stack-types";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
-
-interface FramerProviderType {
-  children: React.ReactNode;
-}
 
 export const FramerProvider: React.FC<FramerProviderType> = ({ children }) => {
   const pathname = usePathname();

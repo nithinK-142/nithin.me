@@ -7,3 +7,7 @@ export interface TechStackCardProps {
   techArray: TechStackItem[];
   title: string;
 }
+
+export interface FramerProviderType {
+  children: React.ReactNode;
+}

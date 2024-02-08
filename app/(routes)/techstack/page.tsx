@@ -1,5 +1,6 @@
 import { backend, frontend, tools, hosting } from "@/app/assets/tech-stack";
 import Header from "@/components/sub/Header";
+import { TechStackPageDiv } from "@/components/framer/TechStackPage";
 import TechStackCard from "@/components/sub/TechStackCard";
 
 const techStackItems = [
@@ -15,11 +16,11 @@ const TechStackPage = () => {
     // <h3 className="mb-2 text-2xl font-semibold uppercase">Tech Stack</h3>
     <section className="my-16 md:my-0">
       <Header heading="Tech Stack" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+      <TechStackPageDiv>
         {techStackItems.map(({ techArray, title }, index) => (
           <TechStackCard key={index} techArray={techArray} title={title} />
         ))}
-      </div>
+      </TechStackPageDiv>
     </section>
   );
 };
