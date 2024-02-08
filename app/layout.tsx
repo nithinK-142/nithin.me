@@ -4,6 +4,7 @@ import { Quicksand } from "next/font/google";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 import { ThemeContextProvider } from "@/providers/ThemeContextProvider";
+import { FramerProvider } from "@/providers/FramerProvider";
 import { Analytics } from "@vercel/analytics/react";
 
 const quick = Quicksand({
@@ -34,7 +35,9 @@ export default function RootLayout({
           <div className="flex justify-center w-full">
             <div className="h-screen w-[90%] sm:w-[70%] flex flex-col justify-between py-1 sm:py-2 px-1 sm:px-2">
               <Navbar />
-              <main className="sm:floating-scrollbar">{children}</main>
+              <main className="sm:floating-scrollbar">
+                <FramerProvider>{children}</FramerProvider>
+              </main>
               <Footer />
             </div>
           </div>
