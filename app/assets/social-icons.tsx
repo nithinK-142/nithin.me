@@ -1,4 +1,8 @@
-export const socialIcons = {
+type SocialIcons = {
+  [key: string]: JSX.Element;
+};
+
+export const socialIcons: SocialIcons = {
   linkedin: (
     <>
       <svg viewBox="0 0 25 25" className="social-before">
