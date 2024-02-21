@@ -84,3 +84,31 @@ export const otherProjects: OtherType[] = [
     href: "https://github.com/nithinK-142/todo-svelte-fire",
   },
 ];
+
+export const frameworkGuides = [
+  {
+    framework: "React",
+    title: "nithinK-142/react-guide",
+    href: "https://react-guide.vercel.app/",
+  },
+  {
+    framework: "Next.js",
+    title: "nithinK-142/nextjs-guide",
+    href: "https://next-guide-main.vercel.app/",
+  },
+  {
+    framework: "Vue",
+    title: "nithinK-142/vue-guide",
+    href: "https://vue-guide.vercel.app/",
+  },
+  {
+    framework: "SvelteKit",
+    title: "nithinK-142/svelte-guide",
+    href: "https://svelte-guide.vercel.app/",
+  },
+  {
+    framework: "Node.js",
+    title: "nithinK-142/node-guide",
+    href: "https://node-guide.vercel.app/",
+  },
+];

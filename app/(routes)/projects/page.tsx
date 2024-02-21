@@ -1,8 +1,9 @@
 import Cards from "@/components/sub/Cards";
-import { mainProjects, otherProjects } from "@/data/projects";
+import { mainProjects, otherProjects, frameworkGuides } from "@/data/projects";
 import "@/styles/scrollbar.css";
 import Header from "@/components/sub/Header";
 import OtherProjects from "@/components/sub/OtherProjects";
+import FrameworkGuide from "@/components/sub/framework-guide";
 
 const ProjectsPage = () => {
   return (
@@ -13,13 +14,28 @@ const ProjectsPage = () => {
           <Cards key={index} {...link} />
         ))}
       </div>
-      <div>
-        <p className="mt-6 text-xl">Other Noteworthy Projects</p>
-        <ul className="pb-2 ml-4">
-          {otherProjects.map(({ title, href }, index) => (
-            <OtherProjects key={index} title={title} href={href} />
-          ))}
-        </ul>
+      <div className="flex flex-col-reverse md:flex-row md:justify-between mt-6">
+        <div>
+          <p className="text-xl">Other Noteworthy Projects</p>
+          <ul className="pb-2 ml-4">
+            {otherProjects.map(({ title, href }, index) => (
+              <OtherProjects key={index} title={title} href={href} />
+            ))}
+          </ul>
+        </div>
+        <div className="mr-20">
+          <p className="text-xl">Framework Guides</p>{" "}
+          <ul className="pb-2 ml-2 floating-scrollbar">
+            {frameworkGuides.map(({ title, href, framework }, index) => (
+              <FrameworkGuide
+                key={index}
+                title={title}
+                framework={framework}
+                href={href}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

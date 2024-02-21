@@ -1,5 +1,5 @@
 import { TechStackCardProps } from "@/data/tech-stack-types";
-import {TechStackCardDiv} from "../framer/TechStackCardDiv"
+import { TechStackCardDiv } from "../framer/TechStackCardDiv";
 import TechStackLogo from "./TechStackLogo";
 
 const TechStackCard: React.FC<TechStackCardProps> = ({ techArray, title }) => {
