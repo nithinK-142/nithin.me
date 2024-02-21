@@ -23,7 +23,7 @@ const ProjectsPage = () => {
             ))}
           </ul>
         </div>
-        <div className="mb-6 md:mr-20">
+        <div className="mb-6 md:mr-4 lg:mr-20">
           <p className="text-xl">Framework Guides</p>{" "}
           <ul className="pb-2 ml-2 floating-scrollbar">
             {frameworkGuides.map(({ title, href, framework }, index) => (
