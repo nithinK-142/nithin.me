@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { icons } from "./assets/icons";
-import Button from "@/components/sub/Button";
+import Button from "@/components/Button";
 
 export default function Home() {
   return (
@@ -14,7 +14,9 @@ export default function Home() {
 
         <div className="w-full px-5 md:w-1/2 flex-justify md:justify-start md:items-center">
           <div>
-            <p className="hidden pl-1 text-base font-normal md:text-xl md:block select-none">Hi there, i&apos;m</p>
+            <p className="hidden pl-1 text-base font-normal md:text-xl md:block select-none">
+              Hi there, i&apos;m
+            </p>
             <h1 className="text-5xl sm:text-6xl lg:text-[86px] xl:text-8xl font-bold opacity-75 dark:opacity-100">
               NITHIN
             </h1>
@@ -25,7 +27,10 @@ export default function Home() {
 
             <div className="flex-justify md:justify-start md:pl-1 md:mt-2">
               <Link href="/contact">
-                <Button buttonText="Let's Talk!" animation="md:animate-bounce" />
+                <Button
+                  buttonText="Let's Talk!"
+                  animation="md:animate-bounce"
+                />
               </Link>
             </div>
           </div>

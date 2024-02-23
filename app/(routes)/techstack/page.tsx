@@ -1,7 +1,7 @@
 import { backend, frontend, tools, hosting } from "@/app/assets/tech-stack";
-import Header from "@/components/sub/Header";
+import Header from "@/components/Header";
 import { AnimationProvider } from "@/providers/AnimationProvider";
-import TechStackCard from "@/components/sub/TechStackCard";
+import TechStackCard from "./TechStackCard";
 
 const techStackItems = [
   { techArray: frontend, title: "Frontend" },

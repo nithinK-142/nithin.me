@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import ThemeSwitch from "@/components/sub/ThemeSwitch";
+import ThemeSwitch from "./ThemeSwitch";
 import { navItems } from "@/data/nav-items";
 import { icons } from "@/app/assets/icons";
 import { navsmall } from "@/app/assets/nav-small";
@@ -78,7 +78,9 @@ const Navbar = () => {
       <div className="md:hidden pt-2 flex flex-justify items-center flex-wrap max-xs:space-x-4 space-x-8">
         {navsmall.map((nav, index) => (
           <Link key={index} href={nav.path}>
-            <div className="fill-black dark:fill-white opacity-80 dark:opacity-90">{nav.logo}</div>
+            <div className="fill-black dark:fill-white opacity-80 dark:opacity-90">
+              {nav.logo}
+            </div>
           </Link>
         ))}
         <div className="cursor-pointer">

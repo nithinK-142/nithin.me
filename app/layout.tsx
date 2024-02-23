@@ -1,8 +1,8 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
-import Navbar from "@/components/main/Navbar";
-import Footer from "@/components/main/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { ThemeContextProvider } from "@/providers/ThemeContextProvider";
 import { FramerProvider } from "@/providers/FramerProvider";
 import { Analytics } from "@vercel/analytics/react";

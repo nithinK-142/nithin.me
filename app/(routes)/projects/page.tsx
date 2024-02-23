@@ -1,9 +1,9 @@
-import Cards from "@/components/sub/Cards";
+import Cards from "./Cards";
 import { mainProjects, otherProjects, frameworkGuides } from "@/data/projects";
 import "@/styles/scrollbar.css";
-import Header from "@/components/sub/Header";
-import OtherProjects from "@/components/sub/OtherProjects";
-import FrameworkGuide from "@/components/sub/framework-guide";
+import Header from "@/components/Header";
+import OtherProjects from "./OtherProjects";
+import FrameworkGuide from "./FrameworkGuide";
 
 const ProjectsPage = () => {
   return (
