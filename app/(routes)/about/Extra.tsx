@@ -19,7 +19,7 @@ const Extra = () => {
 
       <AnimationProvider
         varients={slideInFromBottom}
-        className="hidden md:block"
+        className="hidden md:block min-w-[12rem]"
       >
         <HappyPill />
       </AnimationProvider>
