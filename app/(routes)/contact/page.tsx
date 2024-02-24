@@ -1,11 +1,20 @@
 import { icons } from "@/app/assets/icons";
 import Socials from "@/components/Socials";
 import Form from "./Form";
+import { AnimationProvider } from "@/providers/AnimationProvider";
+import { slideInFromBottom, slideInFromTop } from "@/util/motion";
 
 const ContactPage = () => {
   return (
-    <div className="flex flex-col justify-between px-3 mt-8 md:flex-row md:px-0 transition-slow">
-      <div className="w-full p-4 md:w-1/2">
+    <AnimationProvider
+      initial="hidden"
+      animate="visible"
+      className="flex flex-col justify-between px-3 mt-8 md:flex-row md:px-0 transition-slow"
+    >
+      <AnimationProvider
+        varients={slideInFromTop()}
+        className="w-full p-4 md:w-1/2"
+      >
         <h2 className="mb-4 text-2xl font-bold opacity-90">Just Say Hi!</h2>
 
         <h3 className="text-lg">
@@ -32,12 +41,15 @@ const ContactPage = () => {
 
         <p className="mt-8 mb-2 font-semibold">Ping Me on :</p>
         <Socials height="h-7" />
-      </div>
+      </AnimationProvider>
 
-      <div className="w-full p-4 md:w-1/2">
+      <AnimationProvider
+        varients={slideInFromBottom}
+        className="w-full p-4 md:w-1/2"
+      >
         <Form />
-      </div>
-    </div>
+      </AnimationProvider>
+    </AnimationProvider>
   );
 };
 
