@@ -1,13 +1,22 @@
+import { AnimationProvider } from "@/providers/AnimationProvider";
 import Extra from "./Extra";
 import Tooltip from "./Tooltip";
 import Header from "@/components/Header";
+import { slideInFromTop } from "@/util/motion";
 
 const AboutPage = () => {
   return (
     <section className="md:mb-6">
-      <div className="space-y-4">
+      <AnimationProvider
+        initial="hidden"
+        animate="visible"
+        className="space-y-4"
+      >
         <Header heading="About" />
-        <div className="text-lg font-normal leading-relaxed transition-slow">
+        <AnimationProvider
+          varients={slideInFromTop(0)}
+          className="text-lg font-normal leading-relaxed transition-slow"
+        >
           <p className="block mt-4 lg:hidden">
             Proficient in HTML, CSS & JavaScript and passionate about building
             blazing fast, user-friendly, responsive and visually stunning web
@@ -83,10 +92,10 @@ const AboutPage = () => {
               Hire me!
             </a>
           </p>
-        </div>
+        </AnimationProvider>
 
         <Extra />
-      </div>
+      </AnimationProvider>
     </section>
   );
 };

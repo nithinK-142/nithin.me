@@ -2,6 +2,7 @@ import { backend, frontend, tools, hosting } from "@/app/assets/tech-stack";
 import Header from "@/components/Header";
 import { AnimationProvider } from "@/providers/AnimationProvider";
 import TechStackCard from "./TechStackCard";
+import { variantParent } from "@/util/motion";
 
 const techStackItems = [
   { techArray: frontend, title: "Frontend" },
@@ -10,16 +11,6 @@ const techStackItems = [
   { techArray: hosting, title: "Hosting" },
 ];
 
-const variants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-    },
-  },
-};
-
 const TechStackPage = () => {
   return (
     // <section className="mt-8">
@@ -27,7 +18,7 @@ const TechStackPage = () => {
     <section className="my-16 md:my-0">
       <Header heading="Tech Stack" />
       <AnimationProvider
-        varients={variants}
+        varients={variantParent}
         initial="hidden"
         animate="show"
         className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4"

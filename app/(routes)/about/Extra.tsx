@@ -1,17 +1,29 @@
 import HappyPill from "./HappyPill";
 import Achievements from "./Achievements";
+import { AnimationProvider } from "@/providers/AnimationProvider";
+import { slideInFromBottom } from "@/util/motion";
 
 const Extra = () => {
   return (
-    <div className="gap-8 flex">
-      <div className="w-full md:w-1/2">
+    <AnimationProvider
+      initial="hidden"
+      animate="visible"
+      className="gap-8 flex"
+    >
+      <AnimationProvider
+        varients={slideInFromBottom}
+        className="w-full md:w-1/2"
+      >
         <Achievements />
-      </div>
+      </AnimationProvider>
 
-      <div className="hidden md:block">
+      <AnimationProvider
+        varients={slideInFromBottom}
+        className="hidden md:block"
+      >
         <HappyPill />
-      </div>
-    </div>
+      </AnimationProvider>
+    </AnimationProvider>
   );
 };
 
