@@ -14,14 +14,14 @@ const quick = Quicksand({
 
 export const metadata: Metadata = {
   title: "nithin.me",
-  description: "Portfolio using Next JS 13",
+  description: "Portfolio using Next JS",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
