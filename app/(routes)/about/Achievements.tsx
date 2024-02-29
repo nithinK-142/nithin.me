@@ -4,7 +4,10 @@ import { icons } from "@/app/assets/icons";
 const Achievements = () => {
   return (
     <>
-      <p className="about-extra">Achievements</p>
+      <div className="flex items-center space-x-2">
+        {icons.certify}
+        <p className="about-extra">Achievements</p>
+      </div>
       <ul className="space-y-1">
         {achivements.map(({ title, link }, index) => (
           <li className="gap-2 flex-align" key={index}>

@@ -2,13 +2,17 @@
 
 import { useState } from "react";
 import { happyPills } from "@/app/assets/happy-pills";
-import "@/styles/threedots.css"
+import "@/styles/threedots.css";
+import { icons } from "@/app/assets/icons";
 
 const HappyPill = () => {
   const [platformName, setPlatformName] = useState("");
   return (
     <>
-      <p className="about-extra">My happy pills</p>
+      <div className="flex items-center space-x-2">
+       {icons.happy}
+        <p className="about-extra">My happy pills</p>
+      </div>
       <div className="flex gap-3">
         {happyPills.map(({ platform, icon }) => (
           <span
@@ -26,7 +30,9 @@ const HappyPill = () => {
           ⦿ playing <span className="font-semibold">{platformName}...</span>
         </p>
       ) : (
-        <p className="checking-text">⦿ Checking <span className="three-dots"></span></p>
+        <p className="checking-text">
+          ⦿ Checking <span className="three-dots"></span>
+        </p>
       )}
     </>
   );
