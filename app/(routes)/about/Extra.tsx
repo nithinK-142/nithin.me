@@ -1,5 +1,5 @@
 import HappyPill from "./HappyPill";
-import Achievements from "./Achievements";
+import Certifications from "./Certifications";
 import { AnimationProvider } from "@/providers/AnimationProvider";
 import { slideInFromBottom } from "@/util/motion";
 
@@ -14,7 +14,7 @@ const Extra = () => {
         varients={slideInFromBottom}
         className="w-full md:w-1/2"
       >
-        <Achievements />
+        <Certifications />
       </AnimationProvider>
 
       <AnimationProvider

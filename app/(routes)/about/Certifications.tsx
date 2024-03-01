@@ -1,12 +1,12 @@
 import { achivements } from "@/data/achievement";
 import { icons } from "@/app/assets/icons";
 
-const Achievements = () => {
+const Certifications = () => {
   return (
     <>
       <div className="flex items-center space-x-2">
         {icons.certify}
-        <p className="about-extra">Achievements</p>
+        <p className="about-extra">Certifications</p>
       </div>
       <ul className="space-y-1">
         {achivements.map(({ title, link }, index) => (
@@ -27,4 +27,4 @@ const Achievements = () => {
   );
 };
 
-export default Achievements;
+export default Certifications;
