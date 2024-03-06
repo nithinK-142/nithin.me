@@ -54,3 +54,9 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+export async function generateMetadata() {
+  return {
+    title: "Contact",
+  };
+}

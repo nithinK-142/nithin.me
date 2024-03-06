@@ -13,7 +13,10 @@ const quick = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "nithin.me",
+  title: {
+    template: "%s | nithin.me",
+    default: "nithin.me",
+  },
   description: "Portfolio using Next JS",
 };
 

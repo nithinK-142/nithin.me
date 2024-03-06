@@ -54,3 +54,9 @@ const ProjectsPage = () => {
 };
 
 export default ProjectsPage;
+
+export async function generateMetadata() {
+  return {
+    title: "Projects",
+  };
+}

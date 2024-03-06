@@ -32,3 +32,9 @@ const TechStackPage = () => {
 };
 
 export default TechStackPage;
+
+export async function generateMetadata() {
+  return {
+    title: "TechStack",
+  };
+}

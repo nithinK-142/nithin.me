@@ -101,3 +101,9 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+export async function generateMetadata() {
+  return {
+    title: "About",
+  };
+}
