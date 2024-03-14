@@ -9,7 +9,7 @@ import {
   slideInFromLeft,
   slideInFromRight,
   slideInFromTop,
-} from "@/util/motion";
+} from "@/utils/motion";
 
 const ProjectsPage = () => {
   return (

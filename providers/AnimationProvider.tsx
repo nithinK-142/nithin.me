@@ -1,5 +1,5 @@
 "use client";
-import { FramerProviderType } from "@/util/motion";
+import { FramerProviderType } from "@/utils/motion";
 import { motion } from "framer-motion";
 
 export const AnimationProvider: React.FC<FramerProviderType> = (props) => {

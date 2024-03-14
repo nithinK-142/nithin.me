@@ -1,7 +1,7 @@
 import { TechStackCardProps } from "@/data/tech-stack-types";
 import TechStackLogo from "./TechStackLogo";
 import { AnimationProvider } from "@/providers/AnimationProvider";
-import { variantChild } from "@/util/motion";
+import { variantChild } from "@/utils/motion";
 
 const TechStackCard: React.FC<TechStackCardProps> = ({ techArray, title }) => {
   return (
