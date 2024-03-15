@@ -2,29 +2,27 @@ import Link from "next/link";
 import { icons } from "./assets/icons";
 import Button from "@/components/Button";
 import { AnimationProvider } from "@/providers/AnimationProvider";
-import { slideInFromBottom, slideInFromTop } from "@/util/motion";
+import { variantChild, variantParent } from "@/util/motion";
 
 export default function Home() {
   return (
     <AnimationProvider
+      varients={variantParent}
       initial="hidden"
-      animate="visible"
+      animate="show"
       className="py-5 my-5 transition-color"
     >
-      <div className="flex-colm md:flex-row">
-        <AnimationProvider
-          varients={slideInFromTop()}
-          className="w-full pb-4 md:w-1/2 flex-justify"
-        >
+      <AnimationProvider
+        varients={variantChild}
+        className="flex-colm md:flex-row"
+      >
+        <div className="w-full pb-4 md:w-1/2 flex-justify">
           <div className="w-7/12 h-auto sm:w-8/12 md:w-3/4 md:ml-auto">
             {icons.user}
           </div>
-        </AnimationProvider>
+        </div>
 
-        <AnimationProvider
-          varients={slideInFromBottom}
-          className="w-full px-5 md:w-1/2 flex-justify md:justify-start md:items-center"
-        >
+        <div className="w-full px-5 md:w-1/2 flex-justify md:justify-start md:items-center">
           <div>
             <p className="hidden pl-1 text-base font-normal md:text-xl md:block select-none">
               Hi there, i&apos;m
@@ -46,8 +44,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </AnimationProvider>
-      </div>
+        </div>
+      </AnimationProvider>
     </AnimationProvider>
   );
 }
