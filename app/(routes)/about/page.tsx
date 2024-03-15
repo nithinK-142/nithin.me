@@ -2,19 +2,20 @@ import { AnimationProvider } from "@/providers/AnimationProvider";
 import Extra from "./Extra";
 import Tooltip from "./Tooltip";
 import Header from "@/components/Header";
-import { slideInFromTop } from "@/util/motion";
+import { variantChild, variantParent } from "@/util/motion";
 
 const AboutPage = () => {
   return (
     <section className="md:mb-6">
       <AnimationProvider
+        varients={variantParent}
         initial="hidden"
-        animate="visible"
+        animate="show"
         className="space-y-4"
       >
         <Header heading="About" />
         <AnimationProvider
-          varients={slideInFromTop(0)}
+          varients={variantChild}
           className="text-lg font-normal leading-relaxed transition-slow"
         >
           <p className="block mt-4 lg:hidden">
