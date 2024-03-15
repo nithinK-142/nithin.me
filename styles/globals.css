@@ -42,10 +42,6 @@ body {
   @apply absolute pt-3 text-sm;
 }
 
-.nav-text {
-  @apply text-base sm:text-lg;
-}
-
 @layer components {
   .arrow {
     @apply absolute w-0 h-0 border-x-[7px] border-x-transparent border-solid;
