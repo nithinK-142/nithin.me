@@ -2,7 +2,7 @@ import Link from "next/link";
 import { icons } from "./assets/icons";
 import Button from "@/components/Button";
 import { AnimationProvider } from "@/providers/AnimationProvider";
-import { variantChild, variantParent } from "@/util/motion";
+import { variantChild, variantParent } from "@/utils/motion";
 
 export default function Home() {
   return (

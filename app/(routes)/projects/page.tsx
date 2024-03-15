@@ -1,5 +1,5 @@
 import { AnimationProvider } from "@/providers/AnimationProvider";
-import { variantChild, variantParent } from "@/util/motion";
+import { variantChild, variantParent } from "@/utils/motion";
 import "@/styles/scrollbar.css";
 import { projects } from "@/data/projects";
 import Link from "next/link";

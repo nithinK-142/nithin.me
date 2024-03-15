@@ -1,5 +1,5 @@
 "use client";
-import { FramerProviderType } from "@/util/motion";
+import { FramerProviderType } from "@/utils/motion";
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 

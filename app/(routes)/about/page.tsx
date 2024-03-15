@@ -2,7 +2,7 @@ import { AnimationProvider } from "@/providers/AnimationProvider";
 import Extra from "./Extra";
 import Tooltip from "./Tooltip";
 import Header from "@/components/Header";
-import { variantChild, variantParent } from "@/util/motion";
+import { variantChild, variantParent } from "@/utils/motion";
 
 const AboutPage = () => {
   return (
