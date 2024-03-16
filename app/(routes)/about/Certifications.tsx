@@ -4,7 +4,7 @@ import { icons } from "@/app/assets/icons";
 const Certifications = () => {
   return (
     <>
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 my-4">
         {icons.certify}
         <p className="about-extra">Certifications</p>
       </div>

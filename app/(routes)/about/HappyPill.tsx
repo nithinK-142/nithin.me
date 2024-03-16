@@ -9,8 +9,8 @@ const HappyPill = () => {
   const [platformName, setPlatformName] = useState("");
   return (
     <>
-      <div className="flex items-center space-x-2">
-       {icons.happy}
+      <div className="flex items-center space-x-2 my-4">
+        {icons.happy}
         <p className="about-extra">My happy pills</p>
       </div>
       <div className="flex gap-3">

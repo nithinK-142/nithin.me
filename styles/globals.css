@@ -19,15 +19,15 @@ body {
 }
 
 .about-link {
-  @apply font-medium decoration-1 underline underline-offset-4 hover:font-bold dark:hover:font-medium dark:hover:opacity-80;
+  @apply decoration-1 underline underline-offset-4 font-medium;
 }
 
 .about-extra {
-  @apply my-4 text-xl font-bold uppercase;
+  @apply text-xl font-bold uppercase;
 }
 
 .about-para {
-  @apply hidden pt-2 lg:block font-medium dark:font-normal;
+  @apply hidden pt-2 lg:block font-normal;
 }
 
 .transform-center {
