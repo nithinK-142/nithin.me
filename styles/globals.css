@@ -20,6 +20,9 @@ body {
 
 .about-link {
   @apply decoration-1 underline underline-offset-4 font-medium;
+  @apply hover:transition-colors hover:duration-300 hover:ease-in hover:bg-gradient-to-br hover:from-yellow-400 hover:via-red-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text;
+  /* @apply hover:bg-gradient-to-r hover:from-blue-600 hover:via-green-500 hover:to-indigo-400 hover:text-transparent hover:bg-clip-text;
+  @apply hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-green-500 hover:via-purple-500 hover:to-yellow-500; */
 }
 
 .about-extra {

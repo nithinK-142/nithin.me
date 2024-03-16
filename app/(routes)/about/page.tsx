@@ -48,12 +48,21 @@ const AboutPage = () => {
             JavaScript and experience in building blazing fast, user-friendly
             and responsive web apps with technologies like{" "}
             <a
-              href="https://react.dev"
+              href="https://nextjs.org"
               target="_blank"
               rel="noopener noreferrer"
               className="about-link"
             >
               NextJs
+            </a>{" "}
+            ,{" "}
+            <a
+              href="https://vuejs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-link"
+            >
+              Vue
             </a>{" "}
             ,{" "}
             <a
