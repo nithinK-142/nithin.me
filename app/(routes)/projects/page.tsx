@@ -25,7 +25,7 @@ const ProjectsPage = () => {
             className="flex flex-col justify-between hover:bg-neutral-100 transition-colors ease-in-out duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 bg-white/40 dark:bg-neutral-900/40 dark:hover:bg-neutral-900 dark:hover:shadow-lg hover:shadow-lg"
             key={index}
           >
-            <div className="pt-2">
+            <div>
               <div className="h-12 ml-0 block mr-auto">{logo}</div>
               <h4 className="text-xl font-semibold mt-4 mb-1">{name}</h4>
               <p className="text-sm">{description}</p>
@@ -47,20 +47,18 @@ const ProjectsPage = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14">
         {/*  Honorable Mentions */}
-        <div className="flex bg-white/40 dark:bg-neutral-900/40 flex-col justify-between hover:bg-neutral-100 transition-colors ease-in-out duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:bg-neutral-900 dark:hover:shadow-lg hover:shadow-lg">
-          <h4 className="text-xl font-semibold tracking-wider mt-4 mb-1">
-            Honorable Mentions
-          </h4>
-          <div className="flex items-center">
-            <span className="text-blue-800 dark:text-red-100 mr-1 text-lg">
-              -&gt;
-            </span>
-            <p className="text-sm font-normal">
-              Projects that couldn&apos;t make it to the top.
-            </p>
+        <div className="flex bg-white/40 dark:bg-neutral-900/40 flex-col justify-between hover:bg-neutral-100 transition-colors ease-in-out duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:bg-neutral-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
+          <div className="flex items-center pb-1">
+            {icons.badge}
+            <h4 className="text-xl font-semibold tracking-wider">
+              Honorable Mentions
+            </h4>
           </div>
+          <p className="text-sm font-medium mb-1.5 pl-1 opacity-95">
+            Projects that couldn&apos;t make it to the top.
+          </p>
           {honorableMentions.map(({ title, href }, index) => (
-            <div key={index} className="flex items-center gap-2 pt-1">
+            <div key={index} className="flex items-center gap-2 pt-1 pl-1">
               <span className="h-4 dark:fill-white">{icons.git}</span>
               <a
                 href={href}
@@ -75,18 +73,16 @@ const ProjectsPage = () => {
         </div>
 
         {/* Framwork Guides */}
-        <div className="flex bg-white/40 dark:bg-neutral-900/40 flex-col hover:bg-neutral-100 transition-colors ease-in-out duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:bg-neutral-900 dark:hover:shadow-lg hover:shadow-lg">
-          <h4 className="text-xl font-semibold tracking-wider mt-4 mb-1">
-            Framwork Guides
-          </h4>
-          <div className="flex items-center">
-            <span className="text-blue-800 dark:text-red-100 mr-1 text-lg">
-              -&gt;
-            </span>
-            <p className="text-sm font-normal">
-              Quick-start into development with pre-configured templates.
-            </p>
+        <div className="flex bg-white/40 dark:bg-neutral-900/40 flex-col hover:bg-neutral-100 transition-colors ease-in-out duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:bg-neutral-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
+          <div className="flex items-center pb-1 space-x-1">
+            {icons.book}
+            <h4 className="text-xl font-semibold tracking-wider">
+              Framwork Guides
+            </h4>
           </div>
+          <p className="text-sm font-medium mb-1.5 pl-1 opacity-95">
+            Quick-start into development with pre-configured templates.
+          </p>
           <div className="flex gap-6">
             {frameworkGuides.map(({ href, framework }, index) => {
               const frontendLogo = frontend.find(

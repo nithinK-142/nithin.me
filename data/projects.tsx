@@ -1,5 +1,3 @@
-import { frontend, backend } from "@/app/assets/tech-stack";
-
 export const projects = [
   {
     name: "Git View",
