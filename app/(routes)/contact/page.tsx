@@ -15,16 +15,17 @@ const ContactPage = () => {
         varients={slideInFromTop()}
         className="w-full p-4 md:w-1/2"
       >
-        <h2 className="mb-4 text-2xl font-bold opacity-90">Just Say Hi!</h2>
-
+        <h2 className="text-2xl font-bold opacity-90 mb-4">
+          Just Say Hi <span>👋</span>
+        </h2>
         <h3 className="text-lg">
           I&apos;m always open to discuss your project or talk about new things.
           Let&apos;s work together and I&apos;ll provide my utmost assistance.
         </h3>
 
         <div className="flex-wrap mt-2 flex-align hover:opacity-80">
-          <div className="w-auto h-5 dark:fill-white">{icons.envelope}</div>
-          <p className="pl-1 hover:underline underline-offset-2">
+          <div className="w-auto h-4 dark:fill-white">{icons.envelope}</div>
+          <p className="pl-1 pb-[1px] hover:underline underline-offset-2">
             <a href="mailto:nithin.sagar.359@gmail.com">
               nithin.sagar.359@gmail.com
             </a>
