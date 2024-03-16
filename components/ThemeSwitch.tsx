@@ -30,7 +30,7 @@ const ThemeSwitch = () => {
     return (
       <button
         onClick={() => setTheme("light")}
-        className="themeswitch-btn pb-0.5 hover:bg-neutral-700"
+        className="themeswitch-btn md:hover:bg-black/70"
       >
         <span className="sr-only">Toggle theme</span>
         {icons.sun}
@@ -42,7 +42,7 @@ const ThemeSwitch = () => {
     return (
       <button
         onClick={() => setTheme("dark")}
-        className="themeswitch-btn pb-0.5 hover:bg-white/60"
+        className="themeswitch-btn md:hover:bg-black/10"
       >
         <span className="sr-only">Toggle theme</span>
         {icons.moon}
