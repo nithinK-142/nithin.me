@@ -13,21 +13,26 @@ const ThemeSwitch = () => {
 
   if (!mounted)
     return (
-      <Image
-        src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9IiNGRkZGRkYiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBoZWlnaHQ9IjIwMHB4IiB3aWR0aD0iMjAwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSIyIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIiIHJ4PSIyIj48L3JlY3Q+PC9zdmc+Cg=="
-        width={28}
-        height={28}
-        sizes="28x28"
-        alt="Loading Light/Dark Toggle"
-        priority={false}
-        title="Loading Light/Dark Toggle"
-        className="pt-0.5"
-      />
+      <div onClick={() => setTheme("light")} className="themeswitch-btn">
+        <Image
+          src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9IiNGRkZGRkYiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBoZWlnaHQ9IjIwMHB4IiB3aWR0aD0iMjAwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSIyIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIiIHJ4PSIyIj48L3JlY3Q+PC9zdmc+Cg=="
+          width={24}
+          height={24}
+          sizes="24x24"
+          alt="Loading Light/Dark Toggle"
+          priority={false}
+          title="Loading Light/Dark Toggle"
+        />
+      </div>
     );
 
   if (resolvedTheme === "dark") {
     return (
-      <button className="md:opacity-80" onClick={() => setTheme("light")}>
+      <button
+        onClick={() => setTheme("light")}
+        className="themeswitch-btn pb-0.5 hover:bg-neutral-700"
+      >
+        <span className="sr-only">Toggle theme</span>
         {icons.sun}
       </button>
     );
@@ -36,9 +41,10 @@ const ThemeSwitch = () => {
   if (resolvedTheme === "light") {
     return (
       <button
-        className="md:opacity-60 transform rotate-12"
         onClick={() => setTheme("dark")}
+        className="themeswitch-btn pb-0.5 hover:bg-white/60"
       >
+        <span className="sr-only">Toggle theme</span>
         {icons.moon}
       </button>
     );

@@ -68,7 +68,7 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <div className="hidden md:block absolute -right-8 cursor-pointer">
+      <div className="hidden md:block absolute -right-10 cursor-pointer">
         <ThemeSwitch />
       </div>
 
