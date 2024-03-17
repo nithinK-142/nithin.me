@@ -52,7 +52,7 @@ body {
 }
 
 .arrow-head {
-  @apply arrow border-t-8 border-t-[#FFA500];
+  @apply arrow border-t-8 dark:border-t-[#FFA500] border-t-red-600;
 }
 
 .arrow-head-reverse {

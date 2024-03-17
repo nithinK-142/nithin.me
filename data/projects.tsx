@@ -41,7 +41,8 @@ export const projects = [
       </svg>
     ),
     url: "vue-git-view.vercel.app",
-    techStack: ["Vue", "TailwindCSS", "Pinia"],
+    gitUrl: "vue-git-view",
+    techStack: ["Vue", "Pinia", "TailwindCSS"],
   },
   {
     name: "MERN Cart",
@@ -95,6 +96,7 @@ export const projects = [
       </svg>
     ),
     url: "mern-cart.vercel.app",
+    gitUrl: "mern-cart",
     techStack: ["MongoDB", "Express.js", "React", "Node.js"],
   },
   {
@@ -192,7 +194,8 @@ export const projects = [
       </svg>
     ),
     url: "nithin-me.vercel.app",
-    techStack: ["Next.js", "TailwindCSS", "FramerMotion"],
+    gitUrl: "nithin.me",
+    techStack: ["Next.js", "FramerMotion", "TailwindCSS"],
   },
   {
     name: "AESOP Clone",
@@ -237,6 +240,7 @@ export const projects = [
       </svg>
     ),
     url: "next-aesop-clone.vercel.app",
+    gitUrl: "next-aesop-clone",
     techStack: ["Next.js", "TailwindCSS"],
   },
   {
@@ -265,6 +269,7 @@ export const projects = [
       </svg>
     ),
     url: "unsplash-gallery-app.vercel.app",
+    gitUrl: "unsplash-gallery",
     techStack: ["React", "TailwindCSS", "Unsplash"],
   },
   {
@@ -310,6 +315,7 @@ export const projects = [
       </svg>
     ),
     url: "nasaapiusage.netlify.app",
+    gitUrl: "NASA-API-usage",
     techStack: ["HTML5", "CSS3", "JavaScript"],
   },
   // {
@@ -323,15 +329,15 @@ export const projects = [
 export const honorableMentions = [
   {
     title: "nithinK-142/react-flicks",
-    href: "https://github.com/nithinK-142/react-flicks",
+    href: "react-flicks",
   },
   {
     title: "nithinK-142/sveltekit-todos",
-    href: "https://github.com/nithinK-142/sveltekit-todos",
+    href: "sveltekit-todos",
   },
   {
     title: "nithinK-142/vue-expense-tracker",
-    href: "https://github.com/nithinK-142/vue-expense-tracker",
+    href: "vue-expense-tracker",
   },
 ];
 
