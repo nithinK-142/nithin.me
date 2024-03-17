@@ -632,3 +632,12 @@ export const hosting = [
     label: "Heroku"
   },
 ];
+
+export const others = [
+  {
+    logo: (
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 509" className="h-full w-auto fill-black dark:fill-white"><path d="M160 71v71h189V0H160zM0 367v142h509V225H349v142H160V225H0z" /></svg>
+    ),
+    label: "Unsplash",
+  },
+];

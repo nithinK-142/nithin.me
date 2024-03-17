@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Git View",
     description:
-      "A nicer look at GitHub profiles built with Vue3 (compoition api), pinia and GitHub API.",
+      "A nicer look at GitHub profiles built with Vue3 (composition api), pinia and GitHub API.",
     logo: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -41,6 +41,7 @@ export const projects = [
       </svg>
     ),
     url: "vue-git-view.vercel.app",
+    techStack: ["Vue", "TailwindCSS", "Pinia"],
   },
   {
     name: "MERN Cart",
@@ -94,6 +95,7 @@ export const projects = [
       </svg>
     ),
     url: "mern-cart.vercel.app",
+    techStack: ["MongoDB", "Express.js", "React", "Node.js"],
   },
   {
     name: "Portfolio V3",
@@ -190,6 +192,7 @@ export const projects = [
       </svg>
     ),
     url: "nithin-me.vercel.app",
+    techStack: ["Next.js", "TailwindCSS", "FramerMotion"],
   },
   {
     name: "AESOP Clone",
@@ -234,6 +237,7 @@ export const projects = [
       </svg>
     ),
     url: "next-aesop-clone.vercel.app",
+    techStack: ["Next.js", "TailwindCSS"],
   },
   {
     name: "Unsplash Gallery",
@@ -261,6 +265,7 @@ export const projects = [
       </svg>
     ),
     url: "unsplash-gallery-app.vercel.app",
+    techStack: ["React", "TailwindCSS", "Unsplash"],
   },
   {
     name: "Space Explorer",
@@ -305,6 +310,7 @@ export const projects = [
       </svg>
     ),
     url: "nasaapiusage.netlify.app",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
   },
   // {
   //   name: "",
@@ -317,7 +323,7 @@ export const projects = [
 export const honorableMentions = [
   {
     title: "nithinK-142/react-flicks",
-    href: "https://github.com/nithinK-142/react-flicksr",
+    href: "https://github.com/nithinK-142/react-flicks",
   },
   {
     title: "nithinK-142/sveltekit-todos",

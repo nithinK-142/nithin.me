@@ -5,9 +5,21 @@ import { projects } from "@/data/projects";
 import Link from "next/link";
 import { icons } from "@/app/assets/icons";
 import { honorableMentions, frameworkGuides } from "@/data/projects";
-import { backend, frontend } from "@/app/assets/tech-stack";
+import { backend, frontend, others } from "@/app/assets/tech-stack";
 
 const ProjectsPage = () => {
+  // const getFrameworkLogo = (label: string) => {
+  //   const frontendLogo = frontend.find((item) => item.label === label)?.logo;
+  //   if (frontendLogo) return frontendLogo;
+
+  //   const backendLogo = backend.find((item) => item.label === label)?.logo;
+  //   if (backendLogo) return backendLogo;
+
+  //   const otherLogo = others.find((item) => item.label === label)?.logo;
+  //   if (otherLogo) return otherLogo;
+
+  //   return null;
+  // };
   return (
     <AnimationProvider
       varients={variantParent}
@@ -20,29 +32,67 @@ const ProjectsPage = () => {
         varients={variantChild}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 "
       >
-        {projects.map(({ name, description, logo, url }, index) => (
-          <div
-            className="flex flex-col justify-between hover:bg-neutral-100 transition-colors ease-in-out duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 bg-white/40 dark:bg-neutral-900/40 dark:hover:bg-neutral-900 dark:hover:shadow-lg hover:shadow-lg"
-            key={index}
-          >
-            <div>
-              <div className="h-12 ml-0 block mr-auto">{logo}</div>
-              <h4 className="text-xl font-semibold mt-4 mb-1">{name}</h4>
-              <p className="text-sm">{description}</p>
-            </div>
+        {projects.map(({ name, description, techStack, logo, url }, index) => {
+          return (
+            <div
+              className="flex flex-col justify-between hover:bg-neutral-100 transition-colors ease-in-out duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 bg-white/40 dark:bg-neutral-900/40 dark:hover:bg-neutral-900 dark:hover:shadow-lg hover:shadow-lg relative overflow-hidden"
+              key={index}
+            >
+              <div className="absolute flex items-center space-x-2 right-3 transition-transform duration-500 -translate-y-20 group-hover:-translate-y-6">
+                {techStack.map((tech, idx) => {
+                  const frontendLogo = frontend.find(
+                    (item) => item.label === tech
+                  )?.logo;
+                  let frameworkLogo;
 
-            <div className="flex items-center gap-2 mt-6 font-medium text-sm group-hover:text-blue-700 dark:group-hover:text-yellow-500 transition-colors ease-in-out duration-300">
-              {icons.link}
-              <Link
-                href={`https://${url}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {url}
-              </Link>
+                  if (frontendLogo) frameworkLogo = frontendLogo;
+                  else {
+                    const backendLogo = backend.find(
+                      (item) => item.label === tech
+                    )?.logo;
+                    if (backendLogo) frameworkLogo = backendLogo;
+                    else {
+                      const otherLogo = others.find(
+                        (item) => item.label === tech
+                      )?.logo;
+                      if (otherLogo) frameworkLogo = otherLogo;
+                      else frameworkLogo = null;
+                    }
+                  }
+                  // const frameworkLogo = getFrameworkLogo(tech);
+                  return (
+                    frameworkLogo && (
+                      <div key={idx} className="flex flex-col justify-center items-center">
+                        <div className="h-6 border border-black/10 dark:border-stone-700"></div>
+                        <div className="h-8 w-8 overflow-hidden flex justify-center items-center rounded-full border border-black/20 dark:border-stone-700">
+                          <div key={idx} className="h-6">
+                            {frameworkLogo}
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  );
+                })}
+              </div>
+              <div>
+                <div className="h-12 ml-0 block mr-auto">{logo}</div>
+                <h4 className="text-xl font-semibold mt-4 mb-1">{name}</h4>
+                <p className="text-sm">{description}</p>
+              </div>
+
+              <div className="flex items-center gap-2 mt-6 font-medium text-sm group-hover:text-blue-700 dark:group-hover:text-yellow-500 transition-colors ease-in-out duration-300">
+                {icons.link}
+                <Link
+                  href={`https://${url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {url}
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </AnimationProvider>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14">
@@ -96,6 +146,8 @@ const ProjectsPage = () => {
                 )?.logo;
                 frameworkLogo = backendLogo;
               }
+
+              // const frameworkLogo = getFrameworkLogo(framework);
               return (
                 <div key={index} className="flex pt-6">
                   <div className="h-8 hover:scale-110 transition-transform duration-300">
