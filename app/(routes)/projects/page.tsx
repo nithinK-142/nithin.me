@@ -49,7 +49,7 @@ const ProjectsPage = () => {
                           className="flex flex-col justify-center items-center"
                         >
                           <div className="h-6 border border-black/10 dark:border-stone-700"></div>
-                          <div className="h-8 w-8 overflow-hidden flex justify-center items-center rounded-full border border-black/20 dark:border-stone-700">
+                          <div className="h-8 w-8 overflow-hidden flex justify-center items-center rounded-full border border-black/20 dark:border-stone-700 hover:animate-rotate3d cursor-pointer">
                             <div className="h-6">{frameworkLogo}</div>
                           </div>
                         </div>
