@@ -10,7 +10,7 @@ export default function Home() {
       varients={variantParent}
       initial="hidden"
       animate="show"
-      className="py-5 my-5 transition-color"
+      className="py-5 my-5"
     >
       <AnimationProvider
         varients={variantChild}

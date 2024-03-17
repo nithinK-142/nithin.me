@@ -16,7 +16,7 @@ const AboutPage = () => {
         <Header heading="About" />
         <AnimationProvider
           varients={variantChild}
-          className="text-lg font-normal leading-relaxed transition-slow"
+          className="text-lg font-normal leading-relaxed"
         >
           <p className="block mt-4 lg:hidden">
             Proficient in HTML, CSS & JavaScript and passionate about building

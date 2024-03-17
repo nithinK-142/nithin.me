@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  transition: background-color 700ms;
-}
-
 .flex-justify {
   @apply flex justify-center;
 }
@@ -69,14 +65,6 @@ body {
 
 .social-after {
   @apply hidden w-auto h-full group-hover:block;
-}
-
-.transition-slow {
-  @apply transition-all duration-1000;
-}
-
-.transition-color {
-  @apply transition-colors duration-700;
 }
 
 .themeswitch-btn {

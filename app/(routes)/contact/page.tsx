@@ -9,7 +9,7 @@ const ContactPage = () => {
     <AnimationProvider
       initial="hidden"
       animate="visible"
-      className="flex flex-col justify-between px-3 mt-8 md:flex-row md:px-0 transition-slow"
+      className="flex flex-col justify-between px-3 mt-8 md:flex-row md:px-0"
     >
       <AnimationProvider
         varients={slideInFromTop()}
