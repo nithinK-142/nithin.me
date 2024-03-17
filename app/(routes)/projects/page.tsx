@@ -8,18 +8,18 @@ import { honorableMentions, frameworkGuides } from "@/data/projects";
 import { backend, frontend, others } from "@/app/assets/tech-stack";
 
 const ProjectsPage = () => {
-  // const getFrameworkLogo = (label: string) => {
-  //   const frontendLogo = frontend.find((item) => item.label === label)?.logo;
-  //   if (frontendLogo) return frontendLogo;
+  const getFrameworkLogo = (label: string) => {
+    const frontendLogo = frontend.find((item) => item.label === label)?.logo;
+    if (frontendLogo) return frontendLogo;
 
-  //   const backendLogo = backend.find((item) => item.label === label)?.logo;
-  //   if (backendLogo) return backendLogo;
+    const backendLogo = backend.find((item) => item.label === label)?.logo;
+    if (backendLogo) return backendLogo;
 
-  //   const otherLogo = others.find((item) => item.label === label)?.logo;
-  //   if (otherLogo) return otherLogo;
+    const otherLogo = others.find((item) => item.label === label)?.logo;
+    if (otherLogo) return otherLogo;
 
-  //   return null;
-  // };
+    return null;
+  };
   return (
     <AnimationProvider
       varients={variantParent}
@@ -27,7 +27,7 @@ const ProjectsPage = () => {
       animate="show"
       className="my-20"
     >
-      {/* Projects */}
+      {/* Project Cards */}
       <AnimationProvider
         varients={variantChild}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 "
@@ -39,35 +39,17 @@ const ProjectsPage = () => {
               key={index}
             >
               <div className="absolute flex items-center space-x-2 right-3 transition-transform duration-500 -translate-y-20 group-hover:-translate-y-6">
-                {techStack.map((tech, idx) => {
-                  const frontendLogo = frontend.find(
-                    (item) => item.label === tech
-                  )?.logo;
-                  let frameworkLogo;
-
-                  if (frontendLogo) frameworkLogo = frontendLogo;
-                  else {
-                    const backendLogo = backend.find(
-                      (item) => item.label === tech
-                    )?.logo;
-                    if (backendLogo) frameworkLogo = backendLogo;
-                    else {
-                      const otherLogo = others.find(
-                        (item) => item.label === tech
-                      )?.logo;
-                      if (otherLogo) frameworkLogo = otherLogo;
-                      else frameworkLogo = null;
-                    }
-                  }
-                  // const frameworkLogo = getFrameworkLogo(tech);
+                {techStack.map((tech, index) => {
+                  const frameworkLogo = getFrameworkLogo(tech);
                   return (
                     frameworkLogo && (
-                      <div key={idx} className="flex flex-col justify-center items-center">
+                      <div
+                        key={index}
+                        className="flex flex-col justify-center items-center"
+                      >
                         <div className="h-6 border border-black/10 dark:border-stone-700"></div>
                         <div className="h-8 w-8 overflow-hidden flex justify-center items-center rounded-full border border-black/20 dark:border-stone-700">
-                          <div key={idx} className="h-6">
-                            {frameworkLogo}
-                          </div>
+                          <div className="h-6">{frameworkLogo}</div>
                         </div>
                       </div>
                     )
@@ -135,19 +117,7 @@ const ProjectsPage = () => {
           </p>
           <div className="flex gap-6">
             {frameworkGuides.map(({ href, framework }, index) => {
-              const frontendLogo = frontend.find(
-                (item) => item.label === framework
-              )?.logo;
-              let frameworkLogo;
-              if (frontendLogo) frameworkLogo = frontendLogo;
-              else {
-                const backendLogo = backend.find(
-                  (item) => item.label === framework
-                )?.logo;
-                frameworkLogo = backendLogo;
-              }
-
-              // const frameworkLogo = getFrameworkLogo(framework);
+              const frameworkLogo = getFrameworkLogo(framework);
               return (
                 <div key={index} className="flex pt-6">
                   <div className="h-8 hover:scale-110 transition-transform duration-300">
