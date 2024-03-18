@@ -8,14 +8,14 @@ const AboutPage = () => {
   return (
     <section className="md:mb-6">
       <AnimationProvider
-        varients={variantParent}
+        variants={variantParent}
         initial="hidden"
         animate="show"
         className="space-y-4"
       >
         <Header heading="About" />
         <AnimationProvider
-          varients={variantChild}
+          variants={variantChild}
           className="text-lg font-normal leading-relaxed"
         >
           <p className="block mt-4 lg:hidden">

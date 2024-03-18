@@ -11,14 +11,14 @@ const Extra = () => {
       className="gap-8 flex"
     >
       <AnimationProvider
-        varients={slideInFromBottom}
+        variants={slideInFromBottom}
         className="w-full md:w-1/2"
       >
         <Certifications />
       </AnimationProvider>
 
       <AnimationProvider
-        varients={slideInFromBottom}
+        variants={slideInFromBottom}
         className="hidden md:block min-w-[12rem]"
       >
         <HappyPill />

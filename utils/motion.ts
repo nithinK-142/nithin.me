@@ -2,7 +2,7 @@ import { Variants } from "framer-motion";
 
 export interface FramerProviderType {
   children?: React.ReactNode;
-  varients?: Variants;
+  variants?: Variants;
   initial?: string | { [key: string]: number };
   animate?: string;
   className?: string;
@@ -12,22 +12,15 @@ export const variantParent = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-    },
+    transition: { staggerChildren: 0.3 },
   },
 };
 
 export const variantChild = {
-  hidden: {
-    opacity: 0,
-  },
+  hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1,
-    },
+    transition: { duration: 1 },
   },
 };
 

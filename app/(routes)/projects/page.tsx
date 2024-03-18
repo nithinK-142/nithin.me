@@ -22,14 +22,14 @@ const ProjectsPage = () => {
   };
   return (
     <AnimationProvider
-      varients={variantParent}
+      variants={variantParent}
       initial="hidden"
       animate="show"
       className="my-20"
     >
       {/* Project Cards */}
       <AnimationProvider
-        varients={variantChild}
+        variants={variantChild}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 "
       >
         {projects.map(
