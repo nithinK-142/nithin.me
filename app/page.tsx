@@ -7,13 +7,14 @@ import { variantChild, variantParent } from "@/utils/motion";
 export default function Home() {
   return (
     <AnimationProvider
-      varients={variantParent}
+      variants={variantParent}
       initial="hidden"
       animate="show"
-      className="py-5 my-5"
+      className="py-5 my-5 opacity-0"
     >
       <AnimationProvider
-        varients={variantChild}
+        variants={variantChild}
+        animate={{ opacity: 1 }}
         className="flex-colm md:flex-row"
       >
         <div className="w-full pb-4 md:w-1/2 flex-justify">

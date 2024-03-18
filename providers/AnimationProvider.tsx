@@ -3,11 +3,11 @@ import { FramerProviderType } from "@/utils/motion";
 import { motion } from "framer-motion";
 
 export const AnimationProvider: React.FC<FramerProviderType> = (props) => {
-  const { varients, initial, animate, className, children } = props;
+  const { variants, initial, animate, className, children } = props;
   let modifiedVariants;
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768;
-    modifiedVariants = isMobile ? {} : varients;
+    modifiedVariants = isMobile ? {} : variants;
   }
   return (
     <motion.div

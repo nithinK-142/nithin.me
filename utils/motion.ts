@@ -2,9 +2,9 @@ import { Variants } from "framer-motion";
 
 export interface FramerProviderType {
   children?: React.ReactNode;
-  varients?: Variants;
+  variants?: Variants;
   initial?: string;
-  animate?: string;
+  animate?: string | { [key: string]: number };
   className?: string;
 }
 
