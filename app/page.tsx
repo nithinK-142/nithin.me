@@ -6,12 +6,7 @@ import { variantChild, variantParent } from "@/utils/motion";
 
 export default function Home() {
   return (
-    <AnimationProvider
-      varients={variantParent}
-      initial="hidden"
-      animate="show"
-      className="py-5 my-5"
-    >
+    <AnimationProvider varients={variantParent} className="py-5 my-5">
       <AnimationProvider
         varients={variantChild}
         initial="hidden"
