@@ -14,6 +14,7 @@ export default function Home() {
     >
       <AnimationProvider
         variants={variantChild}
+        animate={{ opacity: 1 }}
         className="flex-colm md:flex-row"
       >
         <div className="w-full pb-4 md:w-1/2 flex-justify">

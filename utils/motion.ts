@@ -3,8 +3,8 @@ import { Variants } from "framer-motion";
 export interface FramerProviderType {
   children?: React.ReactNode;
   variants?: Variants;
-  initial?: string | { [key: string]: number };
-  animate?: string;
+  initial?: string;
+  animate?: string | { [key: string]: number };
   className?: string;
 }
 
@@ -20,7 +20,7 @@ export const variantChild = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    // transition: { duration: 1 },
+    transition: { duration: 1 },
   },
 };
 
