@@ -10,7 +10,7 @@ export default function Home() {
       variants={variantParent}
       initial="hidden"
       animate="show"
-      className="py-5 my-5"
+      className="py-5 my-5 opacity-0"
     >
       <AnimationProvider
         variants={variantChild}
