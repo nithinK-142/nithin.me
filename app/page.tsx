@@ -2,15 +2,18 @@ import Link from "next/link";
 import { icons } from "./assets/icons";
 import Button from "@/components/Button";
 import { AnimationProvider } from "@/providers/AnimationProvider";
-import { variantParent } from "@/utils/motion";
+import { variantChild, variantParent } from "@/utils/motion";
 
 export default function Home() {
   return (
-    <div className="py-5 my-5">
+    <AnimationProvider
+      varients={variantParent}
+      initial="hidden"
+      animate="show"
+      className="py-5 my-5"
+    >
       <AnimationProvider
-        varients={variantParent}
-        initial="hidden"
-        animate="show"
+        varients={variantChild}
         className="flex-colm md:flex-row"
       >
         <div className="w-full pb-4 md:w-1/2 flex-justify">
@@ -43,6 +46,6 @@ export default function Home() {
           </div>
         </div>
       </AnimationProvider>
-    </div>
+    </AnimationProvider>
   );
 }

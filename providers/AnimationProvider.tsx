@@ -7,7 +7,7 @@ export const AnimationProvider: React.FC<FramerProviderType> = (props) => {
   let modifiedVariants;
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768;
-    modifiedVariants = isMobile ? {} : varients;
+    modifiedVariants = isMobile ? {} : varients ?? {};
   }
   return (
     <motion.div
