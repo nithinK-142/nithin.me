@@ -3,7 +3,7 @@ import { Variants } from "framer-motion";
 export interface FramerProviderType {
   children?: React.ReactNode;
   varients?: Variants;
-  initial?: string;
+  initial?: string | { [key: string]: number };
   animate?: string;
   className?: string;
 }
