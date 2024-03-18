@@ -6,13 +6,13 @@ import { variantParent } from "@/utils/motion";
 
 export default function Home() {
   return (
-    <AnimationProvider
-      varients={variantParent}
-      initial="hidden"
-      animate="show"
-      className="py-5 my-5"
-    >
-      <div className="flex-colm md:flex-row">
+    <div className="py-5 my-5">
+      <AnimationProvider
+        varients={variantParent}
+        initial="hidden"
+        animate="show"
+        className="flex-colm md:flex-row"
+      >
         <div className="w-full pb-4 md:w-1/2 flex-justify">
           <div className="w-7/12 h-auto sm:w-8/12 md:w-3/4 md:ml-auto">
             {icons.user}
@@ -42,7 +42,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-    </AnimationProvider>
+      </AnimationProvider>
+    </div>
   );
 }
