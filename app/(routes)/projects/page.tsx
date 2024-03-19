@@ -36,7 +36,7 @@ const ProjectsPage = () => {
           ({ name, description, techStack, logo, url, gitUrl }, index) => {
             return (
               <div
-                className="flex flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 bg-white/40 dark:bg-neutral-800 dark:hover:bg-neutral-900/60 dark:hover:shadow-lg hover:shadow-lg relative overflow-hidden"
+                className="flex flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 dark:hover:shadow-lg hover:shadow-lg relative overflow-hidden"
                 key={index}
               >
                 <div className="absolute flex items-center space-x-2 right-3 transition-transform duration-500 delay-200 -translate-y-20 group-hover:-translate-y-6">
@@ -95,7 +95,7 @@ const ProjectsPage = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14">
         {/*  Honorable Mentions */}
-        <div className="flex bg-white/40 dark:hover:bg-neutral-900 dark:bg-neutral-900/40 flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
+        <div className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
           <div className="flex items-center pb-1">
             {icons.badge}
             <h4 className="text-xl font-semibold tracking-wider">
@@ -121,7 +121,7 @@ const ProjectsPage = () => {
         </div>
 
         {/* Framwork Guides */}
-        <div className="flex bg-white/40 dark:hover:bg-neutral-900 dark:bg-neutral-900/40 flex-col hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
+        <div className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
           <div className="flex items-center pb-1 space-x-1">
             {icons.book}
             <h4 className="text-xl font-semibold tracking-wider">
