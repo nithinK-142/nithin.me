@@ -1,6 +1,6 @@
 import HappyPill from "./HappyPill";
 import Certifications from "./Certifications";
-import { AnimationProvider } from "@/providers/AnimationProvider";
+import { AnimationProvider } from "@/context/AnimationProvider";
 import { slideInFromBottom } from "@/utils/motion";
 
 const Extra = () => {

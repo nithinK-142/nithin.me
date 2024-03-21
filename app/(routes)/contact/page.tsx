@@ -1,7 +1,7 @@
 import { icons } from "@/app/assets/icons";
 import Socials from "@/components/Socials";
 import Form from "./Form";
-import { AnimationProvider } from "@/providers/AnimationProvider";
+import { AnimationProvider } from "@/context/AnimationProvider";
 import { slideInFromBottom, slideInFromTop } from "@/utils/motion";
 
 const ContactPage = () => {

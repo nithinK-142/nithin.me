@@ -1,4 +1,4 @@
-import { AnimationProvider } from "@/providers/AnimationProvider";
+import { AnimationProvider } from "@/context/AnimationProvider";
 import Extra from "./Extra";
 import Tooltip from "./Tooltip";
 import Header from "@/components/Header";

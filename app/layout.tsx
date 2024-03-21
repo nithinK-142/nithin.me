@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ThemeContextProvider } from "@/providers/ThemeContextProvider";
-import { FramerProvider } from "@/providers/FramerProvider";
+import { ThemeContextProvider } from "@/context/ThemeContextProvider";
+import { FramerProvider } from "@/context/FramerProvider";
 import { Analytics } from "@vercel/analytics/react";
 
 const quick = Quicksand({

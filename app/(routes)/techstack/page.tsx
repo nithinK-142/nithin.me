@@ -1,6 +1,6 @@
 import { backend, frontend, tools, hosting } from "@/app/assets/tech-stack";
 import Header from "@/components/Header";
-import { AnimationProvider } from "@/providers/AnimationProvider";
+import { AnimationProvider } from "@/context/AnimationProvider";
 import TechStackCard from "./TechStackCard";
 import { variantParent } from "@/utils/motion";
 

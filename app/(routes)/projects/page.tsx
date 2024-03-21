@@ -1,4 +1,4 @@
-import { AnimationProvider } from "@/providers/AnimationProvider";
+import { AnimationProvider } from "@/context/AnimationProvider";
 import { variantChild, variantParent } from "@/utils/motion";
 import "@/styles/scrollbar.css";
 import { projects } from "@/data/projects";
