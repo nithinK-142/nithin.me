@@ -4,7 +4,7 @@ export interface FramerProviderType {
   children?: React.ReactNode;
   variants?: Variants;
   initial?: string;
-  animate?: string | { [key: string]: number };
+  animate?: string;
   className?: string;
 }
 

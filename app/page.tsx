@@ -10,11 +10,12 @@ export default function Home() {
       variants={variantParent}
       initial="hidden"
       animate="show"
-      className="py-5 my-5 opacity-0"
+      className="py-5 my-5 opacity-100 md:opacity-0"
     >
       <AnimationProvider
         variants={variantChild}
-        animate={{ opacity: 1 }}
+        initial="hidden"
+        animate="show"
         className="flex-colm md:flex-row"
       >
         <div className="w-full pb-4 md:w-1/2 flex-justify">
