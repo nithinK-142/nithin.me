@@ -6,6 +6,7 @@ import Link from "next/link";
 import { icons } from "@/app/assets/icons";
 import { honorableMentions, frameworkGuides } from "@/data/projects";
 import { backend, frontend, others } from "@/app/assets/tech-stack";
+import Header from "@/components/Header";
 
 const ProjectsPage = () => {
   const getFrameworkLogo = (label: string) => {
@@ -27,6 +28,7 @@ const ProjectsPage = () => {
       animate="show"
       className="my-20"
     >
+      <Header heading="Projects" />
       {/* Project Cards */}
       <AnimationProvider
         variants={variantChild}
@@ -92,7 +94,6 @@ const ProjectsPage = () => {
           }
         )}
       </AnimationProvider>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14">
         {/*  Honorable Mentions */}
         <div className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
