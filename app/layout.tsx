@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import { ThemeContextProvider } from "@/context/ThemeContextProvider";
 import { FramerProvider } from "@/context/FramerProvider";
 import { Analytics } from "@vercel/analytics/react";
+import { AnimationToggleProvider } from "@/context/AnimationToggleProvider";
+import { AnimationSwitch } from "@/components/AnimationSwitch";
 
 const quick = Quicksand({
   weight: ["400", "500", "600", "700"],
@@ -35,11 +37,14 @@ export default function RootLayout({
         className={`${quick.className} bg-[#ba97a95e] dark:bg-[#1f1f1f] dark:text-white font-medium`}
       >
         <ThemeContextProvider>
-          <div className="flex justify-center w-full">
+          <div className="flex justify-center w-full relative">
             <div className="h-screen w-[90%] sm:w-[70%] flex flex-col justify-between py-1 sm:py-2 px-1 sm:px-2">
               <Navbar />
               <main className="sm:floating-scrollbar">
-                <FramerProvider>{children}</FramerProvider>
+                <AnimationToggleProvider>
+                  <AnimationSwitch />
+                  <FramerProvider>{children}</FramerProvider>
+                </AnimationToggleProvider>
               </main>
               <Footer />
             </div>

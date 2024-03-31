@@ -1,15 +1,21 @@
 "use client";
-import { FramerProviderType } from "@/utils/motion";
 import { motion } from "framer-motion";
+import { FramerProviderType } from "@/utils/motion";
+import { useAnimationToggle } from "./AnimationToggleProvider";
+import { usePathname } from "next/navigation";
 
 export const AnimationProvider: React.FC<FramerProviderType> = (props) => {
   const { variants, initial, animate, className, children } = props;
+
+  const { animationEnabled } = useAnimationToggle();
+  const isRoot = usePathname() === "/";
+
   let modifiedVariants;
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768;
     modifiedVariants = isMobile ? {} : variants;
   }
-  return (
+  return animationEnabled ? (
     <motion.div
       variants={modifiedVariants}
       initial={initial}
@@ -19,5 +25,7 @@ export const AnimationProvider: React.FC<FramerProviderType> = (props) => {
     >
       {children}
     </motion.div>
+  ) : (
+    <div className={className}>{children}</div>
   );
 };
