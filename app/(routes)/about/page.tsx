@@ -1,6 +1,6 @@
 import { AnimationProvider } from "@/context/AnimationProvider";
 import Extra from "./Extra";
-import Tooltip from "./Tooltip";
+import Tooltip from "@/components/Tooltip";
 import Header from "@/components/Header";
 import { variantChild, variantParent } from "@/utils/motion";
 
