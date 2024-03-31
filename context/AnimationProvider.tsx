@@ -38,8 +38,12 @@ export const AnimationProvider: React.FC<FramerProviderType> = (props) => {
       {children}
     </motion.div>
   ) : (
-    <div className={`${isHeroOuter ? heroOuter + " opacity-100" : className}`}>
+    <motion.div
+      initial={{ opacity: 1 }}
+      animate={{ x: 0, y: 0, transition: { duration: 0.5 } }}
+      className={`${isHeroOuter ? heroOuter + " opacity-100" : className}`}
+    >
       {children}
-    </div>
+    </motion.div>
   );
 };
