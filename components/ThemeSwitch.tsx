@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { icons } from "@/app/assets/icons";
-import Tooltip from "./Tooltip";
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
@@ -28,29 +27,25 @@ const ThemeSwitch = () => {
 
   if (resolvedTheme === "dark") {
     return (
-      <Tooltip content="DarkMode is enabled" tooltip="reverse">
-        <button
-          onClick={() => setTheme("light")}
-          className="themeswitch-btn md:hover:bg-black/70"
-        >
-          <span className="sr-only">Toggle theme</span>
-          {icons.sun}
-        </button>
-      </Tooltip>
+      <button
+        onClick={() => setTheme("light")}
+        className="themeswitch-btn md:hover:bg-black/70"
+      >
+        <span className="sr-only">Toggle theme</span>
+        {icons.sun}
+      </button>
     );
   }
 
   if (resolvedTheme === "light") {
     return (
-      <Tooltip content="LightMode is enabled" tooltip="reverse">
-        <button
-          onClick={() => setTheme("dark")}
-          className="themeswitch-btn md:hover:bg-black/10"
-        >
-          <span className="sr-only">Toggle theme</span>
-          {icons.moon}
-        </button>
-      </Tooltip>
+      <button
+        onClick={() => setTheme("dark")}
+        className="themeswitch-btn md:hover:bg-black/10"
+      >
+        <span className="sr-only">Toggle theme</span>
+        {icons.moon}
+      </button>
     );
   }
 };
