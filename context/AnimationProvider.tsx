@@ -3,21 +3,33 @@ import { motion } from "framer-motion";
 import { FramerProviderType } from "@/utils/motion";
 import { useAnimationToggle } from "./AnimationToggleProvider";
 import { usePathname } from "next/navigation";
+import { heroOuter } from "@/utils/constants";
+import { useEffect } from "react";
 
 export const AnimationProvider: React.FC<FramerProviderType> = (props) => {
   const { variants, initial, animate, className, children } = props;
 
-  const { animationEnabled } = useAnimationToggle();
-  const isRoot = usePathname() === "/";
+  const { animationEnabled, setAnimationEnabled } = useAnimationToggle();
 
-  let modifiedVariants;
-  if (typeof window !== "undefined") {
-    const isMobile = window.innerWidth < 768;
-    modifiedVariants = isMobile ? {} : variants;
-  }
+  // styles for root page when animation is disabled
+  const isRoot = usePathname() === "/";
+  const isHeroOuter = isRoot && className === heroOuter;
+
+  // disable animations for smaller screens
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) setAnimationEnabled(false);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [setAnimationEnabled]);
+
   return animationEnabled ? (
     <motion.div
-      variants={modifiedVariants}
+      variants={variants}
       initial={initial}
       animate={animate}
       className={className}
@@ -26,6 +38,8 @@ export const AnimationProvider: React.FC<FramerProviderType> = (props) => {
       {children}
     </motion.div>
   ) : (
-    <div className={className}>{children}</div>
+    <div className={`${isHeroOuter ? heroOuter + "opacity-100" : className}`}>
+      {children}
+    </div>
   );
 };

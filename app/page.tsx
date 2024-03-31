@@ -3,14 +3,14 @@ import { icons } from "./assets/icons";
 import Button from "@/components/Button";
 import { AnimationProvider } from "@/context/AnimationProvider";
 import { variantChild, variantParent } from "@/utils/motion";
+import { heroOuter } from "@/utils/constants";
 
 export default function Home() {
   return (
     <AnimationProvider
       variants={variantParent}
-      initial="hidden"
       animate="show"
-      className="py-5 my-5 opacity-100 md:opacity-0"
+      className={heroOuter}
     >
       <AnimationProvider
         variants={variantChild}
