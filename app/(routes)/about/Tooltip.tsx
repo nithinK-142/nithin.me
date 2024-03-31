@@ -1,17 +1,22 @@
 type TooltipProps = {
-  text: string;
-  content: string;
-  tooltip?: "normal" | "reverse";
+  text?: string;
+  content?: string;
+  tooltip?: "normal" | "reverse" | "animationSwitch";
+  children: React.ReactNode;
 };
 
 const tooltipStyles = {
   normal: {
-    body: "-translate-y-full bottom-0",
-    tip: "arrow-head bottom-[-10px]",
+    body: "-translate-y-full bottom-0 transform-center",
+    tip: "arrow-head bottom-[-10px]  transform-center",
   },
   reverse: {
-    body: "top-full mt-2",
-    tip: "arrow-head-reverse top-[-10px]",
+    body: "top-full mt-2 transform-center",
+    tip: "arrow-head-reverse top-[-10px] transform-center",
+  },
+  animationSwitch: {
+    body: "-right-32 top-10",
+    tip: "arrow-head-reverse top-[-10px] left-2.5",
   },
 };
 
@@ -19,18 +24,17 @@ const Tooltip: React.FC<TooltipProps> = ({
   text,
   content,
   tooltip = "normal",
+  children,
 }) => {
   return (
     <span className="dark:text-white group relative hover:opacity-90 font-semibold inline-block">
-      {text}
+      {children ? children : text}
       <span
-        className={`absolute bg-black/80 dark:bg-white whitespace-nowrap text-white dark:text-black font-semibold text-sm rounded-lg p-2 group-hover:inline-block hidden transform-center origin-top ${tooltipStyles[tooltip].body}`}
+        className={`absolute bg-black/80 dark:bg-white whitespace-nowrap text-white dark:text-black font-semibold text-sm rounded-lg p-2 group-hover:inline-block hidden origin-top ${tooltipStyles[tooltip].body}`}
         aria-label="tooltip"
         role="tooltip"
       >
-        <span
-          className={`${tooltipStyles[tooltip].tip} transform-center`}
-        ></span>
+        <span className={`${tooltipStyles[tooltip].tip}`}></span>
         {content}
       </span>
     </span>
