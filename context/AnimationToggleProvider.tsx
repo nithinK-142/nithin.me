@@ -1,6 +1,6 @@
 "use client";
 import { FramerProviderType } from "@/utils/motion";
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 interface IAnimationContext {
   animationEnabled: boolean;
@@ -19,9 +19,29 @@ const AnimationContext = createContext<IAnimationContext>(defaultValues);
 export const AnimationToggleProvider: React.FC<FramerProviderType> = ({
   children,
 }) => {
-  const [animationEnabled, setAnimationEnabled] = useState(true);
+  const [animationEnabled, setAnimationEnabled] = useState(
+    typeof window !== "undefined"
+      ? JSON.parse(window.localStorage.getItem("animationEnabled") || "true")
+      : true
+  );
 
-  const toggleAnimation = () => setAnimationEnabled((prev) => !prev);
+  const toggleAnimation = () => {
+    const newValue = !animationEnabled;
+    setAnimationEnabled(newValue);
+
+    if (typeof window !== "undefined") {
+      localStorage.setItem("animationEnabled", JSON.stringify(newValue));
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem(
+        "animationEnabled",
+        JSON.stringify(animationEnabled)
+      );
+    }
+  }, [animationEnabled]);
 
   return (
     <AnimationContext.Provider

@@ -38,7 +38,7 @@ export const AnimationProvider: React.FC<FramerProviderType> = (props) => {
       {children}
     </motion.div>
   ) : (
-    <div className={`${isHeroOuter ? heroOuter + "opacity-100" : className}`}>
+    <div className={`${isHeroOuter ? heroOuter + " opacity-100" : className}`}>
       {children}
     </div>
   );
