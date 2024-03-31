@@ -15,7 +15,7 @@ const tooltipStyles = {
     tip: "arrow-head-reverse top-[-10px] transform-center",
   },
   animationSwitch: {
-    body: "-right-[146px] top-10",
+    body: "-left-[8px] top-10",
     tip: "arrow-head-reverse top-[-10px] left-2.5",
   },
 };
