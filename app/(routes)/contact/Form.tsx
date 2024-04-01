@@ -1,15 +1,10 @@
 "use client";
-import { FormEvent, useState } from "react";
-import axios from "axios";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import Button from "@/components/Button";
+import axios from "axios";
 import toast from "react-hot-toast";
-
-export interface FormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
 
 const defaultValues = {
   name: "",
@@ -18,27 +13,40 @@ const defaultValues = {
   message: "",
 };
 
+const formSchema = z.object({
+  name: z
+    .string()
+    .trim()
+    .min(4, "Name is required")
+    .max(20, "Name is too long!"),
+  email: z.string().trim().email("Invalid email"),
+  subject: z.string().max(20, "Subject is too long!").optional(),
+  message: z.string().min(6, "Message is required"),
+});
+
+export type FormSchemaType = z.infer<typeof formSchema>;
+
 const Form = () => {
-  const [formData, setFormData] = useState<FormData>(defaultValues);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<FormSchemaType>({
+    resolver: zodResolver(formSchema),
+    defaultValues,
+  });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const onSubmit: SubmitHandler<FormSchemaType> = async (data) => {
     try {
-      const responsePromise = axios.post("/api/send-mail", { data: formData });
-
+      const responsePromise = axios.post("/api/send-mail", { data });
       toast.promise(responsePromise, {
         loading: "processing...",
         success: (response) => {
+          reset(defaultValues);
           return response.data.message;
         },
-        error: (error) =>
-          `User verification failed: ${error.response.data.error}`,
+        error: (error) => error.response.data.error,
       });
     } catch (error: any) {
       console.log(error.response);
@@ -46,64 +54,78 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-full md:max-w-md">
-      <div className="mb-4">
+    <form onSubmit={handleSubmit(onSubmit)} className="max-w-full md:max-w-md">
+      <div className="mb-4 relative">
         <label htmlFor="name" className="block mb-2 text-sm">
           Name
         </label>
+        <span className="absolute right-0 -bottom-5 text-xs font-medium text-red-500">
+          {errors.name?.message}
+        </span>
         <input
           type="text"
           id="name"
-          name="name"
+          {...register("name")}
           placeholder="Homelander"
-          required
-          value={formData.name}
-          onChange={handleChange}
-          className="w-full px-2 py-1 rounded-sm outline-none bg-white/70 dark:bg-neutral-700"
+          className={`w-full px-2 py-1 rounded-sm outline-none bg-white/70 dark:bg-neutral-700 ${
+            errors.name && "outline outline-red-500/30"
+          }`}
         />
       </div>
-      <div className="mb-4">
+
+      <div className="mb-4 relative">
         <label htmlFor="email" className="block mb-2 text-sm">
           Email
         </label>
+        <span className="absolute right-0 -bottom-5 text-xs font-medium text-red-500">
+          {errors.email?.message}
+        </span>
         <input
-          type="email"
+          type="text"
           id="email"
-          name="email"
+          {...register("email")}
           placeholder="leaderof7@vought.corp"
-          required
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full px-2 py-1 rounded-sm outline-none bg-white/70 dark:bg-neutral-700"
+          className={`w-full px-2 py-1 rounded-sm outline-none bg-white/70 dark:bg-neutral-700 ${
+            errors.email && "outline outline-red-500/30"
+          }`}
         />
       </div>
-      <div className="mb-4">
+
+      <div className="mb-4 relative">
         <label htmlFor="subject" className="block mb-2 text-sm">
           Subject
         </label>
+        <span className="absolute right-0 -bottom-5 text-xs font-medium text-red-500">
+          {errors.subject?.message}
+        </span>
         <input
           type="text"
           id="subject"
-          name="subject"
-          placeholder="To conquer earth!"
-          value={formData.subject}
-          onChange={handleChange}
-          className="w-full px-2 py-1 rounded-sm outline-none bg-white/70 dark:bg-neutral-700"
+          {...register("subject")}
+          placeholder="To conquer earth! (optional)"
+          className={`w-full px-2 py-1 rounded-sm outline-none bg-white/70 dark:bg-neutral-700 ${
+            errors.subject && "outline outline-red-500/30"
+          }`}
         />
       </div>
-      <label className="block mb-2 text-sm" htmlFor="message">
-        Message
-      </label>
-      <textarea
-        className="w-full min-h-full px-2 py-1 rounded-sm outline-none bg-white/70 dark:bg-neutral-700"
-        rows={4}
-        name="message"
-        id="message"
-        placeholder="I would like to ask you..."
-        required
-        value={formData.message}
-        onChange={handleChange}
-      ></textarea>
+
+      <div className="mb-4 relative">
+        <label className="block mb-2 text-sm" htmlFor="message">
+          Message
+        </label>
+        <span className="absolute right-0 -bottom-5 text-xs font-medium text-red-500">
+          {errors.message?.message}
+        </span>
+        <textarea
+          className={`w-full min-h-full px-2 py-1 rounded-sm outline-none bg-white/70 dark:bg-neutral-700 ${
+            errors.message && "outline outline-red-500/30"
+          }`}
+          rows={4}
+          {...register("message")}
+          placeholder="I would like to ask you..."
+        ></textarea>
+      </div>
+
       <Button buttonText="Send Message" fontWeight="medium" type="submit" />
     </form>
   );

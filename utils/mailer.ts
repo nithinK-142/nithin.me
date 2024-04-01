@@ -1,9 +1,9 @@
+import { FormSchemaType } from "@/app/(routes)/contact/Form";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-import { FormData } from "@/app/(routes)/contact/Form";
 
-export const sendMail = async (data: FormData) => {
-  const { name, email, subject, message } = data;
+export const sendMail = async (data: FormSchemaType) => {
+  const { name, email, subject = "no subject", message } = data;
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
@@ -20,9 +20,9 @@ export const sendMail = async (data: FormData) => {
       to: process.env.USER,
       subject: subject,
       html: `<div style="border: 1px solid #ccc; padding: 20px; border-radius: 5px; background-color: #f9f9f9; font-family: Arial, sans-serif; max-width: 500px;">
-      <h1 style="font-size: 1.4em; margin: 0 0 10px 0; color: #333;">${name}</h1>
+      <h1 style="font-size: 1.4em; margin: 0 0 5px 0; color: #333;font-weight: 400;">${name}</h1>
       <h4 style="font-size: 1.1em; margin: 0 0 5px 0; color: #666;">${email}</h4>
-      <h4 style="font-size: 1.2em; margin: 0;margin-block: 1rem color: #555;">${message}</h4>
+      <p style="font-size: 1.5em; margin: 0;margin-block: 1rem color: #555;">${message}</p>
     </div>`,
     };
 
