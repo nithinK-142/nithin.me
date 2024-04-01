@@ -8,6 +8,7 @@ import { FramerProvider } from "@/context/FramerProvider";
 import { Analytics } from "@vercel/analytics/react";
 import { AnimationToggleProvider } from "@/context/AnimationToggleProvider";
 import { AnimationSwitch } from "@/components/AnimationSwitch";
+import { Toaster } from "react-hot-toast";
 
 const quick = Quicksand({
   weight: ["400", "500", "600", "700"],
@@ -50,6 +51,7 @@ export default function RootLayout({
             </div>
           </div>
         </ThemeContextProvider>
+        <Toaster />
         <Analytics />
       </body>
     </html>
