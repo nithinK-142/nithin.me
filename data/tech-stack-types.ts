@@ -1,5 +1,5 @@
 export interface TechStackItem {
-  logo: JSX.Element;
+  logo: JSX.Element | string;
   label: string;
 }
 
