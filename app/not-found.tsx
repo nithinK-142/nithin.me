@@ -9,7 +9,7 @@ const arvo = Arvo({
 const NotFound = () => {
   return (
     <div
-      className={`${arvo.className} text-center flex flex-col items-center font-arvo p-6 md:mb-14 space-y-8`}
+      className={`${arvo.className} text-center flex flex-col items-center p-6 md:mb-14 space-y-8`}
     >
       <h1 className="text-6xl sm:text-8xl p-6">404</h1>
       <div>
