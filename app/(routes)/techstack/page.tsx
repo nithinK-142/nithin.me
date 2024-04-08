@@ -15,8 +15,10 @@ const TechStackPage = () => {
   return (
     // <section className="mt-8">
     // <h3 className="mb-2 text-2xl font-semibold uppercase">Tech Stack</h3>
-    <section className="my-16 md:my-0">
-      <Header heading="Tech Stack" />
+    <section className="mt-10 mb-16">
+      <div className="pb-4 md:pb-0">
+        <Header heading="Tech Stack" />
+      </div>
       <AnimationProvider
         variants={variantParent}
         initial="hidden"

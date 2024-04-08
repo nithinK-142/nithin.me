@@ -6,7 +6,7 @@ import { variantChild, variantParent } from "@/utils/motion";
 
 const AboutPage = () => {
   return (
-    <section className="md:mb-6">
+    <section className="my-10 md:-mt-6 lg:-mt-8 md:mb-6">
       <AnimationProvider
         variants={variantParent}
         initial="hidden"

@@ -3,19 +3,24 @@ import Socials from "@/components/Socials";
 import Form from "./Form";
 import { AnimationProvider } from "@/context/AnimationProvider";
 import { slideInFromBottom, slideInFromTop } from "@/utils/motion";
+import Header from "@/components/Header";
 
 const ContactPage = () => {
   return (
     <AnimationProvider
       initial="hidden"
       animate="visible"
-      className="flex flex-col justify-between px-3 mt-8 md:flex-row md:px-0"
+      className="flex flex-col justify-between px-3 mt-4 md:flex-row md:px-0"
     >
+      <div className="pt-4 md:pt-0">
+        <Header heading="Contact" />
+      </div>
+
       <AnimationProvider
         variants={slideInFromTop()}
         className="w-full p-4 md:w-1/2"
       >
-        <h2 className="text-2xl font-bold opacity-90 mb-4">
+        <h2 className="text-2xl font-bold opacity-90 mb-4 hidden md:block">
           Just Say Hi <span>👋</span>
         </h2>
         <h3 className="text-lg">

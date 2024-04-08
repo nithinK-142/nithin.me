@@ -26,13 +26,13 @@ const ProjectsPage = () => {
       variants={variantParent}
       initial="hidden"
       animate="show"
-      className="my-20"
+      className="mt-10 mb-16"
     >
       <Header heading="Projects" />
       {/* Project Cards */}
       <AnimationProvider
         variants={variantChild}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 "
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"
       >
         {projects.map(
           ({ name, description, techStack, logo, url, gitUrl }, index) => {
