@@ -73,18 +73,28 @@ const Navbar = () => {
       </div>
 
       {/* Small Screen Nav */}
-      <ul className="md:hidden pt-2 flex flex-justify items-center flex-wrap max-xs:space-x-4 space-x-8">
-        {navsmall.map((nav, index) => (
-          <li key={index}>
-            <Link
-              href={nav.path}
-              className="fill-black dark:fill-white opacity-80 dark:opacity-90"
-            >
-              {nav.logo}
-            </Link>
-          </li>
-        ))}
+      <ul className="md:hidden pt-0.5 flex flex-justify items-center flex-wrap max-xs:space-x-4 space-x-8">
+        {navsmall.map((nav, index) => {
+          const isActive = pathname === nav.path;
+          return (
+            <li key={index}>
+              {isActive && (
+                <div className="flex-justify items-center">
+                  <span className="opacity-100 md:opacity-0 arrow-head"></span>
+                </div>
+              )}
+              <div className="py-1"></div>
+              <Link
+                href={nav.path}
+                className="fill-black dark:fill-white opacity-80 dark:opacity-90"
+              >
+                {nav.logo}
+              </Link>
+            </li>
+          );
+        })}
         <li className="cursor-pointer">
+          <div className="py-1"></div>
           <ThemeSwitch />
         </li>
       </ul>
