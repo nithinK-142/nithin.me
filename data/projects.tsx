@@ -355,7 +355,7 @@ export const frameworkGuides = [
     href: "https://vue-guide.vercel.app/",
   },
   {
-    framework: "SvelteKit",
+    framework: "Svelte",
     href: "https://svelte-guide.vercel.app/",
   },
   {
