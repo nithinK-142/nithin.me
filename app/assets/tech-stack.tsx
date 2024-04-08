@@ -393,6 +393,10 @@ export const frontend = [
     ),
     label: "Redux",
   },
+  {
+    logo:("🐻"),
+    label: "Zustand"
+  },
 ];
 
 export const backend = [
