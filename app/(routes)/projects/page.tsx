@@ -94,9 +94,16 @@ const ProjectsPage = () => {
           }
         )}
       </AnimationProvider>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14">
+
+      <AnimationProvider
+        variants={variantChild}
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14"
+      >
         {/*  Honorable Mentions */}
-        <div className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
+        <AnimationProvider
+          variants={variantChild}
+          className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4"
+        >
           <div className="flex items-center pb-1">
             {icons.badge}
             <h4 className="text-xl font-semibold tracking-wider">
@@ -119,10 +126,13 @@ const ProjectsPage = () => {
               </a>
             </div>
           ))}
-        </div>
+        </AnimationProvider>
 
         {/* Framwork Guides */}
-        <div className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
+        <AnimationProvider
+          variants={variantChild}
+          className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4"
+        >
           <div className="flex items-center pb-1 space-x-1">
             {icons.book}
             <h4 className="text-xl font-semibold tracking-wider">
@@ -146,8 +156,8 @@ const ProjectsPage = () => {
               );
             })}
           </div>
-        </div>
-      </div>
+        </AnimationProvider>
+      </AnimationProvider>
     </AnimationProvider>
   );
 };
