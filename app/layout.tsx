@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ThemeContextProvider } from "@/context/ThemeContextProvider";
 import { FramerProvider } from "@/context/FramerProvider";
-import { Analytics } from "@vercel/analytics/react";
 import { AnimationToggleProvider } from "@/context/AnimationToggleProvider";
 import { AnimationSwitch } from "@/components/AnimationSwitch";
 
@@ -50,7 +49,6 @@ export default function RootLayout({
             </div>
           </div>
         </ThemeContextProvider>
-        <Analytics />
       </body>
     </html>
   );
