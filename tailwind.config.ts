@@ -14,6 +14,8 @@ const config: Config = {
       },
       screens: {
         xs: "340px",
+        lmd: "892px",
+        xlg: "1356px",
       },
       keyframes: {
         rotate3d: {

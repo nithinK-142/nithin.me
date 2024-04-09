@@ -32,7 +32,7 @@ const ProjectsPage = () => {
       {/* Project Cards */}
       <AnimationProvider
         variants={variantChild}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"
+        className="grid grid-cols-1 lmd:grid-cols-2 xlg:grid-cols-3 gap-4 mt-6"
       >
         {projects.map(
           ({ name, description, techStack, logo, url, gitUrl }, index) => {
