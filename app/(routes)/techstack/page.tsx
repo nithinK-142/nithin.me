@@ -2,7 +2,7 @@ import { backend, frontend, tools, hosting } from "@/app/assets/tech-stack";
 import Header from "@/components/Header";
 import { AnimationProvider } from "@/context/AnimationProvider";
 import TechStackCard from "./TechStackCard";
-import { variantParent } from "@/utils/motion";
+import { fadeInOut } from "@/utils/motion";
 
 const techStackItems = [
   { techArray: frontend, title: "Frontend" },
@@ -20,7 +20,7 @@ const TechStackPage = () => {
         <Header heading="Tech Stack" />
       </div>
       <AnimationProvider
-        variants={variantParent()}
+        variants={fadeInOut()}
         initial="hidden"
         animate="show"
         className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4"

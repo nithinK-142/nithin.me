@@ -2,18 +2,18 @@ import Link from "next/link";
 import { icons } from "./assets/icons";
 import Button from "@/components/Button";
 import { AnimationProvider } from "@/context/AnimationProvider";
-import { variantChild, variantParent } from "@/utils/motion";
+import { fadeInUp, fadeInOut } from "@/utils/motion";
 import { heroOuter } from "@/utils/constants";
 
 export default function Home() {
   return (
     <AnimationProvider
-      variants={variantParent()}
+      variants={fadeInOut()}
       animate="show"
       className={heroOuter}
     >
       <AnimationProvider
-        variants={variantChild}
+        variants={fadeInUp}
         initial="hidden"
         animate="show"
         className="flex-colm md:flex-row"

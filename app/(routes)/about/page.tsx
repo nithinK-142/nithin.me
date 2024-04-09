@@ -2,13 +2,13 @@ import { AnimationProvider } from "@/context/AnimationProvider";
 import Extra from "./Extra";
 import Tooltip from "@/components/Tooltip";
 import Header from "@/components/Header";
-import { variantParent } from "@/utils/motion";
+import { fadeInOut } from "@/utils/motion";
 
 const AboutPage = () => {
   return (
     <section className="my-10 md:-mt-6 lg:-mt-8 md:mb-6">
       <AnimationProvider
-        variants={variantParent(1)}
+        variants={fadeInOut(1)}
         initial="hidden"
         animate="show"
         className="space-y-4"

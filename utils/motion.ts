@@ -8,7 +8,7 @@ export interface FramerProviderType {
   className?: string;
 }
 
-export const variantParent = (duration: number = 0) => {
+export const fadeInOut = (duration: number = 0) => {
   return {
     hidden: { opacity: 0 },
     show: {
@@ -21,7 +21,7 @@ export const variantParent = (duration: number = 0) => {
   };
 };
 
-export const variantChild = {
+export const fadeInUp = {
   hidden: {
     opacity: 0,
   },

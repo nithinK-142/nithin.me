@@ -1,5 +1,5 @@
 import { AnimationProvider } from "@/context/AnimationProvider";
-import { variantParent } from "@/utils/motion";
+import { fadeInOut } from "@/utils/motion";
 import "@/styles/scrollbar.css";
 import { projects } from "@/data/projects";
 import Link from "next/link";
@@ -23,7 +23,7 @@ const ProjectsPage = () => {
   };
   return (
     <AnimationProvider
-      variants={variantParent(1)}
+      variants={fadeInOut(1)}
       initial="hidden"
       animate="show"
       className="mt-10 mb-16"
