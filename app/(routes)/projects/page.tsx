@@ -1,5 +1,5 @@
 import { AnimationProvider } from "@/context/AnimationProvider";
-import { variantChild, variantParent } from "@/utils/motion";
+import { variantParent } from "@/utils/motion";
 import "@/styles/scrollbar.css";
 import { projects } from "@/data/projects";
 import Link from "next/link";
@@ -23,17 +23,14 @@ const ProjectsPage = () => {
   };
   return (
     <AnimationProvider
-      variants={variantParent}
+      variants={variantParent(1)}
       initial="hidden"
       animate="show"
       className="mt-10 mb-16"
     >
       <Header heading="Projects" />
       {/* Project Cards */}
-      <AnimationProvider
-        variants={variantChild}
-        className="grid grid-cols-1 lmd:grid-cols-2 xlg:grid-cols-3 gap-4 mt-6"
-      >
+      <div className="grid grid-cols-1 lmd:grid-cols-2 xlg:grid-cols-3 gap-4 mt-6">
         {projects.map(
           ({ name, description, techStack, logo, url, gitUrl }, index) => {
             return (
@@ -93,17 +90,11 @@ const ProjectsPage = () => {
             );
           }
         )}
-      </AnimationProvider>
+      </div>
 
-      <AnimationProvider
-        variants={variantChild}
-        className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14"
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-14">
         {/*  Honorable Mentions */}
-        <AnimationProvider
-          variants={variantChild}
-          className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4"
-        >
+        <div className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
           <div className="flex items-center pb-1">
             {icons.badge}
             <h4 className="text-xl font-semibold tracking-wider">
@@ -126,13 +117,10 @@ const ProjectsPage = () => {
               </a>
             </div>
           ))}
-        </AnimationProvider>
+        </div>
 
         {/* Framwork Guides */}
-        <AnimationProvider
-          variants={variantChild}
-          className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4"
-        >
+        <div className="flex bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 flex-col hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 dark:hover:shadow-lg hover:shadow-lg lg:pl-4">
           <div className="flex items-center pb-1 space-x-1">
             {icons.book}
             <h4 className="text-xl font-semibold tracking-wider">
@@ -156,8 +144,8 @@ const ProjectsPage = () => {
               );
             })}
           </div>
-        </AnimationProvider>
-      </AnimationProvider>
+        </div>
+      </div>
     </AnimationProvider>
   );
 };

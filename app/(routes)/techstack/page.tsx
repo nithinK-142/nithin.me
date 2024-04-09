@@ -20,7 +20,7 @@ const TechStackPage = () => {
         <Header heading="Tech Stack" />
       </div>
       <AnimationProvider
-        variants={variantParent}
+        variants={variantParent()}
         initial="hidden"
         animate="show"
         className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4"

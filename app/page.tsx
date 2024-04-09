@@ -8,7 +8,7 @@ import { heroOuter } from "@/utils/constants";
 export default function Home() {
   return (
     <AnimationProvider
-      variants={variantParent}
+      variants={variantParent()}
       animate="show"
       className={heroOuter}
     >

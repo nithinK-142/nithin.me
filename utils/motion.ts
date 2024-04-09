@@ -8,14 +8,17 @@ export interface FramerProviderType {
   className?: string;
 }
 
-export const variantParent = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
+export const variantParent = (duration: number = 0) => {
+  return {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+        duration: duration,
+      },
     },
-  },
+  };
 };
 
 export const variantChild = {

@@ -2,22 +2,19 @@ import { AnimationProvider } from "@/context/AnimationProvider";
 import Extra from "./Extra";
 import Tooltip from "@/components/Tooltip";
 import Header from "@/components/Header";
-import { variantChild, variantParent } from "@/utils/motion";
+import { variantParent } from "@/utils/motion";
 
 const AboutPage = () => {
   return (
     <section className="my-10 md:-mt-6 lg:-mt-8 md:mb-6">
       <AnimationProvider
-        variants={variantParent}
+        variants={variantParent(1)}
         initial="hidden"
         animate="show"
         className="space-y-4"
       >
         <Header heading="About" />
-        <AnimationProvider
-          variants={variantChild}
-          className="text-lg font-normal leading-relaxed"
-        >
+        <div className="text-lg font-normal leading-relaxed">
           <p className="block mt-4 lg:hidden">
             Proficient in HTML, CSS & JavaScript and passionate about building
             blazing fast, user-friendly, responsive and visually stunning web
@@ -102,7 +99,7 @@ const AboutPage = () => {
               Hire me!
             </a>
           </p>
-        </AnimationProvider>
+        </div>
 
         <Extra />
       </AnimationProvider>
