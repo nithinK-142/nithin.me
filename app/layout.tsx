@@ -32,12 +32,14 @@ export default function RootLayout({
       <head>
         <meta name="darkreader-lock"></meta>
         <link rel="icon" type="image/x-icon" href="favicon.svg" />
-        <Script
-          src="https://umami-analytics-main.vercel.app/script.js"
-          data-website-id="5b7b0aed-1b04-4ff4-957c-9b11ac15189a"
-          async
-          defer
-        />
+        {process.env.NODE_ENV === "production" && (
+          <Script
+            src="https://umami-analytics-main.vercel.app/script.js"
+            data-website-id="5b7b0aed-1b04-4ff4-957c-9b11ac15189a"
+            async
+            defer
+          />
+        )}
       </head>
       <body
         className={`${quick.className} bg-[#ba97a95e] dark:bg-[#1f1f1f] dark:text-white font-medium`}
