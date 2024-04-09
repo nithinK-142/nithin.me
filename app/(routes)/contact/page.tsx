@@ -17,7 +17,7 @@ const ContactPage = () => {
       </div>
 
       <AnimationProvider
-        variants={slideInFromTop()}
+        variants={slideInFromTop(0.2)}
         className="w-full p-4 md:w-1/2"
       >
         <h2 className="text-2xl font-bold opacity-90 mb-4 hidden md:block">
@@ -48,7 +48,7 @@ const ContactPage = () => {
       </AnimationProvider>
 
       <AnimationProvider
-        variants={slideInFromBottom}
+        variants={slideInFromBottom(0.2)}
         className="w-full p-4 md:w-1/2"
       >
         <Form />
