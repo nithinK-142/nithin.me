@@ -7,6 +7,7 @@ import { ThemeContextProvider } from "@/context/ThemeContextProvider";
 import { FramerProvider } from "@/context/FramerProvider";
 import { AnimationToggleProvider } from "@/context/AnimationToggleProvider";
 import { AnimationSwitch } from "@/components/AnimationSwitch";
+import Script from "next/script";
 
 const quick = Quicksand({
   weight: ["400", "500", "600", "700"],
@@ -31,6 +32,12 @@ export default function RootLayout({
       <head>
         <meta name="darkreader-lock"></meta>
         <link rel="icon" type="image/x-icon" href="favicon.svg" />
+        <Script
+          src="https://umami-analytics-main.vercel.app/script.js"
+          data-website-id="5b7b0aed-1b04-4ff4-957c-9b11ac15189a"
+          async
+          defer
+        />
       </head>
       <body
         className={`${quick.className} bg-[#ba97a95e] dark:bg-[#1f1f1f] dark:text-white font-medium`}
