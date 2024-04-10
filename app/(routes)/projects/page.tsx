@@ -74,7 +74,7 @@ const ProjectsPage = () => {
                     </Link>
                   </div>
 
-                  <div className="absolute hidden sm:block right-0 transition-transform duration-500 delay-200 translate-x-7 group-hover:-translate-x-6">
+                  <div className="absolute hidden xs:block right-0 transition-transform duration-500 delay-200 translate-x-7 group-hover:-translate-x-6">
                     <div className="h-5 fill-blue-600 dark:fill-yellow-400">
                       <a
                         href={"https://github.com/nithinK-142/" + `${gitUrl}`}
