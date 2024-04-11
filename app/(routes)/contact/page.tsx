@@ -7,17 +7,15 @@ import Header from "@/components/Header";
 
 const ContactPage = () => {
   return (
-    <AnimationProvider
-      initial="hidden"
-      animate="visible"
-      className="flex flex-col justify-between px-3 mt-4 md:flex-row md:px-0"
-    >
+    <div className="flex flex-col justify-between px-3 mt-4 md:flex-row md:px-0">
       <div className="pt-4 md:pt-0">
         <Header heading="Contact" />
       </div>
 
       <AnimationProvider
         variants={slideInFromTop(0.2)}
+        initial="hidden"
+        animate="visible"
         className="w-full p-4 md:w-1/2"
       >
         <h2 className="text-2xl font-bold opacity-90 mb-4 hidden md:block">
@@ -49,11 +47,13 @@ const ContactPage = () => {
 
       <AnimationProvider
         variants={slideInFromBottom(0.2)}
+        initial="hidden"
+        animate="visible"
         className="w-full p-4 md:w-1/2"
       >
         <Form />
       </AnimationProvider>
-    </AnimationProvider>
+    </div>
   );
 };
 
