@@ -10,7 +10,7 @@ const AboutPage = () => {
       <AnimationProvider
         variants={fadeInOut(1)}
         initial="hidden"
-        animate="show"
+        animate="visible"
         className="space-y-4"
       >
         <Header heading="About" />

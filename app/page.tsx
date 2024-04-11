@@ -9,13 +9,13 @@ export default function Home() {
   return (
     <AnimationProvider
       variants={fadeInOut()}
-      animate="show"
+      animate="visible"
       className={heroOuter}
     >
       <AnimationProvider
         variants={fadeInUp}
         initial="hidden"
-        animate="show"
+        animate="visible"
         className="flex-colm md:flex-row"
       >
         <div className="w-full pb-4 md:w-1/2 flex-justify">

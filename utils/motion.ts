@@ -8,10 +8,10 @@ export interface FramerProviderType {
   className?: string;
 }
 
-export const fadeInOut = (duration: number = 0) => {
+export function fadeInOut(duration: number = 0) {
   return {
     hidden: { opacity: 0 },
-    show: {
+    visible: {
       opacity: 1,
       transition: {
         staggerChildren: 0.3,
@@ -19,13 +19,13 @@ export const fadeInOut = (duration: number = 0) => {
       },
     },
   };
-};
+}
 
 export const fadeInUp = {
   hidden: {
     opacity: 0,
   },
-  show: {
+  visible: {
     opacity: 1,
     y: 0,
     transition: {

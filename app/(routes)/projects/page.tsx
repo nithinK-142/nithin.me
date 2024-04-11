@@ -25,7 +25,7 @@ const ProjectsPage = () => {
     <AnimationProvider
       variants={fadeInOut(1)}
       initial="hidden"
-      animate="show"
+      animate="visible"
       className="mt-10 mb-16"
     >
       <Header heading="Projects" />
