@@ -104,11 +104,11 @@ const ProjectsPage = () => {
           <p className="text-sm font-medium mb-1.5 pl-1 opacity-95">
             Projects that couldn&apos;t make it to the top.
           </p>
-          {honorableMentions.map(({ title, href }, index) => (
+          {honorableMentions.map((title, index) => (
             <div key={index} className="flex items-center gap-2 pt-1 pl-1">
               <span className="h-4 dark:fill-white">{icons.git}</span>
               <a
-                href={href}
+                href={`https://github.com/${title}`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-yellow-500 hover:transition-colors tracking-wide hover:ease-in-out hover:duration-300"
