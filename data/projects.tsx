@@ -327,18 +327,9 @@ export const projects = [
 ];
 
 export const honorableMentions = [
-  {
-    title: "nithinK-142/would-you-like-a-meme",
-    href: "would-you-like-a-meme",
-  },
-  {
-    title: "nithinK-142/react-flicks",
-    href: "react-flicks",
-  },
-  {
-    title: "nithinK-142/sveltekit-todos",
-    href: "sveltekit-todos",
-  },
+  "nithinK-142/would-you-like-a-meme",
+  "nithinK-142/react-flicks",
+  "nithinK-142/sveltekit-todos",
 ];
 
 export const frameworkGuides = [
