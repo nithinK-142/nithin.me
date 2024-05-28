@@ -328,16 +328,16 @@ export const projects = [
 
 export const honorableMentions = [
   {
+    title: "nithinK-142/would-you-like-a-meme",
+    href: "would-you-like-a-meme",
+  },
+  {
     title: "nithinK-142/react-flicks",
     href: "react-flicks",
   },
   {
     title: "nithinK-142/sveltekit-todos",
     href: "sveltekit-todos",
-  },
-  {
-    title: "nithinK-142/vue-expense-tracker",
-    href: "vue-expense-tracker",
   },
 ];
 
