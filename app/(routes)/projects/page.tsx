@@ -63,7 +63,7 @@ const ProjectsPage = () => {
                 </div>
 
                 <div className="flex items-center justify-between mt-6">
-                  <div className="flex items-center gap-2 font-medium text-sm group-hover:text-blue-700 dark:group-hover:text-yellow-500 hover:transition-colors hover:ease-in-out hover:duration-300">
+                  <div className="flex items-center gap-2 font-medium text-sm group-hover:text-blue-700 dark:group-hover:text-yellow-500 hover:transition-colors hover:ease-linear hover:duration-500">
                     {icons.link}
                     <Link
                       href={`https://${url}`}
