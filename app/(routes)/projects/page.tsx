@@ -75,13 +75,15 @@ const ProjectsPage = () => {
                   </div>
 
                   <div className="absolute hidden xs:block right-0 transition-transform duration-500 delay-200 translate-x-7 group-hover:-translate-x-6">
-                    <div className="h-5 fill-blue-600 dark:fill-yellow-400">
+                    <div className="h-5 group">
                       <a
                         href={"https://github.com/nithinK-142/" + `${gitUrl}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {icons.github}
+                        <span className="fill-white group-hover:fill-blue-600 dark:fill-black group-hover:dark:fill-yellow-400 transition-colors ease-linear duration-1000">
+                          {icons.github}
+                        </span>
                       </a>
                     </div>
                   </div>
