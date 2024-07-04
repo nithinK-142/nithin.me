@@ -7,7 +7,6 @@ import { ThemeContextProvider } from "@/context/ThemeContextProvider";
 import { FramerProvider } from "@/context/FramerProvider";
 import { AnimationToggleProvider } from "@/context/AnimationToggleProvider";
 import { AnimationSwitch } from "@/components/AnimationSwitch";
-import Script from "next/script";
 
 const quick = Quicksand({
   weight: ["400", "500", "600", "700"],

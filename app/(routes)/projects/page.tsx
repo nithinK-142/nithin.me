@@ -32,65 +32,63 @@ const ProjectsPage = () => {
       {/* Project Cards */}
       <div className="grid grid-cols-1 lmd:grid-cols-2 xlg:grid-cols-3 gap-4 mt-6">
         {projects.map(
-          ({ name, description, techStack, logo, url, gitUrl }, index) => {
-            return (
-              <div
-                className="flex flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 dark:hover:shadow-lg hover:shadow-lg relative overflow-hidden"
-                key={index}
-              >
-                <div className="absolute flex items-center space-x-2 right-3 transition-transform duration-500 delay-200 -translate-y-20 group-hover:-translate-y-6">
-                  {techStack.map((tech, index) => {
-                    const frameworkLogo = getFrameworkLogo(tech);
-                    return (
-                      frameworkLogo && (
-                        <div
-                          key={index}
-                          className="flex flex-col justify-center items-center"
-                        >
-                          <div className="h-6 border border-black/10 dark:border-stone-700"></div>
-                          <div className="h-8 w-8 overflow-hidden flex justify-center items-center rounded-full border border-black/20 dark:border-stone-700 hover:animate-rotate3d cursor-pointer">
-                            <div className="h-6">{frameworkLogo}</div>
-                          </div>
+          ({ name, description, techStack, logo, url, gitUrl }, index) => (
+            <div
+              className="flex flex-col justify-between hover:bg-neutral-100 hover:transition-colors hover:ease-in-out hover:duration-300 p-4 select-none group border border-black/10 dark:border-stone-900 bg-white/40 dark:bg-black/20 dark:hover:bg-black/50 dark:hover:shadow-lg hover:shadow-lg relative overflow-hidden"
+              key={index}
+            >
+              <div className="absolute flex items-center space-x-2 right-3 transition-transform duration-500 delay-200 -translate-y-20 group-hover:-translate-y-6">
+                {techStack.map((tech, index) => {
+                  const frameworkLogo = getFrameworkLogo(tech);
+                  return (
+                    frameworkLogo && (
+                      <div
+                        key={index}
+                        className="flex flex-col justify-center items-center"
+                      >
+                        <div className="h-6 border border-black/10 dark:border-stone-700"></div>
+                        <div className="h-8 w-8 overflow-hidden flex justify-center items-center rounded-full border border-black/20 dark:border-stone-700 hover:animate-rotate3d cursor-pointer">
+                          <div className="h-6">{frameworkLogo}</div>
                         </div>
-                      )
-                    );
-                  })}
-                </div>
-                <div>
-                  <div className="h-12 ml-0 block mr-auto">{logo}</div>
-                  <h4 className="text-xl font-semibold mt-4 mb-1">{name}</h4>
-                  <p className="text-sm">{description}</p>
+                      </div>
+                    )
+                  );
+                })}
+              </div>
+              <div>
+                <div className="h-12 ml-0 block mr-auto">{logo}</div>
+                <h4 className="text-xl font-semibold mt-4 mb-1">{name}</h4>
+                <p className="text-sm">{description}</p>
+              </div>
+
+              <div className="flex items-center justify-between mt-6">
+                <div className="flex items-center gap-2 font-medium text-sm group-hover:text-blue-700 dark:group-hover:text-yellow-500 hover:transition-colors hover:ease-linear hover:duration-500">
+                  {icons.link}
+                  <Link
+                    href={`https://${url}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {url}
+                  </Link>
                 </div>
 
-                <div className="flex items-center justify-between mt-6">
-                  <div className="flex items-center gap-2 font-medium text-sm group-hover:text-blue-700 dark:group-hover:text-yellow-500 hover:transition-colors hover:ease-linear hover:duration-500">
-                    {icons.link}
-                    <Link
-                      href={`https://${url}`}
+                <div className="absolute hidden xs:block right-0 transition-transform duration-500 delay-200 translate-x-7 group-hover:-translate-x-6">
+                  <div className="h-5 group">
+                    <a
+                      href={"https://github.com/nithinK-142/" + `${gitUrl}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {url}
-                    </Link>
-                  </div>
-
-                  <div className="absolute hidden xs:block right-0 transition-transform duration-500 delay-200 translate-x-7 group-hover:-translate-x-6">
-                    <div className="h-5 group">
-                      <a
-                        href={"https://github.com/nithinK-142/" + `${gitUrl}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span className="fill-white group-hover:fill-blue-600 dark:fill-black group-hover:dark:fill-yellow-400 transition-colors ease-linear duration-1000">
-                          {icons.github}
-                        </span>
-                      </a>
-                    </div>
+                      <span className="fill-white group-hover:fill-blue-600 dark:fill-black group-hover:dark:fill-yellow-400 transition-colors ease-linear duration-1000">
+                        {icons.github}
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>
-            );
-          }
+            </div>
+          )
         )}
       </div>
 
