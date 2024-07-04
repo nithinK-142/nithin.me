@@ -35,7 +35,7 @@ export default function RootLayout({
         {process.env.NODE_ENV === "production" && (
           <Script
             src="https://umami-analytics-main.vercel.app/script.js"
-            data-website-id="5b7b0aed-1b04-4ff4-957c-9b11ac15189a"
+            data-website-id={process.env.WEBSITE_ID}
             async
             defer
           />
