@@ -34,7 +34,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="favicon.svg" />
         {process.env.NODE_ENV === "production" && (
           <Script
-            src="https://umami-analytics-main.vercel.app/script.js"
+            src={process.env.WEBSITE_URL}
             data-website-id={process.env.WEBSITE_ID}
             async
             defer
