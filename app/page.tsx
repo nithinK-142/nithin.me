@@ -1,9 +1,14 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { icons } from "./assets/icons";
 import Button from "@/components/Button";
 import { AnimationProvider } from "@/context/AnimationProvider";
 import { fadeInUp, fadeInOut } from "@/utils/motion";
 import { heroOuter } from "@/utils/constants";
+
+const DynamicResumeLink = dynamic(() => import("@/components/ResumeLink"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -29,7 +34,7 @@ export default function Home() {
             <p className="hidden pl-1 text-base font-normal md:text-xl md:block select-none">
               Hi there, i&apos;m
             </p>
-            <h1 className="text-5xl sm:text-6xl lg:text-[86px] xl:text-8xl font-bold opacity-75 dark:opacity-100">
+            <h1 className="text-5xl sm:text-6xl lg:text-[86px] xl:text-8xl font-bold opacity-75 dark:opacity-100 text-center md:text-start">
               NITHIN
             </h1>
             <p className="pt-2 font-normal leading-relaxed text-center md:pl-1 md:text-left">
@@ -44,6 +49,7 @@ export default function Home() {
                   animation="md:animate-bounce"
                 />
               </Link>
+              <DynamicResumeLink />
             </div>
           </div>
         </div>
