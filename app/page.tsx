@@ -6,9 +6,7 @@ import { AnimationProvider } from "@/context/AnimationProvider";
 import { fadeInUp, fadeInOut } from "@/utils/motion";
 import { heroOuter } from "@/utils/constants";
 
-const DynamicResumeLink = dynamic(() => import("@/components/ResumeLink"), {
-  ssr: false,
-});
+const DynamicResumeLink = dynamic(() => import("@/components/ResumeLink"));
 
 export default function Home() {
   return (

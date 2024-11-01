@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 export interface TechStackItem {
   logo: JSX.Element | string;
   label: string;
