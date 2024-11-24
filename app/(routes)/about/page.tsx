@@ -89,7 +89,7 @@ const AboutPage = () => {
             binge-watching stuff.
           </p>
           <p className="pt-1 font-normal">
-            I&apos;m currently available for a new freelance job.{" "}
+            I&apos;m currently available for freelance.{" "}
             <a
               href="https://www.fiverr.com/nithin_webdev?up_rollout=true"
               className="about-link"
