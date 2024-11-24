@@ -1,11 +1,11 @@
-type AchivementsType = {
+type CertificationsType = {
   title: string;
   link: string;
 };
 
-export const achivements: AchivementsType[] = [
+export const certifications: CertificationsType[] = [
   {
-    title: "Responsive Web Design @FCC",
+    title: "Responsive Web Design @FreeCodeCamp",
     link: "https://www.freecodecamp.org/certification/fcc12be2f4c-b687-4cd2-852f-bb33961a1103/responsive-web-design",
   },
   {
