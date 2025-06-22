@@ -11,7 +11,7 @@ const Experience = () => {
         <li>
           <p className="text-sm opacity-80">2024 Sept - Present</p>
           <p>
-            Full Stack Developer @{" "}
+            Software Developer @{" "}
             <a
               href="https://www.dealsdray.com/"
               className="font-semibold about-link"
